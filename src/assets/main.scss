@@ -1,1 +1,154 @@
+html {
+  background: #888;
+  .mobile-only {
+    background-color: white;
+    min-height: 100vh;
+    width: 420px !important;
+    margin: auto;
+    nav.navbar {
+      width: 420px !important;
+      margin: auto;
+      overflow-x: hidden !important;
+    }
+  }
+}
 
+$primary: #9030CF;
+
+body {
+  font-family: 'Inter';
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+a {
+  text-decoration: none !important;
+  color: $primary;
+}
+.color-primary {
+  color: $primary;
+}
+nav.navbar {
+  position: fixed;
+  top: 0;
+  display: block;
+  background: #000;
+  width: 100%;
+  padding: 0;
+  transition: background 0.15s ease;
+  &.navbar-open {
+    background: #252525;
+  }
+  .navbar-brand {
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    img {
+      height: 51px;
+      width: 51px;
+    }
+    .brand-text {
+      color: #FFF;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      font-weight: 600;
+    }
+  }
+  .navbar-toggler {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .navbar-collapse ~ nav.navbar {
+    background-color: #FFF;
+  }
+  .mobile-navbar-content {
+    height: calc(100vh - 57px);
+    ul {
+      margin: 0;
+      margin-top: 10px;
+      padding: 0 10px;
+      li {
+        list-style: none;
+        padding: 5px 0;
+        .nav-menu-title {
+          font-size: 25px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #FFF;
+          cursor: pointer;
+          &:hover {
+            color: $primary;
+          }
+        }
+        .nav-menu-content {
+          padding-top: 10px;
+          &__cards {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            .card-item {
+              min-height: 211px;
+              width: 204px;
+              .card-image {
+                height: 115px;
+                background: #AFAFAF;
+                position: relative;
+                .card-tag {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  font-size: 14px;
+                  padding: 0 5px;
+                  background: $primary;
+                  font-weight: 700;
+                  color: #FFF;
+                }
+              }
+              .card-footer {
+                background: #000;
+                color: #FFF;
+                .card-description {
+                  padding: 8px;
+                  font-size: 12px;
+                }
+                .card-action {
+                  padding: 8px;
+                  padding-top: 0;
+                  text-align: right;
+                  a {
+                    font-weight: 800;
+                    font-size: 14px;
+                    color: #FFF;
+                    i {
+                      color: $primary;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    i {
+      color: #FFF;
+      font-size: 34px;
+      &:before {
+        transition: transform 0.15s ease-out;
+      }
+      &.bi-x-lg {
+        font-size: 30px;
+      }
+      &.show:before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+main {
+  padding-top: 57px;
+}

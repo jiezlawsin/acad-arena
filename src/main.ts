@@ -1,6 +1,8 @@
-import './assets/main.scss'
 import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap-icons/font/bootstrap-icons.scss"
 import "bootstrap"
+import './assets/fonts/fonts.scss'
+import './assets/main.scss'
 
 import { createPinia } from 'pinia'
 import { createApp } from 'vue'
