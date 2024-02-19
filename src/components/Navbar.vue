@@ -12,6 +12,20 @@
         <i class="bi " :class="{ 'bi-x-lg show': isCollapseOpen, 'bi-list': !isCollapseOpen }"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-nav-links mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News & Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Who We Are</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connect</a>
+          </li>
+        </ul>
         <div class="mobile-navbar-content">
           <ul>
             <li class="active">
