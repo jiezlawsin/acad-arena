@@ -213,7 +213,7 @@ main {
 }
 .btn {
   font-family: 'Roboto';
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   &-dark {
@@ -296,6 +296,41 @@ h3 {
       }
     }
   }
+  &.card-testimonial {
+    .card-image {
+      .card-tag {
+        width: 100%;
+        background: #2E7CF6;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 800;
+      }
+    }
+  }
+  &.card-news {
+    .card-image {
+      .card-tag {
+        top: initial;
+        bottom: -10px;
+        font-size: 12px;
+        font-weight: 800;
+        padding: 2px 8px;
+      }
+    }
+    .card-footer {
+      min-height: 100px;
+      .card-title {
+        padding-top: 8px;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+      .card-description {
+        padding: 0;
+        font-size: 12px;
+      }
+    }
+  }
 }
 .grid {
   display: grid;
@@ -313,5 +348,60 @@ h3 {
   .name {
     font-size: 18px;
     font-weight: 600;
+  }
+}
+
+#footer {
+  background: #D9D9D9;
+  .dots {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+    position: relative;
+    margin-bottom: 50px;
+    &:after {
+      content: ' ';
+      position: absolute;
+      width: 200px;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: #000;
+    }
+    span {
+      width: 46px;
+      height: 46px;
+      background: #000;
+      border-radius: 50%;
+    }
+  }
+  .sitemap {
+    font-family: 'Inter';
+    text-align: center;
+    ul {
+      margin: 0;
+      li {
+        list-style: none;
+        font-size: 15px;
+        font-weight: 400;
+        padding-bottom: 15px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+        b {
+          font-size: 18px;
+          font-weight: 800;
+        }
+        a {
+          color: #000;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
   }
 }
