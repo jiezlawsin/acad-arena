@@ -139,11 +139,11 @@
       <div class="container">
         <h3>Our Company</h3>
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-sm-6">
             <br>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem dolore quasi rem impedit necessitatibus iusto perferendis ratione dignissimos maiores ea porro quidem temporibus, deleniti aliquam molestias officia. Odit, eligendi.</p>
           </div>
-          <div class="col-xs-6">
+          <div class="col-sm-6">
             <div class="grid grid-stats">
               <div class="number">+123</div>
               <div class="name">Events Supported</div>

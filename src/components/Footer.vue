@@ -9,7 +9,7 @@
         <span></span>
       </div>
       <div class="row sitemap">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <ul>
             <li><b>COMPANY</b></li>
             <li><a href="#">About</a></li>
@@ -19,7 +19,7 @@
             <li><a href="#">Support</a></li>
           </ul>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <ul>
             <li><b>LEGAL</b></li>
             <li><a href="#">Terms of Use</a></li>
