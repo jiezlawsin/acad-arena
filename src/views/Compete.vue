@@ -1,12 +1,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Banner from '../components/Banner.vue'
+import HeaderBanner from '../components/HeaderBanner.vue'
 
 export default defineComponent({
   name: 'home',
   title: 'Home',
   components: {
-    Banner
+    Banner,
+    HeaderBanner,
   },
   data() {
     return {
@@ -37,6 +39,14 @@ export default defineComponent({
               backgroundImage: ''
             },
           ]
+        },
+        {
+          component: 'headerbanner',
+          name: 'HeaderBannerComponent',
+          banner: {
+            header: 'Titles We Support',
+            isDark: false,
+          }
         }
       ],
     };
@@ -48,6 +58,7 @@ export default defineComponent({
   <main>
     <div v-for="section in sections">
       <Banner v-if="section.component === 'banner'" :section-id="section.name" :banners="section.banners" />
+      <HeaderBanner v-if="section.component === 'headerbanner'" :section-id="section.name" :banner="section.banner" />
     </div>
   </main>
 </template>
