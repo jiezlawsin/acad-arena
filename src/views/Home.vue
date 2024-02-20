@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import Banner from '../components/Banner.vue'
+import ProgramCards from '../components/ProgramCards.vue'
 
 export default defineComponent({
   name: 'home',
@@ -12,7 +13,8 @@ export default defineComponent({
   components: {
     Swiper,
     SwiperSlide,
-    Banner
+    Banner,
+    ProgramCards,
   },
   data() {
     return {
@@ -41,7 +43,38 @@ export default defineComponent({
               backgroundImage: ''
             },
           ]
-        }
+        },
+        {
+          component: 'program-cards-slide',
+          name: 'OurPrograms',
+          cards: [
+            {
+              tag: 'Lorem Ipsum',
+              description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              cta: 'CTA Here'
+            },
+            {
+              tag: 'LLL Ipsum',
+              description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              cta: 'CTA Here'
+            },
+            {
+              tag: 'SSS Ipsum',
+              description: '<b>AAA ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              cta: 'CTA Here'
+            },
+            {
+              tag: 'SSS Ipsum',
+              description: '<b>SDD ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              cta: 'CTA Here'
+            },
+            {
+              tag: 'Lorem Ipsum',
+              description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              cta: 'CTA Here'
+            },
+          ]
+        },
       ],
       programs: [
         {
@@ -116,34 +149,8 @@ export default defineComponent({
   <main>
     <div v-for="section in sections">
       <Banner v-if="section.component === 'banner'" :section-id="section.name" :banners="section.banners" />
+      <ProgramCards v-if="section.component === 'program-cards-slide'" :section-id="section.name" :title="'Our Programs'" :cards="section.cards" />
     </div>
-    <section id="OurPrograms" class="py-5">
-      <div class="container">
-        <h3>Our Programs</h3>
-        <swiper
-          class="swiper swiper-cards"
-          :modules="modules"
-          :space-between="30"
-          :slides-per-view="3"
-          :slides-per-group="3"
-          :pagination="{ clickable: true }"
-        >
-          <swiper-slide v-for="item in programs" class="card">
-            <div class="card-item">
-              <div class="card-image">
-                <span class="card-tag">{{ item.tag }}</span>
-              </div>
-              <div class="card-footer">
-                <div class="card-description" v-html="item.description"></div>
-                <div class="card-action">
-                  <a href="#">{{ item.cta}} <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </swiper-slide>
-        </swiper>
-      </div>
-    </section>
     <section id="OurCompany" class="pt-0 py-5">
       <div class="container">
         <h3>Our Company</h3>
