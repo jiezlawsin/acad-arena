@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg" :class="{ 'navbar-open': isCollapseOpen }">
-    <div class="container-fluid">
+    <div class="container container-fluid">
       <a class="navbar-brand" href="#">
         <img src="../assets/images/logo-white.png" alt="">
         <div class="brand-text">

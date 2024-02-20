@@ -1,113 +1,122 @@
 <script lang="ts">
-  import { defineComponent } from 'vue'
-  import { Pagination, Autoplay } from 'swiper/modules'
-  import { Swiper, SwiperSlide } from 'swiper/vue'
-  import 'swiper/css'
-  import 'swiper/css/pagination'
+import { defineComponent } from 'vue'
+import { Pagination, Autoplay } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import Banner from '../components/Banner.vue'
 
-  export default defineComponent({
-    name: 'home',
-    title: 'Home',
-    components: {
-      Swiper,
-      SwiperSlide
-    },
-    data() {
-      return {
-        banners: [
-          {
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
-            cta: 'CTA Here'
-          },
-          {
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-            cta: 'CTA Here'
-          },
-          {
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-            cta: 'CTA Here'
-          },
-        ],
-        programs: [
-          {
-            tag: 'Lorem Ipsum',
-            description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
-            cta: 'CTA Here'
-          },
-          {
-            tag: 'LLL Ipsum',
-            description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
-            cta: 'CTA Here'
-          },
-          {
-            tag: 'SSS Ipsum',
-            description: '<b>AAA ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
-            cta: 'CTA Here'
-          },
-          {
-            tag: 'SSS Ipsum',
-            description: '<b>SDD ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
-            cta: 'CTA Here'
-          },
-          {
-            tag: 'Lorem Ipsum',
-            description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
-            cta: 'CTA Here'
-          },
-        ],
-        testimonials: [
-          {
-            tag: 'Lorem Ipsum Dolor',
-            content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."'
-          },
-          {
-            tag: 'Lorem Ipsum Dolor',
-            content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."'
-          },
-          {
-            tag: 'Lorem Ipsum Dolor',
-            content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."'
-          },
-        ],
-        news: [
-          {
-            tag: 'Lorem Ipsum Dolor',
-            title: 'Lorem Ipsum Dolor Sit Amet',
-            description: 'consectetur adipiscing elit'
-          },
-          {
-            tag: 'Lorem Ipsum Dolor',
-            title: 'Lorem Ipsum Dolor Sit Amet',
-            description: 'consectetur adipiscing elit'
-          },
-          {
-            tag: 'Lorem Ipsum Dolor',
-            title: 'Lorem Ipsum Dolor Sit Amet',
-            description: 'consectetur adipiscing elit'
-          },
-        ],
-      };
-    },
-    setup() {
-      return {
-        modules: [Pagination, Autoplay]
-      }
+export default defineComponent({
+  name: 'home',
+  title: 'Home',
+  components: {
+    Swiper,
+    SwiperSlide,
+    Banner
+  },
+  data() {
+    return {
+      sections: [
+        {
+          component: 'banner',
+          name: 'HomeBanner',
+          height: '350px',
+          banners: [
+            {
+              content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
+              ctaText: 'CTA Here',
+              ctaLink: '#',
+              backgroundImage: ''
+            },
+            {
+              content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
+              ctaText: 'CTA Here',
+              ctaLink: '#',
+              backgroundImage: ''
+            },
+            {
+              content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
+              ctaText: 'CTA Here',
+              ctaLink: '#',
+              backgroundImage: ''
+            },
+          ]
+        }
+      ],
+      programs: [
+        {
+          tag: 'Lorem Ipsum',
+          description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+          cta: 'CTA Here'
+        },
+        {
+          tag: 'LLL Ipsum',
+          description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+          cta: 'CTA Here'
+        },
+        {
+          tag: 'SSS Ipsum',
+          description: '<b>AAA ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+          cta: 'CTA Here'
+        },
+        {
+          tag: 'SSS Ipsum',
+          description: '<b>SDD ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+          cta: 'CTA Here'
+        },
+        {
+          tag: 'Lorem Ipsum',
+          description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+          cta: 'CTA Here'
+        },
+      ],
+      testimonials: [
+        {
+          tag: 'Lorem Ipsum Dolor',
+          content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."'
+        },
+        {
+          tag: 'Lorem Ipsum Dolor',
+          content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."'
+        },
+        {
+          tag: 'Lorem Ipsum Dolor',
+          content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."'
+        },
+      ],
+      news: [
+        {
+          tag: 'Lorem Ipsum Dolor',
+          title: 'Lorem Ipsum Dolor Sit Amet',
+          description: 'consectetur adipiscing elit'
+        },
+        {
+          tag: 'Lorem Ipsum Dolor',
+          title: 'Lorem Ipsum Dolor Sit Amet',
+          description: 'consectetur adipiscing elit'
+        },
+        {
+          tag: 'Lorem Ipsum Dolor',
+          title: 'Lorem Ipsum Dolor Sit Amet',
+          description: 'consectetur adipiscing elit'
+        },
+      ],
+    };
+  },
+  setup() {
+    return {
+      modules: [Pagination, Autoplay]
     }
-  })
-
+  }
+})
 </script>
 
 
 <template>
   <main>
-    <swiper class="swiper banner-swiper" style="height: 350px" :modules="modules" :pagination="{ clickable: true }" :autoplay="{ delay: 5500 }">
-      <swiper-slide v-for="banner of banners" class="slide">
-        <div class="banner-swiper-content container flex flex-justify-center flex-align-center flex-column">
-            <div class="banner-swiper-html" v-html="banner.content"></div>
-            <a href="#" class="btn btn-dark btn-lg">{{ banner.cta }}</a>
-        </div>
-      </swiper-slide>
-    </swiper>
+    <div v-for="section in sections">
+      <Banner v-if="section.component === 'banner'" :section-id="section.name" :banners="section.banners" />
+    </div>
     <section id="OurPrograms" class="py-5">
       <div class="container">
         <h3>Our Programs</h3>
