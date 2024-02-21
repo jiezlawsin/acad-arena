@@ -11,17 +11,7 @@
         :pagination="{ clickable: true }"
       >
         <swiper-slide v-for="item in cards" class="card" style="width: 300px">
-          <div class="card-item" >
-            <div class="card-image">
-              <span class="card-tag">{{ item.tag }}</span>
-            </div>
-            <div class="card-footer">
-              <div class="card-description" v-html="item.description"></div>
-              <div class="card-action">
-                <a href="#">{{ item.cta}} <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
+          <ProgramCard :item="item" />
         </swiper-slide>
       </swiper>
     </div>
@@ -33,6 +23,7 @@ import { Pagination, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import ProgramCard from './ProgramCard.vue'
 
 export default {
   props: {
@@ -51,7 +42,8 @@ export default {
   },
   components: {
     Swiper,
-    SwiperSlide
+    SwiperSlide,
+    ProgramCard
   },
   setup() {
     return {

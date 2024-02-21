@@ -17,7 +17,7 @@ $primary: #9030CF;
 $section-gray-bg: #D9D9D9;
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Archivo';
 }
 .cursor-pointer {
   cursor: pointer !important;
@@ -252,9 +252,10 @@ h3 {
       }
     }
   }
-}
+} 
 .card {
   border-radius: 0 !important;
+  background-color: transparent;
   .card-item {
     .card-image {
       height: 205px;
@@ -332,6 +333,85 @@ h3 {
       }
     }
   }
+  .cube-card {
+    border: 0;
+    color: white;
+    max-width: 317px;
+    .card-image {
+      border-radius: 24px;
+      overflow: hidden;
+    }
+    .card-footer {
+      padding: 0;
+      margin-top: 10px;
+    }
+    .card-title {
+      font-size: 16px;
+      line-height: 24px;
+      svg {
+        block-size: 20px;
+        margin-right: 10px;
+      }
+    }
+    .card-content {
+      margin-inline-start: 32px;
+    }
+    .card-name {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 32px;
+      background: linear-gradient(268.74deg, #78C3FF -36.11%, #9030CF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .story-card {
+    color: white;
+    .card-image {
+      margin-block-end: 20px;
+      img {
+        aspect-ratio: 16 / 9;
+        border-radius: 24px;
+      }
+    }
+    .card-footer {
+      padding: 0;
+    }
+    .card-title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .card-description {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .card-cta {
+      display: flex; 
+      gap: 10px;
+      margin-block-start: 20px;
+      a {
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        min-height: 48px;
+        padding-block: 12px;
+        padding-inline: 16px;
+        &:first-child {
+          background: linear-gradient(268.74deg, #78C3FF -36.11%, #9030CF 134.81%);
+        }
+        &:last-child {
+          background: linear-gradient(268.74deg, rgba(120, 195, 255, 0.3) -36.11%, rgba(144, 48, 207, 0.3) 134.81%);
+          border: 1px solid linear-gradient(268.74deg, #78C3FF -36.11%, #9030CF 100%);
+        }
+      }
+    }
+  }
 }
 .grid {
   display: grid;
@@ -358,6 +438,35 @@ h3 {
   min-height: 220px;
   &.dark {
     background-color: $section-gray-bg;
+  }
+}
+.carousel-section {
+  background-color: #0E1024  ;
+  padding: 30px;
+  .section-container {
+    margin: 0 auto;
+    max-width: 1040px;
+  }
+  .section-header {
+    margin-block-end: 40px;
+    .title {
+      color: white;
+      font-size: 35px;
+      line-height: 47.66px;
+      margin-block-end: 0;
+    }
+    .description {
+      font-size: 12px;
+      line-height: 16.34px;
+    }
+  }
+  .swiper-container {
+    margin-block: 10px;
+    margin-right: calc(50% - 50vw);
+  }
+  .swiper-slide {
+    border: 0;
+    width: auto!important;
   }
 }
 
