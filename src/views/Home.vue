@@ -50,27 +50,27 @@ export default defineComponent({
           cards: [
             {
               tag: 'Lorem Ipsum',
-              description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              content: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
               cta: 'CTA Here'
             },
             {
               tag: 'LLL Ipsum',
-              description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              content: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
               cta: 'CTA Here'
             },
             {
               tag: 'SSS Ipsum',
-              description: '<b>AAA ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              content: '<b>AAA ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
               cta: 'CTA Here'
             },
             {
               tag: 'SSS Ipsum',
-              description: '<b>SDD ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              content: '<b>SDD ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
               cta: 'CTA Here'
             },
             {
               tag: 'Lorem Ipsum',
-              description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              content: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
               cta: 'CTA Here'
             },
           ]

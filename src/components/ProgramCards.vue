@@ -1,5 +1,5 @@
 <template>
-  <section :id="sectionId" class="py-5">
+  <section :id="sectionId" class="programs-section py-5">
     <div class="container">
       <h3>{{ title }}</h3>
       <swiper
