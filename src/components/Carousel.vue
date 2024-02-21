@@ -6,8 +6,18 @@
       </div>
       <div class="swiper-container">
         <swiper class="swiper" 
+        :slidesPerView="1.3"  
         :spaceBetween="20"
-        :slidesPerView="carousel.carouselType === 'cube-card' ? 2.3 : 1.2"  
+        :breakpoints="{
+          '640': {
+            slidesPerView: 1.3,
+            spaceBetween: 20,
+          },
+          '768': {
+            slidesPerView: 2.3,
+            spaceBetween: 40,
+          },
+        }"
         :pagination="{
           clickable: true,
         }"

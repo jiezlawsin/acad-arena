@@ -4,6 +4,7 @@ import Banner from '../components/Banner.vue'
 import HeaderBanner from '../components/HeaderBanner.vue'
 import Carousel from '../components/Carousel.vue'
 import Stories from '../components/Stories.vue'
+import Newsletter from '../components/Newsletter.vue'
 
 export default defineComponent({
   name: 'home',
@@ -13,6 +14,7 @@ export default defineComponent({
     HeaderBanner,
     Carousel,
     Stories,
+    Newsletter,
   },
   data() {
     return {
@@ -143,6 +145,14 @@ export default defineComponent({
             ctaText: 'Reach Out to Us'
           },
         },
+        {
+          component: 'newsletter',
+          name: 'NewsletterComponent',
+          newsletter: {
+            title: 'We are opening scholarships & classes soon!',
+            description: 'Get the news first! Subscribe to our newsletter or join our Discord Server.',
+          },
+        },
       ],
     };
   }
@@ -156,6 +166,7 @@ export default defineComponent({
       <HeaderBanner v-if="section.component === 'headerbanner'" :section-id="section.name" :banner="section.banner" />
       <Carousel v-if="section.component === 'carousel'" :section-id="section.name" :cards="section.cards" :carousel="section.carousel" />
       <Stories v-if="section.component === 'stories'" :section-id="section.name" :cards="section.cards" :carousel="section.carousel" />
+      <Newsletter v-if="section.component === 'newsletter'" :section-id="section.name" :newsletter="section.newsletter" />
     </div>
   </main>
 </template>

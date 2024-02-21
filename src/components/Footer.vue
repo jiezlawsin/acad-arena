@@ -6,7 +6,7 @@
           <img src="../assets/images/globe.png" alt="">
         </a>
         <a href="#">
-          <img src="../assets/images/riot.png" alt="">
+          <img src="../assets/images/riot-games.png" alt="">
         </a>
         <a href="#">
           <img src="../assets/images/garena.png" alt="">
