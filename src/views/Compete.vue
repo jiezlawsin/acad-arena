@@ -65,18 +65,21 @@ export default defineComponent({
             {
               header: 'Lorem ipsum dolor sit',
               name: 'Xavier "Xavie8k" Juan',
+              tag: 'The Supportive Teacher',
               content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
               backgroundImage: 'https://placekitten.com/317/317'
             },
             {
               header: 'Lorem ipsum dolor sit',
               name: 'Xavier "Xavie8k" Juan',
+              tag: 'The Supportive Teacher',
               content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
               backgroundImage: 'https://placekitten.com/317/317'
             },
             {
               header: 'Lorem ipsum dolor sit',
               name: 'Xavier "Xavie8k" Juan',
+              tag: 'The Supportive Teacher',
               content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
               backgroundImage: 'https://placekitten.com/317/317'
             },

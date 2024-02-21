@@ -2,6 +2,7 @@
   <div class="cube-card">
     <div class="card-image">
       <img :src="item.backgroundImage" alt="">
+      <span class="tag" v-if="item.tag">{{  item.tag  }}</span>
     </div>
     <div class="card-footer">
       <div class="card-title">

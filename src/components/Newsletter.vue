@@ -4,7 +4,7 @@
       <div class="row align-content-sm-center">
         <div class="col-sm-6"></div>
         <div class="newsletter-content col-sm-6">
-          <h4 class="title">{{ newsletter.title }}</h4>
+          <div class="title">{{ newsletter.title }}</div>
           <div v-if="newsletter.description" class="description">{{ newsletter.description }}</div>
           <a href="" class="cta">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

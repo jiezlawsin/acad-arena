@@ -1,5 +1,6 @@
 html {
   background: #888;
+  overflow-x: hidden;
   .mobile-only {
     background-color: white;
     min-height: 100vh;
@@ -346,9 +347,27 @@ h3 {
         } 
       }
     }
+    .tag {
+      background: linear-gradient(268.74deg, rgba(120, 195, 255, 0.3) -36.11%, rgba(144, 48, 207, 0.3) 134.81%),
+        linear-gradient(0deg, #000910, #000910);
+      border-radius: 8px;
+      color: $white;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+      padding: 4px 8px;
+      margin: auto;
+      position: absolute;
+      z-index: 2;
+      bottom: 10px;
+      left: 0;
+      right: 0; 
+      width: fit-content
+    }
     .card-image {
       border-radius: 24px;
       overflow: hidden;
+      position: relative;
     }
     .card-footer {
       padding: 0;
@@ -559,7 +578,6 @@ h3 {
     }
   }
   .sitemap {
-    font-family: 'Inter';
     color: $white;
     display: flex;
     justify-content: space-between;
@@ -586,6 +604,11 @@ h3 {
         }
       }
     }
+  }
+  .socials {
+    margin-top: 40px;
+    display: flex;
+    gap: 24px;
   }
   hr {
     opacity: 1;
