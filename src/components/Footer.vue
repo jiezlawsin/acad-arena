@@ -3,25 +3,25 @@
     <div class="container">
       <div class="sponsors">
         <a href="#">
-          <img src="../assets/images/globe.png" alt="Globe logo">
+          <img src="../assets/images/globe.svg" alt="Globe logo">
         </a>
         <a href="#">
-          <img src="../assets/images/riot-games.png" alt="Riot Games logo">
+          <img src="../assets/images/riot-games.svg" alt="Riot Games logo">
         </a>
         <a href="#">
-          <img src="../assets/images/garena.png" alt="Garena logo">
+          <img src="../assets/images/garena.svg" alt="Garena logo">
         </a>
         <a href="#">
-          <img src="../assets/images/moonton.png" alt="Moonton logo">
+          <img src="../assets/images/moonton.svg" alt="Moonton logo">
         </a>
         <a href="#">
-          <img src="../assets/images/bren-esports.png" alt="Bren Esports logo">
+          <img src="../assets/images/bren-esports.svg" alt="Bren Esports logo">
         </a>
         <a href="#">
-          <img src="../assets/images/pearson.png" alt="Pearson logo">
+          <img src="../assets/images/pearson.svg" alt="Pearson logo">
         </a>
         <a href="#">
-          <img src="../assets/images/rumble-royale.png" alt="Rumble Royale logo">
+          <img src="../assets/images/rumble-royale.svg" alt="Rumble Royale logo">
         </a>
       </div>
       <hr>
