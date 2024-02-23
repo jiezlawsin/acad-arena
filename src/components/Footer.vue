@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" class="py-5">
+  <footer id="footer">
     <div class="container">
       <div class="sponsors">
         <a href="#">
@@ -27,26 +27,30 @@
       <hr>
       <div class="sitemap">
         <ul>
-          <li><a href="#">About</a></li>
+          <li><a href="#">About AcadArena</a></li>
           <li><a href="#">Our Team</a></li>
           <li><a href="#">Careers</a></li>
+          <li><a href="#">AcadArena App </a></li>
           <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Suppor  t</a></li>
         </ul>
         <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Code of Conduct</a></li>
+          <li><a href="#">Play Tournaments</a></li>
+          <li><a href="#">Communities</a></li>
+          <li><a href="#">Scholarships</a></li>
+          <li><a href="#">Academy</a></li>
+          <li><a href="#">CONQuest</a></li>
         </ul>
         <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Code of Conduct</a></li>
+          <li><a href="#">Fod Educators</a></li>
+          <li><a href="#">Gaming and Esports Labs</a></li>
+          <li><a href="#">Educational Programs</a></li>
         </ul>
         <ul>
-          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Blog</a></li>
           <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Code of Conduct</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Press Information</a></li>
+          <li><a href="#">Legal</a></li>
         </ul>
       </div>
       <div class="socials">

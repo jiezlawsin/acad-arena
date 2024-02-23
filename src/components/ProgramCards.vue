@@ -5,9 +5,18 @@
       <swiper
         class="swiper swiper-cards"
         :modules="modules"
-        :space-between="30"
-        slides-per-view="auto"
-        :slides-per-group="3"
+        :space-between="40"
+        :slides-per-view="1.3"
+        :breakpoints="{
+          '640': {
+            slidesPerView: 1.3,
+            spaceBetween: 20,
+          },
+          '768': {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        }"
         :pagination="{ clickable: true }"
       >
         <swiper-slide v-for="item in cards" class="card" style="width: 300px">

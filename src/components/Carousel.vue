@@ -1,12 +1,12 @@
 <template>
   <section :id="sectionId" class="carousel-section">
-    <div class="section-container">
+    <div class="container">
       <div class="section-header">
         <h2 class="title text-center">{{ carousel.title }}</h2>
       </div>
       <div class="swiper-container">
         <swiper class="swiper" 
-        :slidesPerView="1.3"  
+        :slides-per-view="1.3"  
         :spaceBetween="20"
         :breakpoints="{
           '640': {

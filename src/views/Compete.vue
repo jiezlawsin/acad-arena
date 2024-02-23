@@ -5,6 +5,7 @@ import HeaderBanner from '../components/HeaderBanner.vue'
 import Carousel from '../components/Carousel.vue'
 import Stories from '../components/Stories.vue'
 import Newsletter from '../components/Newsletter.vue'
+import Features from '../components/Features.vue'
 
 export default defineComponent({
   name: 'home',
@@ -15,6 +16,7 @@ export default defineComponent({
     Carousel,
     Stories,
     Newsletter,
+    Features,
   },
   data() {
     return {
@@ -52,6 +54,20 @@ export default defineComponent({
           banner: {
             header: 'Titles We Support',
             isDark: true,
+          }
+        },
+        {
+          component: 'features',
+          name: 'FeaturesComponent',
+          data: {
+            title: 'Learn By Doing',
+            description: '<p>Turn your hobby to something more—learn a new skill, bond with friends, add to your resume, a paid gig, your difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
+            features: [
+              'Extracurricular Enrichment',
+              'Sports Department', 
+              'Alternative Learning Programs',
+              'Internships & Placement',
+            ]
           }
         },
         {
@@ -170,6 +186,7 @@ export default defineComponent({
       <Carousel v-if="section.component === 'carousel'" :section-id="section.name" :cards="section.cards" :carousel="section.carousel" />
       <Stories v-if="section.component === 'stories'" :section-id="section.name" :cards="section.cards" :carousel="section.carousel" />
       <Newsletter v-if="section.component === 'newsletter'" :section-id="section.name" :newsletter="section.newsletter" />
+      <Features v-if="section.component === 'features'" :section-id="section.name" :data="section.data" />
     </div>
   </main>
 </template>

@@ -1,5 +1,18 @@
+/* Define the keyframes for the bounce animation */
+@keyframes bounce {
+  0%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(15px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+}
+
 html {
-  background: #888;
+  background: linear-gradient(90deg, #0E1024 1.3%, #0C1826 100%);
   overflow-x: hidden;
   .mobile-only {
     background-color: white;
@@ -20,6 +33,8 @@ $white: #F4F4F4;
 
 body {
   font-family: 'Archivo';
+  background: linear-gradient(90deg, #0E1024 1.3%, #0C1826 100%);
+  color: $white;
 }
 .cursor-pointer {
   cursor: pointer !important;
@@ -245,12 +260,12 @@ h3 {
   .swiper-pagination {
     .swiper-pagination-bullet {
       background: none;
-      border: 1px solid #000;
+      border: 1px solid #FFF;
       opacity: 1 !important;
       width: 10px;
       height: 10px;
       &-active {
-        background: #000;
+        background: #FFF;
       }
     }
   }
@@ -261,8 +276,15 @@ h3 {
   .card-item {
     border-radius: 24px;
     overflow: hidden;
+    width: 230px;
+    @media screen and (min-width: 768px) {
+      width: 317px;
+      .card-image {
+        height: 317px;
+      }
+    }
     .card-image {
-      height: 205px;
+      height: 230px;
       background: #AFAFAF;
       position: relative;
     }
@@ -281,6 +303,7 @@ h3 {
       color: #FFF;
       border-radius: 0 !important;
       padding: 24px;
+      border-top: 0;
       .card-description {
         padding: 8px;
         font-size: 12px;
@@ -288,12 +311,21 @@ h3 {
       .card-action {
         display: flex;
         justify-content: space-between;
+        gap: 8px;
         a {
           font-weight: 800;
-          font-size: 14px;
+          font-size: 20px;
+          line-height: 21.76px;
           color: #FFF;
+          svg {
+            transition: transform 0.3s ease-in-out;
+            will-change: transform;
+          }
           &:hover {
             color: $primary;
+            svg {
+              animation: bounce 1s; 
+            }
           }
           i {
             color: $primary;
@@ -325,6 +357,7 @@ h3 {
     }
     .card-footer {
       min-height: 100px;
+      border-top: 0;
       .card-title {
         padding-top: 8px;
         font-size: 15px;
@@ -342,7 +375,7 @@ h3 {
     color: $white;
     max-width: 317px;
     @media screen and (max-width: 767px) {
-      max-width: 237px;
+      max-width: 137px;
       .card-image {
         img {
           max-width: -webkit-fill-available;
@@ -364,7 +397,8 @@ h3 {
       bottom: 10px;
       left: 0;
       right: 0; 
-      width: fit-content
+      width: fit-content;
+      text-align: center;
     }
     .card-image {
       border-radius: 24px;
@@ -374,6 +408,7 @@ h3 {
     .card-footer {
       padding: 0;
       margin-top: 10px;
+      border-top: 0;
     }
     .card-title {
       display: flex;
@@ -411,6 +446,7 @@ h3 {
     }
     .card-footer {
       padding: 0;
+      border-top: 0;
     }
     .card-title {
       font-size: 24px;
@@ -473,11 +509,7 @@ h3 {
 }
 .carousel-section {
   background: linear-gradient(90deg, #0E1024 1.3%, #0C1826 100%);
-  padding: 30px;
-  .section-container {
-    margin: 0 auto;
-    max-width: 1040px;
-  }
+  padding: 30px 0;
   .section-header {
     margin-block-end: 40px;
     .title {
@@ -535,13 +567,38 @@ h3 {
     width: fit-content; 
   }
 }
+.container {
+  max-width: 1040px;
+  padding-inline: 20px;
+  @media screen and (min-width: 1040px) {
+    padding: 0;
+  }
+}
 .programs-section {
   background: linear-gradient(90deg, #060C1A 0.73%, #06111B 100%);
   color: $white;
 }
+.features-section {
+  padding: 30px 0;
+  .features {
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+    }
+    i {
+      margin-right: 12px;
+      font-size: 20px;
+      background: linear-gradient(268.74deg, #78C3FF -36.11%, #9030CF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
 #footer {
   background: #0E1024;
   color: $white;
+  padding-block: 120px;
   .container {
     max-width: 1040px;
     padding: 0;
@@ -594,7 +651,7 @@ h3 {
         list-style: none;
         font-size: 15px;
         font-weight: 400;
-        padding-bottom: 15px;
+        padding-bottom: 8px;
         &:last-child {
           padding-bottom: 0;
         }
@@ -604,6 +661,8 @@ h3 {
         }
         a {
           color: white;
+          font-size: 14px;
+          line-height: 20px;
           &:hover {
             color: $primary;
           }
@@ -638,6 +697,12 @@ h3 {
   .logo {
     img {
       max-height: 33px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    padding-block: 60px;
+    .container {
+      padding-inline: 20px;
     }
   }
 }

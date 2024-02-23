@@ -1,6 +1,6 @@
 <template>
   <section :id="sectionId" class="carousel-section">
-    <div class="section-container">
+    <div class="container">
       <div class="section-header">
         <h1 class="title">{{ carousel.title }}</h1>
         <div v-if="carousel.description" class="description">{{ carousel.description }}</div>
@@ -8,7 +8,7 @@
       <div class="swiper-container">
         <swiper class="swiper" 
         :spaceBetween="40"
-        :slidesPerView="1.2"  
+        :slidesPerView="1.7"  
         :pagination="{
           clickable: true,
         }"
