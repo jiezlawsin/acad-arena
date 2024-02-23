@@ -1,12 +1,14 @@
 <template>
   <section :id="sectionId" class="features-section">
     <div class="container">
-      <div class="section-header w-50">
-        <h2 class="title">{{ data.title }}</h2>
-        <div class="description" v-html="data.description"></div>
-        <ul class="features">
-          <li v-for="feature in data.features"><i class="bi bi-check-circle-fill"></i>{{  feature  }}</li>
-        </ul>   
+      <div class="row">
+        <div class="col-md-6 co-sm-12">
+          <h2 class="title">{{ data.title }}</h2>
+          <div class="description" v-html="data.description"></div>
+          <ul class="features">
+            <li v-for="feature in data.features"><i class="bi bi-check-circle-fill"></i>{{  feature  }}</li>
+          </ul> 
+        </div>
       </div>
     </div>
   </section>

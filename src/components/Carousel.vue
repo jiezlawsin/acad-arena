@@ -14,7 +14,7 @@
             spaceBetween: 20,
           },
           '768': {
-            slidesPerView: 2.3,
+            slidesPerView: 3,
             spaceBetween: 40,
           },
         }"
