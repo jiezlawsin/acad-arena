@@ -82,8 +82,7 @@ export default defineComponent({
           component: 'listing',
           name: 'ListingComponent',
           data: {
-            title: 'Learn By Doing',
-            description: '<p>Turn your hobby to something more—learn a new skill, bond with friends, add to your resume, a paid gig, your difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
+            title: 'What You Need To Do',
             features: [
               {
                 title: 'Lorem Ipsum Dolor Sit Amet',
@@ -112,8 +111,7 @@ export default defineComponent({
           component: 'timeline',
           name: 'TimelineComponent',
           data: {
-            title: 'Learn By Doing',
-            description: '<p>Turn your hobby to something more—learn a new skill, bond with friends, add to your resume, a paid gig, your difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
+            title: 'How Does It Work?',
             features: [
               {
                 title: 'Lorem Ipsum Dolor Sit Amet',

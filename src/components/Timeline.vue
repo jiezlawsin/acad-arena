@@ -3,8 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 co-sm-12">
-          <h2 class="title">{{ data.title }}</h2>
-          <div class="description" v-html="data.description"></div>
+          <div class="section-header">
+            <h2 class="title">{{ data.title }}</h2>
+            <div class="description" v-html="data.description"></div>
+          </div>
           <ul class="features">
             <li v-for="feature in data.features">
               <div>
