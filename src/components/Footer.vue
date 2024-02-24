@@ -41,7 +41,7 @@
           <li><a href="#">CONQuest</a></li>
         </ul>
         <ul>
-          <li><a href="#">Fod Educators</a></li>
+          <li><a href="#">For Educators</a></li>
           <li><a href="#">Gaming and Esports Labs</a></li>
           <li><a href="#">Educational Programs</a></li>
         </ul>

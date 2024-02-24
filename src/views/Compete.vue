@@ -6,6 +6,8 @@ import Carousel from '../components/Carousel.vue'
 import Stories from '../components/Stories.vue'
 import Newsletter from '../components/Newsletter.vue'
 import Features from '../components/Features.vue'
+import Listing from '../components/Listing.vue'
+import Timeline from '../components/Timeline.vue'
 
 export default defineComponent({
   name: 'home',
@@ -17,6 +19,8 @@ export default defineComponent({
     Stories,
     Newsletter,
     Features,
+    Listing,
+    Timeline,
   },
   data() {
     return {
@@ -67,6 +71,66 @@ export default defineComponent({
               'Sports Department', 
               'Alternative Learning Programs',
               'Internships & Placement',
+            ]
+          }
+        },
+        {
+          component: 'listing',
+          name: 'ListingComponent',
+          data: {
+            title: 'Learn By Doing',
+            description: '<p>Turn your hobby to something more—learn a new skill, bond with friends, add to your resume, a paid gig, your difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
+            features: [
+              {
+                title: 'Lorem Ipsum Dolor Sit Amet',
+                description: 'Lorem ipsum dolor sit amet.'
+              },
+              {
+                title: 'Lorem Ipsum Dolor Sit Amet',
+                description: 'Lorem ipsum dolor sit amet.'
+              },
+              {
+                title: 'Lorem Ipsum Dolor Sit Amet',
+                description: 'Lorem ipsum dolor sit amet.'
+              },
+              {
+                title: 'Lorem Ipsum Dolor Sit Amet',
+                description: 'Lorem ipsum dolor sit amet.'
+              },
+              {
+                title: 'Lorem Ipsum Dolor Sit Amet',
+                description: 'Lorem ipsum dolor sit amet.'
+              },
+            ]
+          }
+        },
+        {
+          component: 'timeline',
+          name: 'TimelineComponent',
+          data: {
+            title: 'Learn By Doing',
+            description: '<p>Turn your hobby to something more—learn a new skill, bond with friends, add to your resume, a paid gig, your difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
+            features: [
+              {
+                title: 'Lorem Ipsum Dolor Sit Amet',
+                description: 'Lorem ipsum dolor sit amet.'
+              },
+              {
+                title: 'Lorem Ipsum Dolor Sit Amet',
+                description: 'Lorem ipsum dolor sit amet.'
+              },
+              {
+                title: 'Lorem Ipsum Dolor Sit Amet',
+                description: 'Lorem ipsum dolor sit amet.'
+              },
+              {
+                title: 'Lorem Ipsum Dolor Sit Amet',
+                description: 'Lorem ipsum dolor sit amet.'
+              },
+              {
+                title: 'Lorem Ipsum Dolor Sit Amet',
+                description: 'Lorem ipsum dolor sit amet.'
+              },
             ]
           }
         },
@@ -187,6 +251,8 @@ export default defineComponent({
       <Stories v-if="section.component === 'stories'" :section-id="section.name" :cards="section.cards" :carousel="section.carousel" />
       <Newsletter v-if="section.component === 'newsletter'" :section-id="section.name" :newsletter="section.newsletter" />
       <Features v-if="section.component === 'features'" :section-id="section.name" :data="section.data" />
+      <Listing v-if="section.component === 'listing'" :section-id="section.name" :data="section.data" />
+      <Timeline v-if="section.component === 'timeline'" :section-id="section.name" :data="section.data" />
     </div>
   </main>
 </template>

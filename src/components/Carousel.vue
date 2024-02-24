@@ -6,7 +6,7 @@
       </div>
       <div class="swiper-container">
         <swiper class="swiper" 
-        :slides-per-view="1.3"  
+        :slides-per-view="1.4"  
         :spaceBetween="20"
         :breakpoints="{
           '640': {

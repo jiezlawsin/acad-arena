@@ -1,5 +1,5 @@
 <template>
-  <section :id="sectionId" class="carousel-section">
+  <section :id="sectionId" class="carousel-section features-carousel">
     <div class="container">
       <div class="section-header">
         <h1 class="title">{{ carousel.title }}</h1>
@@ -8,7 +8,17 @@
       <div class="swiper-container">
         <swiper class="swiper" 
         :spaceBetween="40"
-        :slidesPerView="1.7"  
+        :slides-per-view="1.4" 
+        :breakpoints="{
+          '1280': {
+            slidesPerView: 1.5,
+            spaceBetween: 40,
+          },
+          '1441': {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+        }" 
         :pagination="{
           clickable: true,
         }"
