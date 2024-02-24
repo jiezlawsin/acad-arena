@@ -8,6 +8,7 @@ import Newsletter from '../components/Newsletter.vue'
 import Features from '../components/Features.vue'
 import Listing from '../components/Listing.vue'
 import Timeline from '../components/Timeline.vue'
+import Cards from '../components/Cards.vue'
 
 export default defineComponent({
   name: 'home',
@@ -21,6 +22,7 @@ export default defineComponent({
     Features,
     Listing,
     Timeline,
+    Cards,
   },
   data() {
     return {
@@ -130,6 +132,31 @@ export default defineComponent({
               {
                 title: 'Lorem Ipsum Dolor Sit Amet',
                 description: 'Lorem ipsum dolor sit amet.'
+              },
+            ]
+          }
+        },
+        {
+          component: 'cards',
+          name: 'CardsComponent',
+          data: {
+            title: 'Who Can Apply',
+            cards: [
+              {
+                title: 'Students',
+                image: 'https://placekitten.com/317/317'
+              },
+              {
+                title: 'Community Leader',
+                image: 'https://placekitten.com/317/317'
+              },
+              {
+                title: 'Teachers',
+                image: 'https://placekitten.com/317/317'
+              },
+              {
+                title: 'NGOs & LGUs',
+                image: 'https://placekitten.com/317/317'
               },
             ]
           }
@@ -253,6 +280,7 @@ export default defineComponent({
       <Features v-if="section.component === 'features'" :section-id="section.name" :data="section.data" />
       <Listing v-if="section.component === 'listing'" :section-id="section.name" :data="section.data" />
       <Timeline v-if="section.component === 'timeline'" :section-id="section.name" :data="section.data" />
+      <Cards v-if="section.component === 'cards'" :section-id="section.name" :data="section.data" />
     </div>
   </main>
 </template>
