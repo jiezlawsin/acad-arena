@@ -835,3 +835,29 @@ h3 {
     }
   }
 }
+.violator {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(268.74deg, #78C3FF -36.11%, #9030CF 100%);
+  z-index: 9;
+  padding: 10px 0;
+  .description {
+    margin-right: 10px;
+    font-weight: 600;
+  }
+  a {
+    background: linear-gradient(268.74deg, rgba(120, 195, 255, 0.3) -36.11%, rgba(144, 48, 207, 0.3) 134.81%),
+      linear-gradient(0deg, #000910, #000910);
+    border-radius: 8px;
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    min-height: 28px;
+    padding-block: 10px;
+    padding-inline: 16px;
+    min-width: 110px;
+    text-align: center;
+  }
+}

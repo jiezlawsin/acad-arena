@@ -9,6 +9,7 @@ import Features from '../components/Features.vue'
 import Listing from '../components/Listing.vue'
 import Timeline from '../components/Timeline.vue'
 import Cards from '../components/Cards.vue'
+import Violator from '../components/Violator.vue'
 
 export default defineComponent({
   name: 'home',
@@ -23,6 +24,7 @@ export default defineComponent({
     Listing,
     Timeline,
     Cards,
+    Violator,
   },
   data() {
     return {
@@ -263,6 +265,17 @@ export default defineComponent({
             description: 'Get the news first! Subscribe to our newsletter or join our Discord Server.',
           },
         },
+        {
+          component: 'violator',
+          name: 'ViolatorComponent',
+          data: {
+            description: 'Deadline of Applications February 22, 2024',
+            cta: {
+              ctaText: 'Apply',
+              ctaLink: '#'
+            },
+          },
+        },
       ],
     };
   }
@@ -281,6 +294,7 @@ export default defineComponent({
       <Listing v-if="section.component === 'listing'" :section-id="section.name" :data="section.data" />
       <Timeline v-if="section.component === 'timeline'" :section-id="section.name" :data="section.data" />
       <Cards v-if="section.component === 'cards'" :section-id="section.name" :data="section.data" />
+      <Violator v-if="section.component === 'violator'" :section-id="section.name" :data="section.data" />
     </div>
   </main>
 </template>
