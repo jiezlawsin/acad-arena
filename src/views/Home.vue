@@ -5,7 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import Banner from '../components/Banner.vue'
-import ProgramCards from '../components/ProgramCards.vue'
+import CarouselCards from '../components/CarouselCards.vue'
+import Features from '../components/Features.vue'
 
 export default defineComponent({
   name: 'home',
@@ -14,7 +15,8 @@ export default defineComponent({
     Swiper,
     SwiperSlide,
     Banner,
-    ProgramCards,
+    CarouselCards,
+    Features
   },
   data() {
     return {
@@ -25,28 +27,22 @@ export default defineComponent({
           height: '350px',
           banners: [
             {
+              header: 'Lorem Ipsum Dolor',
               content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
               ctaText: 'CTA Here',
               ctaLink: '#',
-              backgroundImage: ''
-            },
-            {
-              content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
-              ctaText: 'CTA Here',
-              ctaLink: '#',
-              backgroundImage: ''
-            },
-            {
-              content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
-              ctaText: 'CTA Here',
-              ctaLink: '#',
-              backgroundImage: ''
-            },
+              backgroundImage: '/acad-arena/src/assets/home/banner.jpg',
+            }
           ]
         },
         {
-          component: 'program-cards-slide',
+          component: 'carousel-cards',
           name: 'OurPrograms',
+          title: 'Our Programs',
+          background: true,
+          carousel: {
+            carouselType: 'program-card',
+          },
           cards: [
             {
               tag: 'Lorem Ipsum',
@@ -75,64 +71,21 @@ export default defineComponent({
             },
           ]
         },
-      ],
-      programs: [
         {
-          tag: 'Lorem Ipsum',
-          description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
-          cta: 'CTA Here'
+          component: 'features',
+          name: 'FeaturesComponent',
+          data: {
+            title: 'Learn by Doing',
+            description: '<p>Turn your hobby to something more—learn a new skill, bond with friends, add to your resume, a paid gig, your difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
+            features: [
+              'Extracurricular Enrichment',
+              'Sports Department', 
+              'Alternative Learning Programs',
+              'Internships & Placement',
+            ]
+          }
         },
-        {
-          tag: 'LLL Ipsum',
-          description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
-          cta: 'CTA Here'
-        },
-        {
-          tag: 'SSS Ipsum',
-          description: '<b>AAA ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
-          cta: 'CTA Here'
-        },
-        {
-          tag: 'SSS Ipsum',
-          description: '<b>SDD ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
-          cta: 'CTA Here'
-        },
-        {
-          tag: 'Lorem Ipsum',
-          description: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
-          cta: 'CTA Here'
-        },
-      ],
-      testimonials: [
-        {
-          tag: 'Lorem Ipsum Dolor',
-          content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."'
-        },
-        {
-          tag: 'Lorem Ipsum Dolor',
-          content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."'
-        },
-        {
-          tag: 'Lorem Ipsum Dolor',
-          content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."'
-        },
-      ],
-      news: [
-        {
-          tag: 'Lorem Ipsum Dolor',
-          title: 'Lorem Ipsum Dolor Sit Amet',
-          description: 'consectetur adipiscing elit'
-        },
-        {
-          tag: 'Lorem Ipsum Dolor',
-          title: 'Lorem Ipsum Dolor Sit Amet',
-          description: 'consectetur adipiscing elit'
-        },
-        {
-          tag: 'Lorem Ipsum Dolor',
-          title: 'Lorem Ipsum Dolor Sit Amet',
-          description: 'consectetur adipiscing elit'
-        },
+        
       ],
     };
   },
@@ -149,9 +102,10 @@ export default defineComponent({
   <main>
     <div v-for="section in sections">
       <Banner v-if="section.component === 'banner'" :section-id="section.name" :banners="section.banners" />
-      <ProgramCards v-if="section.component === 'program-cards-slide'" :section-id="section.name" :title="'Our Programs'" :cards="section.cards" />
+      <CarouselCards v-if="section.component === 'carousel-cards'" :has-background="section.background" :title="section.title"  :section-id="section.name" :cards="section.cards" :carousel="section.carousel" />
+      <Features v-if="section.component === 'features'" :carousel="section.carousel" :section-id="section.name" :data="section.data" />
     </div>
-    <section id="OurCompany" class="pt-0 py-5">
+    <!-- <section id="OurCompany" class="pt-0 py-5">
       <div class="container">
         <h3>Our Company</h3>
         <div class="row">
@@ -232,6 +186,6 @@ export default defineComponent({
           </swiper-slide>
         </swiper>
       </div>
-    </section>
+    </section> -->
   </main>
 </template>

@@ -14,16 +14,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav navbar-nav-links mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Programs</a>
+            <a class="nav-link" href="#">Event Buffs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Compete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Alliance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Company</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">News & Stories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Who We Are</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Connect</a>
           </li>
         </ul>
         <div class="mobile-navbar-content">

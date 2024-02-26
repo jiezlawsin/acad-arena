@@ -19,10 +19,11 @@
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.3",
     "bootstrap-vue": "^2.23.1",
+    "jquery": "^3.7.1",
     "pinia": "^2.1.7",
+    "slick-carousel": "^1.8.1",
     "swiper": "^11.0.6",
     "vue": "^3.4.19",
-    "vue-awesome-swiper": "^5.0.1",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
