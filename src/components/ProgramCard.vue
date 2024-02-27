@@ -4,6 +4,7 @@
       <img :src="item.backgroundImage" alt="">
     </div>
     <div class="card-footer">
+      <div class="card-title no-margin" v-if="item.title">{{ item.title }}</div>
       <div class="card-description" v-html="item.content"></div>
       <div class="card-action">
         <span class="card-tag">{{ item.tag }}</span>

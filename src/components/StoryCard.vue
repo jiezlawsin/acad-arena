@@ -5,8 +5,12 @@
     </div>
     <div class="card-footer">
       <div class="card-title">{{  item.header  }}</div>  
-      <div class="card-description" v-html="item.content"></div>
-      <div class="card-cta">
+      <div class="card-description" v-if="item.content" v-html="item.content"></div>
+      <div class="card-tag-date" v-if="item.tagDate">
+        <div class="card-tag">{{ item.tagDate.tag }}</div>
+        <div class="card-date">{{ item.tagDate.date }}</div>
+      </div>
+      <div class="card-cta" v-if="item.ctas">
         <a href="cta.ctaLink" v-for="cta of item.ctas">{{ cta.ctaText}}</a>
       </div>
     </div>
