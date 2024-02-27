@@ -1073,6 +1073,10 @@ h3 {
     line-height: 90px;
     color: #fff;
     margin-block: 20px;
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+    line-height: 50px;
+    }
   }
   .description {
     font-family: 'Open Sans';
@@ -1155,11 +1159,27 @@ h3 {
         linear-gradient(0deg, #000910, #000910);
       padding: 80px;
       gap: 40px;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+      @media screen and (max-width: 768px) {
+        padding: 40px 20px;
+      }
     }
     .image {
       text-align: center;
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        width: 50%;
+      }
       img {
         max-width: 100%;
+      }
+    }
+    .content {
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        width: 50%;
       }
     }
     .small-text {
@@ -1214,6 +1234,7 @@ h3 {
       padding: 12px 20px;  
       width: fit-content; 
       height: 48px;
+      justify-content: center;
       @media screen and (max-width: 1040px) {
         width: 100%;
       }

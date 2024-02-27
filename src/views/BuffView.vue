@@ -48,10 +48,10 @@ export default defineComponent({
     <div class="cta-breaker">
       <div class="container">
         <div class="wrapper d-flex">
-          <div class="image w-50">
+          <div class="image">
             <img :src="data?.ctaBreaker.image" alt="">
           </div>
-          <div class="content w-50">
+          <div class="content">
             <div class="small-text" v-if="data?.ctaBreaker.smallText">{{ data?.ctaBreaker.smallText }}</div>
             <div class="big-text" v-if="data?.ctaBreaker.bigText">{{ data?.ctaBreaker.bigText }}</div>
             <div class="description" v-if="data?.ctaBreaker.description" v-html="data?.ctaBreaker.description"></div>
