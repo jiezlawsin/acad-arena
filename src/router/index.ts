@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Compete from '../views/Compete.vue'
 import Buffs from '../views/Buffs.vue'
 import BuffView from '../views/BuffView.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routesArr = [
   {
@@ -24,6 +25,10 @@ const routesArr = [
     path: '/buffs/:id',
     name: 'buffView',
     component: BuffView
+  },
+  {
+    path: '/:catchAll(.*)',
+    component: NotFound
   }
 ]
 

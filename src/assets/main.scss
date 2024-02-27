@@ -80,19 +80,25 @@ nav.navbar {
     box-shadow: none !important;
   }
   .navbar-collapse {
+    transition: height 0.2s ease-out;
     @media (min-width: 992px) {
       justify-content: center;
       margin-left: -120px;
+    }
+    &.show {
+      height: calc(100vh - 77px);
     }
   }
   .navbar-collapse ~ nav.navbar {
     background-color: #FFF;
   }
   .navbar-nav-links {
-    display: none;
+    display: blocks;
     color: #FFF;
+    text-align: center;
     @media (min-width: 992px) {
       display: flex;
+      text-align: left;
     }
     .nav-item {
       .nav-link {
@@ -247,6 +253,8 @@ main {
   justify-content: center;
   font-weight: 600;
   font-size: 16px;
+  border-radius: 8px;
+  gap: 10px;
   &-gradient {
     background: linear-gradient(to right, #9030cf, #78c3ff);
     color: #FFF;
@@ -261,8 +269,12 @@ main {
   &-lg {
     min-width: 200px;
     height: 60px;
-    font-size: 18px;
-    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  i {
+    font-size: 22px;
   }
 }
 h1,h2,h3,h4,h5,h6 {
@@ -655,6 +667,10 @@ h3 {
     background: #D9D9D9;
     outline: none !important;
     box-shadow: none !important;
+    border: 2px solid transparent;
+    &.error {
+      border: 2px solid red;
+    }
   }
   
   .cta {
@@ -672,9 +688,6 @@ h3 {
     }
     &:not(:last-child) {
       margin-right: 25px;
-    }
-    i {
-      transform: scale(1.2);
     }
   }
 }
@@ -702,7 +715,43 @@ h3 {
     margin-top: 30px;;
   }
 }
-.numbered-features-section {
+.buff-features-section {
+  background: linear-gradient(268.74deg, rgba(120, 195, 255, 0.2) -36.11%, rgba(144, 48, 207, 0.2) 134.81%), linear-gradient(0deg, #000910, #000910);
+  .left {
+    .title {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 56px;
+    }
+  }
+  .right {
+    @media (max-width: 767px) {
+      margin-top: 30px;
+    }
+    .title {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+    .features {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        align-items: center;
+      }
+      i {
+        margin-right: 5px;
+        font-size: 20px;
+        background: linear-gradient(268.74deg, #78C3FF -36.11%, #9030CF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+.numbered-features-section, .iconed-features-section {
   .title {
     font-size: 40px;
     font-weight: 500;
@@ -756,6 +805,18 @@ h3 {
     }
   }
 }
+.iconed-features-section {
+  background: linear-gradient(90deg, #060C1A 0.73%, #06111B 100%);
+  .features {
+    li {
+      justify-content: center;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+} 
 .features-section {
   .title {
       font-size: 40px;
@@ -1028,6 +1089,9 @@ h3 {
   .description {
     margin-right: 10px;
     font-weight: 600;
+    &.no-cta {
+      margin: auto;
+    }
   }
   a {
     background: linear-gradient(268.74deg, rgba(120, 195, 255, 0.3) -36.11%, rgba(144, 48, 207, 0.3) 134.81%),
@@ -1061,4 +1125,104 @@ h3 {
 }
 .no-margin {
   margin: 0 !important;
+}
+.faq-section {
+  position: relative;
+  
+  .background-image {
+    width: 40%;
+    margin-left: 0;
+    height: auto;
+    height: 100%;
+    position: absolute;
+    @media screen and (max-width: 1124px) {
+      width: 48%;
+    }
+    @media (max-width: 767px) {
+      position: relative;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  
+  .title {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  .accordion {
+    .accordion-item {
+      background: none !important;
+      border: none !important;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      .accordion-header {
+        .accordion-button {
+          background: linear-gradient(268.74deg, rgba(120, 195, 255, 0.2) -36.11%, rgba(144, 48, 207, 0.2) 134.81%), linear-gradient(0deg, #000910, #000910);
+          color: #FFF;
+          border: none !important;
+          box-shadow: none !important;
+          border-radius: 24px;
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+          font-weight: 400;
+          &:after {
+            display: none;
+          }
+          i {
+            background: linear-gradient(268.74deg, #78C3FF -36.11%, #9030CF 134.81%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 20px;
+            transition: transform 0.15s ease-out;
+          }
+          &[aria-expanded="true"] {
+            i {
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+      .accordion-body {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.buff-marketplace-section {
+  .title {
+      font-size: 40px;
+    line-height: 56px;
+    font-weight: 600;
+  }
+  .row {
+    > *:first-child {
+      padding: 0 40px;
+    }
+  }
+}
+
+.content, .description {
+  a {
+    background: linear-gradient(268.74deg, #78C3FF -36.11%, #9030CF 134.81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.not-found-page {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
 }

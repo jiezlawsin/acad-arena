@@ -29,35 +29,6 @@
             <a class="nav-link" href="#">News & Stories</a>
           </li>
         </ul>
-        <div class="mobile-navbar-content">
-          <ul>
-            <li class="active">
-              <div class="nav-menu-title">Programs</div>
-              <div class="nav-menu-content nav-menu-content__cards">
-                <div class="card-item" v-for="item in programs">
-                  <div class="card-image">
-                    <span class="card-tag">{{ item.tag }}</span>
-                  </div>
-                  <div class="card-footer">
-                    <div class="card-description" v-html="item.description"></div>
-                    <div class="card-action">
-                      <a href="#">{{ item.cta}} <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="nav-menu-title">News & Stories</div>
-            </li>
-            <li>
-              <div class="nav-menu-title">Who We Are</div>
-            </li>
-            <li>
-              <div class="nav-menu-title">Connect</div>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
   </nav>

@@ -3,7 +3,7 @@
     <div class="container">
       <h2 class="section-title" :class="titleClass ? titleClass : ''">{{ title }}</h2>
       <p class="section-description" v-if="description" v-html="description"></p>
-      <div class="slick-carousel" :class="carousel.carouselType + '-slick'">
+      <div class="slick-carousel" :class="sectionId + '-slick'">
         <div v-for="item in cards" class="card">
           <ProgramCard :item="item" v-if="carousel.carouselType === 'program-card'" />
           <CubeCard :item="item" v-if="carousel.carouselType === 'cube-card'"/>
@@ -73,56 +73,63 @@ export default {
   },
   mounted() {
     console.log(this.carousel.carouselType)
-    $('.program-card-slick').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            variableWidth: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        },
-      ]
-    });
-    $('.cube-card-slick').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            variableWidth: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        },
-      ]
-    });
-    $('.story-card-slick').slick({
-      infinite: false,
-      variableWidth: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 700,
-          settings: {
-            infinite: true,
-            variableWidth: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        },
-      ]
-    });
+    if (this.carousel.carouselType === 'program-card') {
+      $('.' + this.sectionId + '-slick').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              variableWidth: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+        ]
+      });
+    }
+    if (this.carousel.carouselType === 'cube-card') {
+      $('.' + this.sectionId + '-slick').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              variableWidth: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+        ]
+      });
+    }
+    if (this.carousel.carouselType === 'story-card') {
+      $('.' + this.sectionId + '-slick').slick({
+        infinite: false,
+        variableWidth: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 700,
+            settings: {
+              infinite: true,
+              variableWidth: false,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+        ]
+      });
+    }
+    
   }
 };
 
