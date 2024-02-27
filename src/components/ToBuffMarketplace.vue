@@ -6,8 +6,8 @@
           <div class="title">{{  data.title }}</div>
           <div class="content" v-html="data.content"></div>
           <br>
-          <a href="/acad-arena/buff-markeplace" class="btn btn-lg btn-gradient">
-            <i class="bi bi-file-earmark-text-fill"></i>
+          <a href="/buffs-marketplace" class="btn btn-lg btn-gradient">
+            <i class="bi bi-clipboard2-check-fill"></i>
             Apply Now
           </a>
         </div>

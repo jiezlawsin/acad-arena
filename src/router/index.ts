@@ -4,6 +4,7 @@ import Compete from '../views/Compete.vue'
 import Buffs from '../views/Buffs.vue'
 import BuffView from '../views/BuffView.vue'
 import NotFound from '../views/NotFound.vue'
+import BuffsMarketplace from '../views/BuffsMarketplace.vue'
 
 const routesArr = [
   {
@@ -17,6 +18,11 @@ const routesArr = [
     component: Buffs
   },
   {
+    path: '/buffs-marketplace',
+    name: 'buffs-marketplace',
+    component: BuffsMarketplace
+  },
+  {
     path: '/compete',
     name: 'compete',
     component: Compete
@@ -28,6 +34,7 @@ const routesArr = [
   },
   {
     path: '/:catchAll(.*)',
+    name: 'notfound',
     component: NotFound
   }
 ]
@@ -36,5 +43,11 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: routesArr
 })
+
+router.beforeEach((to, from, next) => {
+  // Scroll to the top before each route navigation
+  window.scrollTo(0, 0);
+  next();
+});
 
 export default router

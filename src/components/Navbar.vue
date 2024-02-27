@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg" :class="{ 'navbar-open': isCollapseOpen }">
     <div class="container container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#" @click.prevent="goTo('/')">
         <img src="../assets/images/logo-white.png" alt="">
         <div class="brand-text">
           <div>acadarena</div>
@@ -14,19 +14,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav navbar-nav-links mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Event Buffs</a>
+            <a class="nav-link" href="#" @click.prevent="goTo('/buffs')">Event Buffs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Compete</a>
+            <a class="nav-link" href="#" >Compete</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Alliance</a>
+            <a class="nav-link" href="#" >Alliance</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Company</a>
+            <a class="nav-link" href="#" >Company</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">News & Stories</a>
+            <a class="nav-link" href="#" >News & Stories</a>
           </li>
         </ul>
       </div>
@@ -35,6 +35,8 @@
 </template>
 
 <script lang="ts">
+import { useRouter } from 'vue-router';
+
 export default {
   data() {
     return {
@@ -56,6 +58,17 @@ export default {
           cta: 'CTA Here'
         },
       ]
+    };
+  },
+  setup() {
+    const router = useRouter();
+
+    const goTo = (path: string) => {
+      router.push(path);
+    }
+
+    return {
+      goTo
     };
   },
   mounted() {

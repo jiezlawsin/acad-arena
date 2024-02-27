@@ -3,6 +3,8 @@ export const BuffsList = [
     id: 'unipin-mlbb-tournament-buff',
     name: 'UniPin MLBB Tournament Buff',
     description: 'Lorem ipsum—dolor sit amet, consectetur adipiscing elit.',
+    tag: 'For Students',
+    cardImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
     heroImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
     sponsors: [
       {
@@ -48,6 +50,8 @@ export const BuffsList = [
     id: 'dewday-tournament-buff',
     name: '#DewDay Tournament Buff',
     description: 'Lorem ipsum—dolor sit amet, consectetur adipiscing elit.',
+    tag: 'For Students',
+    cardImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
     heroImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
     sponsors: [
       {

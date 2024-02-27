@@ -7,7 +7,10 @@
           <div v-if="data.left.content" class="description" v-html="data.left.content"></div>
           <br>
           <div class="action" v-if="data.left.cta">
-            <a :href="data.left.cta.url" target="_blank" class="btn btn-lg btn-gradient">{{ data.left.cta.text }}</a>
+            <a :href="data.left.cta.url" target="_blank" class="btn btn-lg btn-gradient">
+              <i class="bi bi-clipboard2-check-fill"></i>
+              {{ data.left.cta.text }}
+            </a>
           </div>
         </div>
         <div class="right col-md-6">

@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { BuffsList } from '../mock/buffs'
+import { useRouter } from 'vue-router';
 
 export default defineComponent({
   name: 'buffView',
@@ -11,6 +12,10 @@ export default defineComponent({
     };
   },
   mounted() {
+    const router = useRouter();
+    if (!this.data) {
+      router.push('/notfound');
+    }
     const eventCount = this.data?.eligibleEvents.length ?? 0;
     if(eventCount < 6) {
       const diff = 6 - eventCount;
@@ -58,7 +63,7 @@ export default defineComponent({
             <ul v-if="data?.ctaBreaker.list" class="list">
               <li v-for="item in data?.ctaBreaker.list"><i class="bi bi-check-lg"></i> {{ item }}</li>
             </ul>
-            <a :href="data?.ctaBreaker.cta.ctaLink" class="cta"><i class="bi bi-clipboard2-check-fill"></i> {{ data?.ctaBreaker.cta.ctaText }}</a>
+            <a :href="data?.ctaBreaker.cta.ctaLink" class="btn btn-lg btn-gradient"><i class="bi bi-clipboard2-check-fill"></i> {{ data?.ctaBreaker.cta.ctaText }}</a>
           </div>
         </div>
       </div>

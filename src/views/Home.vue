@@ -27,7 +27,7 @@ export default defineComponent({
               content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
               ctaText: 'CTA Here',
               ctaLink: '#',
-              backgroundImage: '/acad-arena/src/assets/home/banner.jpg',
+              backgroundImage: '/src/assets/home/banner.jpg',
             }
           ]
         },
@@ -42,22 +42,16 @@ export default defineComponent({
           },
           cards: [
             {
-              tag: 'Lorem Ipsum',
-              content: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              buffId: 'unipin-mlbb-tournament-buff',
               cta: 'CTA Here',
-              backgroundImage: 'https://picsum.photos/602/383'
             },
             {
-              tag: 'LLL Ipsum',
-              content: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              buffId: 'unipin-mlbb-tournament-buff',
               cta: 'CTA Here',
-              backgroundImage: 'https://picsum.photos/602/383'
             },
             {
-              tag: 'SSS Ipsum',
-              content: '<b>AAA ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              buffId: 'unipin-mlbb-tournament-buff',
               cta: 'CTA Here',
-              backgroundImage: 'https://picsum.photos/602/383'
             },
           ]
         },

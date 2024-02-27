@@ -37,7 +37,7 @@ export default defineComponent({
               content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
               ctaText: 'CTA Here',
               ctaLink: '#',
-              backgroundImage: '/acad-arena/src/assets/home/banner.jpg',
+              backgroundImage: '/src/assets/home/banner.jpg',
             }
           ]
         },
@@ -137,23 +137,16 @@ export default defineComponent({
           },
           cards: [
             {
-              tag: 'Online/Offline',
-              title: 'UniPin MLBB Tournament Buff',
-              content: '<b>Lorem ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              buffId: 'unipin-mlbb-tournament-buff',
               cta: 'CTA Here',
-              backgroundImage: 'https://picsum.photos/602/383'
             },
             {
-              tag: 'Offline Only',
-              content: 'Lorem ipsum—dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+              buffId: 'dewday-tournament-buff',
               cta: 'CTA Here',
-              backgroundImage: 'https://picsum.photos/602/383'
             },
             {
-              tag: 'Online Only',
-              content: '<b>AAA ipsum</b>—dolor sit amet, consectetur adipiscing elit.',
+              buffId: 'unipin-mlbb-tournament-buff',
               cta: 'CTA Here',
-              backgroundImage: 'https://picsum.photos/602/383'
             },
           ]
         },
