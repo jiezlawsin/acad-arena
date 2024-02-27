@@ -21,7 +21,7 @@ const routesArr = [
     component: Compete
   },
   {
-    path: '/buff/:id',
+    path: '/buffs/:id',
     name: 'buffView',
     component: BuffView
   }
