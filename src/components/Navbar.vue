@@ -14,16 +14,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav navbar-nav-links mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#" @click.prevent="goTo('/buffs')">Event Buffs</a>
+            <a class="nav-link" href="/buffs" @click.prevent="goTo('/buffs')">Event Buffs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" >Compete</a>
+            <a class="nav-link" href="https://www.challengermode.com/s/AcadArenaPH" target="_blank">Compete</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" >Alliance</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" >Company</a>
+            <a class="nav-link" href="/alliance" @click.prevent="goTo('/alliance')">Alliance</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" >News & Stories</a>

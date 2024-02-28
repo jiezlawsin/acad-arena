@@ -1,23 +1,20 @@
 <template>
-  <section :id="sectionId">
-    <swiper class="swiper banner-swiper" :modules="modules" :pagination="{ clickable: true }" :autoplay="{ delay: 5500 }">
-      <swiper-slide v-for="banner of banners" class="slide" :style="{ backgroundImage: 'url(' + banner.backgroundImage + ')' }">
-        <div class="banner-swiper-content container flex flex-justify-center flex-align-center flex-column">
-          <h2 class="banner-swiper-header" v-if="banner.header">{{  banner.header  }}</h2>
-          <div class="banner-swiper-html" v-if="banner.content" v-html="banner.content"></div>
-          <a v-if="banner.ctaText" :href="banner.ctaLink" class="btn btn-gradient btn-lg" v-uf>{{ banner.ctaText }}</a>
-        </div>
-      </swiper-slide>
-    </swiper>
+  <section :id="sectionId" class="banner-swiper">
+    <div class="slick-slider" :id="'slick' + sectionId">
+      <img v-for="image in banners.images" :src="image">
+    </div>
+    <div class="banner-swiper-content container flex flex-justify-center flex-align-center flex-column">
+      <h2 class="banner-swiper-header" v-if="banners.header">{{  banners.header  }}</h2>
+      <div class="banner-swiper-html" v-if="banners.content" v-html="banners.content"></div>
+      <a v-if="banners.ctaText" :href="banners.ctaLink" class="btn btn-gradient btn-lg" v-uf>{{ banners.ctaText }}</a>
+    </div>
   </section>
 </template>
 
 <script lang="ts">
-import { Pagination, Autoplay } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/vue'
+import $ from "jquery";
 import 'swiper/css'
 import 'swiper/css/pagination'
-
 export default {
   props: {
     sectionId: {
@@ -29,14 +26,16 @@ export default {
       required: true
     },
   },
-  components: {
-    Swiper,
-    SwiperSlide
-  },
-  setup() {
-    return {
-      modules: [Pagination, Autoplay]
-    }
+  mounted() {
+    $('#slick' + this.sectionId).slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 5000,
+    });
   }
 };
 

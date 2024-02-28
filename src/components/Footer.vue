@@ -25,32 +25,18 @@
         </a>
       </div>
       <hr>
-      <div class="sitemap">
-        <ul>
-          <li><a href="#">About AcadArena</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">AcadArena App </a></li>
+      <div class="sitemap row">
+        <ul class="col-sm-6">
+          <li><a href="/buffs">AcadAreana Buffs</a></li>
+          <li><a href="/alliance">Alliance Program</a></li>
+          <li><a href="#">Play Tournaments</a></li>
+          <li><a href="/buffs-marketplace">Buff Marketplace</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
-        <ul>
-          <li><a href="#">Play Tournaments</a></li>
-          <li><a href="#">Communities</a></li>
-          <li><a href="#">Scholarships</a></li>
-          <li><a href="#">Academy</a></li>
-          <li><a href="#">CONQuest</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">For Educators</a></li>
-          <li><a href="#">Gaming and Esports Labs</a></li>
-          <li><a href="#">Educational Programs</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms and Conditions</a></li>
-          <li><a href="#">Press Information</a></li>
-          <li><a href="#">Legal</a></li>
+        <ul class="col-sm-6">
+          <li><a href="/stories">News & Stories</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
         </ul>
       </div>
       <div class="socials">

@@ -13,10 +13,10 @@
             </a>
           </div>
         </div>
-        <div class="right col-md-6">
-          <div class="title">{{ data.right.title}}</div>
+        <div class="right col-md-6" v-if="data.right">
+          <div class="title">{{ data.right?.title}}</div>
           <ul class="features">
-            <li v-for="feature in data.right.features"><i class="bi bi-check-lg"></i>{{  feature.title  }}</li>
+            <li v-for="feature in data?.right?.features"><i class="bi bi-check-lg"></i>{{  feature.title  }}</li>
           </ul> 
         </div>
       </div>

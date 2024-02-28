@@ -1,9 +1,4 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import Banner from '../components/Banner.vue'
-import CarouselCards from '../components/CarouselCards.vue'
-import Features from '../components/Features.vue'
-import Newsletter from '../components/Newsletter.vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'home',
@@ -20,16 +15,16 @@ export default defineComponent({
         {
           component: 'banner',
           name: 'HomeBanner',
-          banners: {
-            header: 'Lorem Ipsum Dolor',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
-            ctaText: 'CTA Here',
-            ctaLink: '#',
-            images: [
-              '/src/assets/home/banner.jpg',
-              'https://picsum.photos/1080'
-            ], 
-          }
+          height: '350px',
+          banners: [
+            {
+              header: 'Lorem Ipsum Dolor',
+              content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
+              ctaText: 'CTA Here',
+              ctaLink: '#',
+              backgroundImage: '/src/assets/home/banner.jpg',
+            }
+          ]
         },
         {
           component: 'carousel-cards',
@@ -42,25 +37,16 @@ export default defineComponent({
           },
           cards: [
             {
-              image: 'https://picsum.photos/200',
-              description: 'Buffs provide students with support through merch, prizes, and other cool stuff for tournaments and events.',
-              tag: 'For Students',
-              cta: 'Get Buffed',
-              url: '/buffs',
+              buffId: 'unipin-mlbb-tournament-buff',
+              cta: 'CTA Here',
             },
             {
-              image: 'https://picsum.photos/200',
-              description: 'Compete in weekly tournaments, regional conferences, and a nationwide league. Open to every school across the Philippines..',
-              tag: 'For Students',
-              cta: 'Queue Up',
-              url: '/alliance',
+              buffId: 'unipin-mlbb-tournament-buff',
+              cta: 'CTA Here',
             },
             {
-              image: 'https://picsum.photos/200',
-              description: 'Join a nationwide network of student leaders. Learn from your peers on how to build a community, mount events, and be part of something greater.',
-              tag: 'For Students',
-              cta: 'Take Part',
-              url: '/buffs',
+              buffId: 'unipin-mlbb-tournament-buff',
+              cta: 'CTA Here',
             },
           ]
         },
@@ -72,7 +58,7 @@ export default defineComponent({
             description: '<p>Turn your hobby to something more—learn a new skill, bond with friends, add to your resume, a paid gig, your difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
             features: [
               'Extracurricular Enrichment',
-              'Sports Department', 
+              'Sports Department',
               'Alternative Learning Programs',
               'Internships & Placement',
             ]
@@ -160,25 +146,4 @@ export default defineComponent({
       ],
     };
   },
-})
-</script>
-
-
-<template>
-  <main>
-    <div v-for="section in sections">
-      <Banner v-if="section.component === 'banner'" :section-id="section.name" :banners="section.banners" />
-      <CarouselCards v-if="section.component === 'carousel-cards'" 
-        :no-top-padding="section.noTopPadding"
-        :has-background="section.background" 
-        :title="section.title"  
-        :title-class="section.titleClass" 
-        :section-id="section.name" 
-        :cards="section.cards" 
-        :carousel="section.carousel" />
-      <Features v-if="section.component === 'features'" :carousel="section.carousel" :section-id="section.name" :data="section.data" />
-      <Newsletter v-if="section.component === 'newsletter'" :section-id="section.name" :newsletter="section.newsletter" />
-      
-    </div>
-  </main>
-</template>
+});

@@ -11,8 +11,8 @@ import FAQ from '../components/FAQ.vue'
 import ToBuffMarketplace from '../components/ToBuffMarketplace.vue'
 
 export default defineComponent({
-  name: 'home',
-  title: 'Home',
+  name: 'alliance',
+  title: 'Alliance',
   components: {
     Banner,
     CarouselCards,
@@ -29,7 +29,7 @@ export default defineComponent({
       sections: [
         {
           component: 'banner',
-          name: 'BuffsBanner',
+          name: 'AllianceBanner',
           banners: {
             header: 'Lorem Ipsum Dolor',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
@@ -43,93 +43,9 @@ export default defineComponent({
         },
         {
           component: 'carousel-cards',
-          name: 'WhoCanApply',
-          title: 'Who Can Apply?',
-          description: 'Pa-sponsor po? We gotchu whether online or offline, student or teacher, from Luzon, Visayas and Mindanao!',
-          background: false,
-          noTopPadding: false,
-          carousel: {
-            title: 'Join the #NotJustPlay Movement',
-            carouselType: 'cube-card',
-          },
-          cards: [
-            {
-              tag: 'College or High School Students',
-              backgroundImage: 'https://picsum.photos/200'
-            },
-            {
-              tag: 'Teachers & Administrators',
-              backgroundImage: 'https://picsum.photos/200'
-            },
-            {
-              tag: 'NGOs or LGUs',
-              backgroundImage: 'https://picsum.photos/200'
-            },
-          ],
-        },
-        {
-          component: 'numbered-features',
-          name: 'HowDoesItWork',
-          data: {
-            sectionClass: 'pb-5',
-            title: 'How Does It Work',
-            features: [
-              {
-                title: 'Find Your Match',
-                description: 'Match your event with our buff requirements.'
-              },
-              {
-                title: 'Apply for a Buff',
-                description: 'Flex your event! Our buffs are limited.'
-              },
-              {
-                title: 'Execute Your Event',
-                description: 'Receive the buff & complete the requirements.'
-              },
-              {
-                title: 'Send Your Report',
-                description: 'Show & tell! We’ll celebrate with you.'
-              },
-            ]
-          }
-        },
-        {
-          component: 'buff-features',
-          name: 'EarlyBirdGetsTheBuff',
-          data: {
-            sectionClass: 'py-5',
-            left: {
-              title: 'Early Bird Gets the Buff',
-              content: '<a href="#">Apply as early as four (4) months before your event.</a> Our Buff Coordinators will contact you within 3-5 working days."',
-              cta: {
-                url: '',
-                text: 'Apply Now'
-              }
-            },
-            right:{
-              title: 'We buff up any event for the youth!',
-              features: [
-                {
-                  title: 'Online & Offline Esports Tournaments',
-                },
-                {
-                  title: 'Club Events (e.g. Recruitment Week, General Assemblys etc.)',
-                },
-                {
-                  title: 'Academic Celebrations (e.g. Foundation Days & College Weeks)',
-                },
-                {
-                  title: 'City-wide or Region-wide Festivals (e.g. Fiestas)  ',
-                },
-              ]
-            }
-          }
-        },
-        {
-          component: 'carousel-cards',
-          name: 'AvailableBuffs',
-          title: 'Available Buffs',
-          description: 'We have limited buffs per month! <a href="#">Check out our buffs marketplace for a full list.</a>',
+          name: 'JoinTheAlliance',
+          title: 'Join the Alliance',
+          description: 'Any teacher or student can start a community or club in your campus! Get access to perks and resources to get into esports.',
           background: true,
           noTopPadding: false,
           carousel: {
@@ -152,10 +68,10 @@ export default defineComponent({
         },
         {
           component: 'iconed-features',
-          name: 'EventsHappenAllYearNationwide',
+          name: 'Last5Years',
           data: {
-            sectionClass: 'pb-5',
-            title: 'Events Happen All Year Nationwide',
+            sectionClass: 'pb-5 ',
+            title: 'A Growing Community the Last 5 Years',
             features: [
               {
                 title: '+150 Clubs Seeded',
@@ -171,6 +87,109 @@ export default defineComponent({
               },
             ]
           }
+        },
+        {
+          component: 'buff-features',
+          name: 'ApplicationsOpen',
+          data: {
+            sectionClass: 'py-5 bg-light-gradient',
+            left: {
+              title: 'Applications Open till March 28!',
+              content: '<a>Apply before the crushing weight of exams.</a> Our Alliance Coordinators will contact you within 3-5 working days."',
+              cta: {
+                url: '',
+                text: 'Apply Now'
+              }
+            },
+            right:{
+              title: 'Perks you unlock',
+              features: [
+                {
+                  title: 'Priority slots for any AcadArena Event Buff',
+                },
+                {
+                  title: 'Exclusive or priority slots to join Alliance Games',
+                },
+                {
+                  title: 'Access to mentorship and learning resources',
+                },
+                {
+                  title: 'City-wide or Region-wide Festivals (e.g. Fiestas)  ',
+                },
+              ]
+            }
+          }
+        },
+        {
+          component: 'carousel-cards',
+          name: 'WhatOurCommunitySays',
+          title: 'What Our Community Says',
+          // titleClass: 'text-center',
+          class: 'py-5',
+          hasBackground: false,
+          noTopPadding: false,
+          carousel: {
+            carouselType: 'cube-card',
+          },
+          cards: [
+            {
+              header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim risus eget neque tincidunt, ut iaculis lorem.',
+              name: 'Xavier "Xavie8k" Juan',
+              tag: 'The Supportive Teacher',
+              content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
+              backgroundImage: 'https://picsum.photos/200'
+            },
+            {
+              header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim risus eget neque tincidunt, ut iaculis lorem.',
+              name: 'Xavier "Xavie8k" Juan',
+              tag: 'The Supportive Teacher',
+              content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
+              backgroundImage: 'https://picsum.photos/200'
+            },
+            {
+              header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim risus eget neque tincidunt, ut iaculis lorem.',
+              name: 'Xavier "Xavie8k" Juan',
+              tag: 'The Supportive Teacher',
+              content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
+              backgroundImage: 'https://picsum.photos/200'
+            },
+          ],
+        },
+        {
+          component: 'carousel-cards',
+          name: 'NewsAndStories',
+          title: 'What Our Community Does',
+          background: false,
+          noTopPadding: true,
+          carousel: {
+            carouselType: 'story-card',
+          },
+          cards: [
+            {
+              header: 'New scholarship offers! Apply now!',
+              backgroundImage: 'https://picsum.photos/602/383',
+              tagDate: {
+                tag: 'Adulting',
+                date: 'June 23, 2024'
+              }
+            },
+            {
+              header: 'New scholarship offers! Apply now!',
+              backgroundImage: 'https://picsum.photos/602/383',
+              tagDate: {
+                tag: 'Adulting',
+                date: 'June 23, 2024'
+              }
+            },
+            {
+              header: 'New scholarship offers! Apply now!',
+              backgroundImage: 'https://picsum.photos/602/383',
+              tagDate: {
+                tag: 'Adulting',
+                date: 'June 23, 2024'
+              }
+            },
+          ],
         },
         {
           component: 'faq',
@@ -204,12 +223,18 @@ export default defineComponent({
           }
         },
         {
-          component: 'buff-marketplace',
-          name: 'BuffMarketplace',
+          component: 'buff-features',
+          name: 'ApplicationsOpen',
           data: {
-            sectionClass: 'py-5',
-            title: 'We have limited buffs per month.',
-            content: '<a>Accepting events happening between March and June 2024.</a> Our Buff Coordinators will contact you within 3-5 working days.',
+            sectionClass: 'py-5 bg-light-gradient',
+            left: {
+              title: 'Level Up Your Community',
+              content: '<a>Deadline of applications is on March 28.</a> Our Alliance Coordinators will contact you within 3-5 working days."',
+              cta: {
+                url: '',
+                text: 'Apply Now'
+              }
+            },
           }
         },
       ],

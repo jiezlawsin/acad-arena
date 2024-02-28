@@ -5,12 +5,18 @@ import Buffs from '../views/Buffs.vue'
 import BuffView from '../views/BuffView.vue'
 import NotFound from '../views/NotFound.vue'
 import BuffsMarketplace from '../views/BuffsMarketplace.vue'
+import Alliance from '../views/Alliance.vue'
 
 const routesArr = [
   {
     path: '/',
     name: 'home',
     component: Home
+  },
+  {
+    path: '/alliance',
+    name: 'Alliance',
+    component: Alliance
   },
   {
     path: '/buffs',
