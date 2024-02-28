@@ -42,25 +42,26 @@ export default defineComponent({
           },
           cards: [
             {
-              image: 'https://picsum.photos/200',
+              image: '/images/program2.jpg',
               description: 'Buffs provide students with support through merch, prizes, and other cool stuff for tournaments and events.',
               tag: 'For Students',
               cta: 'Get Buffed',
               url: '/buffs',
             },
             {
-              image: 'https://picsum.photos/200',
-              description: 'Compete in weekly tournaments, regional conferences, and a nationwide league. Open to every school across the Philippines..',
+              image: '/images/program1.jpg',
+              description: 'Compete in weekly tournaments, join regional conferences, and represent your school in a nationwide league.',
               tag: 'For Students',
               cta: 'Queue Up',
-              url: '/alliance',
+              url: 'https://www.challengermode.com/s/AcadArenaPH',
+              external: true
             },
             {
               image: 'https://picsum.photos/200',
-              description: 'Join a nationwide network of student leaders. Learn from your peers on how to build a community, mount events, and be part of something greater.',
+              description: 'Join a network of student leaders. Build a community, learn to mount events, be part of something greater.',
               tag: 'For Students',
               cta: 'Take Part',
-              url: '/buffs',
+              url: '/alliance',
             },
           ]
         },
@@ -68,6 +69,7 @@ export default defineComponent({
           component: 'features',
           name: 'LearnByDoing',
           data: {
+            image: '/images/art1.png',
             title: 'Learn by Doing',
             description: '<p>Turn your hobby to something more—learn a new skill, bond with friends, add to your resume, a paid gig, your difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
             features: [
@@ -91,24 +93,24 @@ export default defineComponent({
           },
           cards: [
             {
-              header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim risus eget neque tincidunt, ut iaculis lorem.',
-              name: 'Xavier "Xavie8k" Juan',
+              header: 'Sobrang saya ng parents ko sa’kin, sabi pa nila [noon] “may dulot pala ang paglalaro mo.”',
+              name: 'Chino “Shino” Engallado',
               tag: 'The Supportive Teacher',
-              content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
+              content: 'Globe AA Merit Scholarship - Competitive 2021<br>Holy Angel University',
               backgroundImage: 'https://picsum.photos/200'
             },
             {
-              header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim risus eget neque tincidunt, ut iaculis lorem.',
-              name: 'Xavier "Xavie8k" Juan',
+              header: `With AA's support, I founded an org connecting student gamers, fostering personal growth and leadership.`,
+              name: 'Renzel “RenzuKun” Laroza',
               tag: 'The Supportive Teacher',
-              content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
+              content: 'President of Tempest Gaming Society<br>Technological Institute of the Philippines - QC',
               backgroundImage: 'https://picsum.photos/200'
             },
             {
-              header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim risus eget neque tincidunt, ut iaculis lorem.',
-              name: 'Xavier "Xavie8k" Juan',
+              header: 'Alliance turns gamers into achievers. Thanks to being a student gamer, I have been made into a student leader.',
+              name: 'Therese “Iryzviel” Elizalde',
               tag: 'The Supportive Teacher',
-              content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
+              content: 'AA Student Leader of the Year 2022<br>Central Philippine University',
               backgroundImage: 'https://picsum.photos/200'
             },
           ],
@@ -153,6 +155,7 @@ export default defineComponent({
           component: 'newsletter',
           name: 'NewsletterComponent',
           newsletter: {
+            image: '/src/assets/images/art-newsletter.png',
             title: 'Scholarships will be back soon!',
             description: '<a href="#">Get the news first!</a> Subscribe to our newsletter or join our Discord Server.',
           },

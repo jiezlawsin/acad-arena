@@ -8,6 +8,7 @@ import BuffsMarketplace from '../views/BuffsMarketplace.vue'
 import Stories from '../views/Stories.vue'
 import StoryView from '../views/StoryView.vue'
 import Alliance from '../views/Alliance.vue'
+import TermsAndConditions from '../views/TermsAndConditions.vue'
 
 const routesArr = [
   {
@@ -17,7 +18,7 @@ const routesArr = [
   },
   {
     path: '/alliance',
-    name: 'Alliance',
+    name: 'alliance',
     component: Alliance
   },
   {
@@ -54,7 +55,12 @@ const routesArr = [
     path: '/:catchAll(.*)',
     name: 'notfound',
     component: NotFound
-  }
+  },
+  {
+    path: '/terms-and-conditions',
+    name: 'terms',
+    component: TermsAndConditions
+  },
 ]
 
 const router = createRouter({

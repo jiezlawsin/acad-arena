@@ -3,25 +3,16 @@
     <div class="container">
       <div class="sponsors">
         <a href="#">
+          <img src="../assets/images/UniPinWhite.png" alt="UniPin logo">
+        </a>
+        <a href="#">
           <img src="../assets/images/globe.svg" alt="Globe logo">
         </a>
         <a href="#">
-          <img src="../assets/images/riot-games.svg" alt="Riot Games logo">
-        </a>
-        <a href="#">
-          <img src="../assets/images/garena.svg" alt="Garena logo">
+          <img src="../assets/images/Mountain-Dew.png" alt="Mountain Dew logo">
         </a>
         <a href="#">
           <img src="../assets/images/moonton.svg" alt="Moonton logo">
-        </a>
-        <a href="#">
-          <img src="../assets/images/bren-esports.svg" alt="Bren Esports logo">
-        </a>
-        <a href="#">
-          <img src="../assets/images/pearson.svg" alt="Pearson logo">
-        </a>
-        <a href="#">
-          <img src="../assets/images/rumble-royale.svg" alt="Rumble Royale logo">
         </a>
       </div>
       <hr>
@@ -40,17 +31,15 @@
         </ul>
       </div>
       <div class="socials">
-        <a href=""><img src="../assets/images/discord.svg" alt=""></a>
-        <a href=""><img src="../assets/images/facebook.svg" alt=""></a>
-        <a href=""><img src="../assets/images/twitter.svg" alt=""></a>
-        <a href=""><img src="../assets/images/instagram.svg" alt=""></a>
-        <a href=""><img src="../assets/images/youtube.svg" alt=""></a>
-        <a href=""><img src="../assets/images/tiktok.svg" alt=""></a>
-        <a href=""><img src="../assets/images/twitch.svg" alt=""></a>
+        <a href="https://discord.gg/acadarenagg" target="_blank"><img src="../assets/images/discord.svg" alt=""></a>
+        <a href="https://www.facebook.com/AcadArenaGG"target="_blank"><img src="../assets/images/facebook.svg" alt=""></a>
+        <a href="https://twitter.com/acadarena" target="_blank"><img src="../assets/images/twitter.svg" alt=""></a>
+        <a href="https://www.instagram.com/acadarenagg" target="_blank"><img src="../assets/images/instagram.svg" alt=""></a>
+        <a href="https://www.challengermode.com/s/AcadArenaPH" target="_blank"><img src="../assets/images/challenger.svg" alt=""></a>
       </div>
       <hr>
       <div class="copyright">
-        <div class="logo"><img src="../assets/images/logo-colored.png" alt=""></div>
+        <div class="logo"><img src="../assets/images/logo.png" alt="acadarena education"></div>
         <div class="copy">&copy; 2022 AcadArena &bull; AcadArena is a trademarked brand owned by AcadArena Technologies Inc. - A Singapore-registered company. All other trademarks are owned by their respective owners.</div>
       </div>
     </div>

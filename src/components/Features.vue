@@ -9,6 +9,11 @@
             <li v-for="feature in data.features"><i class="bi bi-check-lg"></i>{{  feature  }}</li>
           </ul> 
         </div>
+        <div class="col-lg-7 col-md-6 col-sm-12">
+          <div class="features-art">
+            <img :src="data.image" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </section>

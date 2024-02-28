@@ -3,8 +3,12 @@
     <div class="container">
       <div class="newsletter-container">
         <div class="flex align-content-sm-center row">
-          <div class="col-md-6"></div>
-          <div class="newsletter-content col-md-6">
+          <div class="col-lg-6 col-md-5 newsletter-art-container">
+            <div class="newsletter-art">
+              <img :src="newsletter.image" alt="">
+            </div>
+          </div>
+          <div class="newsletter-content col-lg-6 col-md-7">
             <div class="title">{{ newsletter.title }}</div>
             <div v-if="newsletter.description" class="description" v-html="newsletter.description"></div>
             <input ref="emailInput" :class="{'error': emailError}" v-model="email" type="email" class="form-control" aria-describedby="email" placeholder="Enter your email">
