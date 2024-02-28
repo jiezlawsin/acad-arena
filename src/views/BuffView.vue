@@ -30,7 +30,7 @@ export default defineComponent({
 
 <template>
   <main class="buffs-view-page">
-    <div class="container">
+    <div class="container buff-view-container">
       <div class="hero-banner">
         <img :src="data?.heroImage" alt="">
       </div>
@@ -63,7 +63,9 @@ export default defineComponent({
             <ul v-if="data?.ctaBreaker.list" class="list">
               <li v-for="item in data?.ctaBreaker.list"><i class="bi bi-check-lg"></i> {{ item }}</li>
             </ul>
-            <a :href="data?.ctaBreaker.cta.ctaLink" class="btn btn-lg btn-gradient"><i class="bi bi-clipboard2-check-fill"></i> {{ data?.ctaBreaker.cta.ctaText }}</a>
+            <div class="action">
+              <a :href="data?.ctaBreaker.cta.ctaLink" class="btn btn-lg btn-gradient"><i class="bi bi-clipboard2-check-fill"></i> {{ data?.ctaBreaker.cta.ctaText }}</a>
+            </div>
           </div>
         </div>
       </div>

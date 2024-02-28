@@ -24,7 +24,7 @@ export default defineComponent({
 
 <template>
   <main class="buffs-marketplace-page ">
-    <div class="container py-5">
+    <div class="header-container container py-5">
       <h2 class="header-title">Buffs Marketplace</h2>
       <p class="content">We have limited buffs per month! <a>Check back for new buffs per cycle.</a></p>
       <div class="buffs-list">

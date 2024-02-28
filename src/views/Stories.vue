@@ -2,6 +2,7 @@
 import { defineComponent } from 'vue'
 import { StoriesList } from '../mock/stories'
 import Newsletter from '../components/Newsletter.vue'
+import $ from "jquery";
 
 export default defineComponent({
   name: 'buffMarketplace',
@@ -22,6 +23,22 @@ export default defineComponent({
   },
   mounted() {
     console.log('stories', StoriesList)
+    // $('.stories-grid').slick({
+    //   slidesToShow: 3,
+    //   slidesToScroll: 3,
+    //   arrows: false,
+    //   responsive: [
+    //     {
+    //       breakpoint: 700,
+    //       settings: {
+    //         infinite: true,
+    //         variableWidth: false,
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //       }
+    //     },
+    //   ]
+    // });
   }
 })
 </script>

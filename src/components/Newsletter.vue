@@ -12,6 +12,13 @@
             <div class="title">{{ newsletter.title }}</div>
             <div v-if="newsletter.description" class="description" v-html="newsletter.description"></div>
             <input ref="emailInput" :class="{'error': emailError}" v-model="email" type="email" class="form-control" aria-describedby="email" placeholder="Enter your email">
+            <div class="agree-tc content">
+              <input type="checkbox" required id="agree-tc" name="agree-tc" v-model="agree">
+              <label for="agree-tc">
+                I agree to the <a href="/terms-and-conditions" target="_blank">Terms & Conditions.</a>
+              </label>
+            </div>
+            <p v-if="agreeError && !agree" class="error-message">Please agree to the Terms & Conditions.</p>
             <div class="actions">
               <button type="button" class="btn btn-gradient cta" :disabled="submitLoading" @click="subscribeToNewsletter()">
                 <i class="bi bi-envelope-fill"></i>
@@ -33,6 +40,7 @@
 </template>
 
 <script lang="ts">
+import $ from "jquery";
 import axios from 'axios';
 import Violator from './Violator.vue'
 
@@ -53,7 +61,9 @@ export default {
   data() {
     return {
       email: '',
+      agree: false,
       emailError: false,
+      agreeError: false,
       submitLoading: false,
       showAlert: false,
       alert: {
@@ -66,9 +76,15 @@ export default {
   }, 
   methods: {
     async subscribeToNewsletter() {
+      
       this.submitLoading = true;
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (this.email && this.email !== '' && emailPattern.test(this.email)) {
+        if (!this.agree) {
+          this.agreeError = true;
+          this.submitLoading = false;
+          return;
+        }
         this.emailError = false;
         try {
           const response = await axios.post('https://us21.api.mailchimp.com/3.0/lists/839d6de563/members', {
