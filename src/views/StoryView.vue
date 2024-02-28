@@ -7,6 +7,9 @@ import Newsletter from '../components/Newsletter.vue'
 export default defineComponent({
   name: 'storyView',
   title: 'StoryView',
+  components: {
+    Newsletter
+  },
   data() {
     return {
       data: StoriesList.find(story => story.id === this.$route.params.id),
