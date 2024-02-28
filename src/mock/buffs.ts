@@ -39,7 +39,7 @@ export const BuffsList = [
       bigText: '3000 UC',
       description: '<p class="text-gradient ">UniPin Credits will be inserted directly to their accounts.</p><p>Subscribe to our newsletter or join our Discord Server.</p>',
       list: [],
-      image: 'https://cdn.vectorstock.com/i/preview-1x/78/97/online-education-concept-vector-38217897.webp',
+      image: '/images/art3.png',
       cta: {
         ctaText: 'Apply Now',
         ctaLink: '#',

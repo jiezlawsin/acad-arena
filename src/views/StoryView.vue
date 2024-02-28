@@ -15,6 +15,7 @@ export default defineComponent({
       data: StoriesList.find(story => story.id === this.$route.params.id),
       stories: StoriesList.filter(story => story.id !== this.$route.params.id),
       newsletter: {
+        image: '/images/art-newsletter.png',
         title: 'Be part of the AA Student Pulse!',
         description: '<span class="text-gradient">Join our newsletter for exclusive and spicy content</span> or not if you’re boring.',
       },
@@ -45,11 +46,11 @@ export default defineComponent({
       <div class="stories-section">
         <div class="stories-grid">
           <div class="story-card" v-for="story in stories">
-            <a class="image">
+            <a class="image" :href="'/stories/' + story.id">
               <img :src="story.heroImage" alt="">
             </a>
             <div class="info">
-              <a class="title">{{  story.title  }}</a>
+              <a class="title" :href="'/stories/' + story.id">{{  story.title  }}</a>
               <div class="d-flex align-items-center">
                 <span class="tag">{{  story.tag  }}</span>
                 <span class="date">{{  story.date  }}</span>

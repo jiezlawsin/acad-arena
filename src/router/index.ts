@@ -9,6 +9,7 @@ import Stories from '../views/Stories.vue'
 import StoryView from '../views/StoryView.vue'
 import Alliance from '../views/Alliance.vue'
 import TermsAndConditions from '../views/TermsAndConditions.vue'
+import PrivacyPolicy from '../views/PrivacyPolicy.vue'
 
 const routesArr = [
   {
@@ -60,6 +61,11 @@ const routesArr = [
     path: '/terms-and-conditions',
     name: 'terms',
     component: TermsAndConditions
+  },
+  {
+    path: '/privacy-policy',
+    name: 'privacy-policy',
+    component: PrivacyPolicy
   },
 ]
 

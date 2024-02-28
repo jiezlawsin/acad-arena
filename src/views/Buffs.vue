@@ -129,7 +129,7 @@ export default defineComponent({
           component: 'carousel-cards',
           name: 'AvailableBuffs',
           title: 'Available Buffs',
-          description: 'We have limited buffs per month! <a href="#">Check out our buffs marketplace for a full list.</a>',
+          description: 'We have limited buffs per month! <a href="/buffs-marketplace">Check out our buffs marketplace for a full list.</a>',
           background: true,
           noTopPadding: false,
           carousel: {
@@ -161,13 +161,13 @@ export default defineComponent({
                 title: '+150 Clubs Seeded',
               },
               {
-                title: '~XXX Events Supported',
+                title: '+460 Events Supported',
               },
               {
-                title: '+150 Scholars Supported',
+                title: '+100 Scholars Supported',
               },
               {
-                title: '+300 Teams Competed',
+                title: '+470 Teams Competed',
               },
             ]
           }
@@ -207,6 +207,7 @@ export default defineComponent({
           component: 'buff-marketplace',
           name: 'BuffMarketplace',
           data: {
+            image: '/images/art2.png',
             sectionClass: 'py-5',
             title: 'We have limited buffs per month.',
             content: '<a>Accepting events happening between March and June 2024.</a> Our Buff Coordinators will contact you within 3-5 working days.',

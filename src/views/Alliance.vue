@@ -52,17 +52,29 @@ export default defineComponent({
             carouselType: 'program-card',
           },
           cards: [
-            {
-              buffId: 'unipin-mlbb-tournament-buff',
-              cta: 'CTA Here',
+          {
+              image: '/images/program2.jpg',
+              description: 'No club? No problem. We will help you set up a community that may become a club someday.',
+              tag: 'For Students',
+              cta: 'Start Here',
+              url: 'https://www.challengermode.com/s/AcadArenaPH',
+              external: true
             },
             {
-              buffId: 'dewday-tournament-buff',
-              cta: 'CTA Here',
+              image: '/images/program1.jpg',
+              description: 'Eng club, anime club, CS, IT etc. All official school clubs can join the Alliance.',
+              tag: 'For Clubs',
+              cta: 'Join Here',
+              url: 'https://www.challengermode.com/s/AcadArenaPH',
+              external: true
             },
             {
-              buffId: 'unipin-mlbb-tournament-buff',
-              cta: 'CTA Here',
+              image: 'https://picsum.photos/200',
+              description: 'Aspiring esports club advisers, student team coaches, or a supportive OSA - we’re here to help.',
+              tag: 'For Teachers',
+              cta: 'Partner Up',
+              url: 'https://www.challengermode.com/s/AcadArenaPH',
+              external: true
             },
           ]
         },
@@ -77,13 +89,13 @@ export default defineComponent({
                 title: '+150 Clubs Seeded',
               },
               {
-                title: '~XXX Events Supported',
+                title: '+460 Events Supported',
               },
               {
-                title: '+150 Scholars Supported',
+                title: '+100 Scholars Supported',
               },
               {
-                title: '+300 Teams Competed',
+                title: '+470 Teams Competed',
               },
             ]
           }
@@ -223,18 +235,18 @@ export default defineComponent({
           }
         },
         {
-          component: 'buff-features',
+          component: 'buff-marketplace',
           name: 'ApplicationsOpen',
           data: {
-            sectionClass: 'py-5 bg-light-gradient',
-            left: {
-              title: 'Level Up Your Community',
-              content: '<a>Deadline of applications is on March 28.</a> Our Alliance Coordinators will contact you within 3-5 working days."',
-              cta: {
-                url: '',
-                text: 'Apply Now'
-              }
-            },
+            image: '/images/art4.png',
+            sectionClass: 'py-5',
+            title: 'Level Up Your Community.',
+            content: '<a>Deadline of applications is on March 28.</a> Our Alliance Coordinators will contact you within 3-5 working days."',
+            cta: {
+              url: '',
+              text: 'Apply Now',
+              external: true
+            }
           }
         },
       ],

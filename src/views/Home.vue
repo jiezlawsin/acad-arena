@@ -155,7 +155,7 @@ export default defineComponent({
           component: 'newsletter',
           name: 'NewsletterComponent',
           newsletter: {
-            image: '/src/assets/images/art-newsletter.png',
+            image: '/images/art-newsletter.png',
             title: 'Scholarships will be back soon!',
             description: '<a href="#">Get the news first!</a> Subscribe to our newsletter or join our Discord Server.',
           },

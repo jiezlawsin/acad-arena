@@ -2,7 +2,7 @@
   <section :id="sectionId" class="carousel-cards-section" :class="{'hasBg': hasBackground, 'py-5': !noTopPadding, 'pb-5': noTopPadding}">
     <div class="container">
       <h2 class="section-title" :class="titleClass ? titleClass : ''">{{ title }}</h2>
-      <p class="section-description" v-if="description" v-html="description"></p>
+      <p class="section-description content" v-if="description" v-html="description"></p>
       <div class="slick-carousel" :class="sectionId + '-slick'">
         <div v-for="item in cards" class="card">
           <ProgramCard :item="item" v-if="carousel.carouselType === 'program-card'" />
