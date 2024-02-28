@@ -5,6 +5,8 @@ import Buffs from '../views/Buffs.vue'
 import BuffView from '../views/BuffView.vue'
 import NotFound from '../views/NotFound.vue'
 import BuffsMarketplace from '../views/BuffsMarketplace.vue'
+import Stories from '../views/Stories.vue'
+import StoryView from '../views/StoryView.vue'
 
 const routesArr = [
   {
@@ -23,6 +25,11 @@ const routesArr = [
     component: BuffsMarketplace
   },
   {
+    path: '/stories',
+    name: 'stories',
+    component: Stories
+  },
+  {
     path: '/compete',
     name: 'compete',
     component: Compete
@@ -31,6 +38,11 @@ const routesArr = [
     path: '/buffs/:id',
     name: 'buffView',
     component: BuffView
+  },
+  {
+    path: '/stories/:id',
+    name: 'storyView',
+    component: StoryView
   },
   {
     path: '/:catchAll(.*)',

@@ -1,0 +1,64 @@
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { StoriesList } from '../mock/stories'
+import Newsletter from '../components/Newsletter.vue'
+
+export default defineComponent({
+  name: 'buffMarketplace',
+  title: 'Buff Marketplace',
+  components: {
+    Newsletter,
+  },
+  data() {
+    return {
+      stories: StoriesList.filter(story => !story.featured),
+      featuredStory: StoriesList.find(story => story.featured),
+      newsletter: {
+        title: 'Be part of the AA Student Pulse!',
+        description: '<span class="text-gradient">Join our newsletter for exclusive and spicy content</span> or not if you’re boring.',
+      },
+    };
+  },
+  mounted() {
+    console.log('stories', StoriesList)
+  }
+})
+</script>
+
+
+<template>
+  <main class="stories-page">
+    <div class="stories-section">
+      <div class="container">
+        <div class="story-card featured" v-if="featuredStory">
+          <a class="image">
+            <img :src="featuredStory?.heroImage" alt="">
+          </a>
+          <div class="info">
+            <a class="title">{{  featuredStory?.title  }}</a>
+            <div class="d-flex align-items-center">
+              <span class="tag">{{  featuredStory?.tag  }}</span>
+              <span class="date">{{  featuredStory?.date  }}</span>
+            </div>
+            <div class="content" v-html="featuredStory?.content"></div>
+          </div>
+        </div>
+        <div class="stories-grid">
+          <div class="story-card" v-for="story in stories">
+            <a class="image">
+              <img :src="story.heroImage" alt="">
+            </a>
+            <div class="info">
+              <a class="title">{{  story.title  }}</a>
+              <div class="d-flex align-items-center">
+                <span class="tag">{{  story.tag  }}</span>
+                <span class="date">{{  story.date  }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Newsletter :section-id="'newsletter'" :newsletter="newsletter" />    
+  </main>
+</template>
