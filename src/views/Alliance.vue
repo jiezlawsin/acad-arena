@@ -36,8 +36,8 @@ export default defineComponent({
             ctaText: 'CTA Here',
             ctaLink: '#',
             images: [
-              '/src/assets/home/banner.jpg',
-              'https://picsum.photos/1080'
+              'https://picsum.photos/1080/?blur=2&random=3&grayscale',
+              'https://picsum.photos/1080/?blur=2&random=4&grayscale'
             ], 
           }
         },
@@ -53,7 +53,7 @@ export default defineComponent({
           },
           cards: [
           {
-              image: '/images/program2.jpg',
+              image: '/acad-arena/images/program2.jpg',
               description: 'No club? No problem. We will help you set up a community that may become a club someday.',
               tag: 'For Students',
               cta: 'Start Here',
@@ -61,7 +61,7 @@ export default defineComponent({
               external: true
             },
             {
-              image: '/images/program1.jpg',
+              image: '/acad-arena/images/program1.jpg',
               description: 'Eng club, anime club, CS, IT etc. All official school clubs can join the Alliance.',
               tag: 'For Clubs',
               cta: 'Join Here',
@@ -238,7 +238,7 @@ export default defineComponent({
           component: 'buff-marketplace',
           name: 'ApplicationsOpen',
           data: {
-            image: '/images/art4.png',
+            image: '/acad-arena/images/art4.png',
             sectionClass: 'py-5',
             title: 'Level Up Your Community.',
             content: '<a>Deadline of applications is on March 28.</a> Our Alliance Coordinators will contact you within 3-5 working days."',

@@ -36,8 +36,8 @@ export default defineComponent({
             ctaText: 'CTA Here',
             ctaLink: '#',
             images: [
-              '/src/assets/home/banner.jpg',
-              'https://picsum.photos/1080'
+              'https://picsum.photos/1080/?blur=2&random=12&grayscale',
+              'https://picsum.photos/1080/?blur=2&random=24&grayscale'
             ], 
           }
         },
@@ -207,7 +207,7 @@ export default defineComponent({
           component: 'buff-marketplace',
           name: 'BuffMarketplace',
           data: {
-            image: '/images/art2.png',
+            image: '/acad-arena/images/art2.png',
             sectionClass: 'py-5',
             title: 'We have limited buffs per month.',
             content: '<a>Accepting events happening between March and June 2024.</a> Our Buff Coordinators will contact you within 3-5 working days.',

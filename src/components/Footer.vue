@@ -18,16 +18,16 @@
       <hr>
       <div class="sitemap row">
         <ul class="col-sm-6">
-          <li><a href="/buffs">AcadAreana Buffs</a></li>
-          <li><a href="/alliance">Alliance Program</a></li>
-          <li><a href="#">Play Tournaments</a></li>
-          <li><a href="/buffs-marketplace">Buff Marketplace</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="/buffs" @click.prevent="goTo('/buffs')">AcadAreana Buffs</a></li>
+          <li><a href="/alliance" @click.prevent="goTo('/alliance')">Alliance Program</a></li>
+          <li><a href="#" target="_blank">Play Tournaments</a></li>
+          <li><a href="/buffs-marketplace" @click.prevent="goTo('/buffs-marketplace')">Buff Marketplace</a></li>
+          <li><a href="#" target="_blank">Contact Us</a></li>
         </ul>
         <ul class="col-sm-6">
-          <li><a href="/stories">News & Stories</a></li>
-          <li><a href="/privacy-policy">Privacy Policy</a></li>
-          <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
+          <li><a href="/stories" @click.prevent="goTo('/stories')">News & Stories</a></li>
+          <li><a href="/privacy-policy" @click.prevent="goTo('/privacy-policy')">Privacy Policy</a></li>
+          <li><a href="/terms-and-conditions" @click.prevent="goTo('/terms-and-conditions')">Terms and Conditions</a></li>
         </ul>
       </div>
       <div class="socials">
@@ -45,3 +45,23 @@
     </div>
   </footer>
 </template>
+
+
+<script lang="ts">
+import { useRouter } from 'vue-router';
+
+export default {
+  setup() {
+    const router = useRouter();
+
+    const goTo = (path: string) => {
+      router.push(path);
+    }
+
+    return {
+      goTo
+    };
+  },
+};
+
+</script>

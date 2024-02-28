@@ -23,7 +23,7 @@
             <a class="nav-link" href="/alliance" @click.prevent="goTo('/alliance')">Alliance</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/stories" >News & Stories</a>
+            <a class="nav-link" href="/stories" @click.prevent="goTo('/stories')">News & Stories</a>
           </li>
         </ul>
       </div>

@@ -26,8 +26,8 @@ export default defineComponent({
             ctaText: 'CTA Here',
             ctaLink: '#',
             images: [
-              '/src/assets/home/banner.jpg',
-              'https://picsum.photos/1080'
+              'https://picsum.photos/1080/?blur=2&random=1&grayscale',
+              'https://picsum.photos/1080/?blur=2&random=2&grayscale'
             ], 
           }
         },
@@ -42,14 +42,14 @@ export default defineComponent({
           },
           cards: [
             {
-              image: '/images/program2.jpg',
+              image: '/acad-arena/images/program2.jpg',
               description: 'Buffs provide students with support through merch, prizes, and other cool stuff for tournaments and events.',
               tag: 'For Students',
               cta: 'Get Buffed',
               url: '/buffs',
             },
             {
-              image: '/images/program1.jpg',
+              image: '/acad-arena/images/program1.jpg',
               description: 'Compete in weekly tournaments, join regional conferences, and represent your school in a nationwide league.',
               tag: 'For Students',
               cta: 'Queue Up',
@@ -69,7 +69,7 @@ export default defineComponent({
           component: 'features',
           name: 'LearnByDoing',
           data: {
-            image: '/images/art1.png',
+            image: '/acad-arena/images/art1.png',
             title: 'Learn by Doing',
             description: '<p>Turn your hobby to something more—learn a new skill, bond with friends, add to your resume, a paid gig, your difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
             features: [
@@ -155,7 +155,7 @@ export default defineComponent({
           component: 'newsletter',
           name: 'NewsletterComponent',
           newsletter: {
-            image: '/images/art-newsletter.png',
+            image: '/acad-arena/images/art-newsletter.png',
             title: 'Scholarships will be back soon!',
             description: '<a href="#">Get the news first!</a> Subscribe to our newsletter or join our Discord Server.',
           },
