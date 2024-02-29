@@ -4,6 +4,22 @@ import Banner from '../components/Banner.vue'
 import CarouselCards from '../components/CarouselCards.vue'
 import Features from '../components/Features.vue'
 import Newsletter from '../components/Newsletter.vue'
+import { TestimonialsList } from '../mock/testimonials'
+
+function shuffle(array: any) {
+  let currentIndex = array.length,  randomIndex;
+  // While there remain elements to shuffle.
+  while (currentIndex > 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
 
 export default defineComponent({
   name: 'home',
@@ -43,14 +59,14 @@ export default defineComponent({
           cards: [
             {
               image: '/acad-arena/images/program2.jpg',
-              description: 'Buffs provide students with support through merch, prizes, and other cool stuff for tournaments and events.',
+              shortDescription: 'Buffs provide students with support through merch, prizes, and other cool stuff for tournaments and events.',
               tag: 'For Students',
               cta: 'Get Buffed',
               url: '/buffs',
             },
             {
               image: '/acad-arena/images/program1.jpg',
-              description: 'Compete in weekly tournaments, join regional conferences, and represent your school in a nationwide league.',
+              shortDescription: 'Compete in weekly tournaments, join regional conferences, and represent your school in a nationwide league.',
               tag: 'For Students',
               cta: 'Queue Up',
               url: 'https://www.challengermode.com/s/AcadArenaPH',
@@ -58,7 +74,7 @@ export default defineComponent({
             },
             {
               image: 'https://picsum.photos/200',
-              description: 'Join a network of student leaders. Build a community, learn to mount events, be part of something greater.',
+              shortDescription: 'Join a network of student leaders. Build a community, learn to mount events, be part of something greater.',
               tag: 'For Students',
               cta: 'Take Part',
               url: '/alliance',
@@ -91,29 +107,7 @@ export default defineComponent({
             title: 'Join the #NotJustPlay Movement',
             carouselType: 'cube-card',
           },
-          cards: [
-            {
-              header: 'Sobrang saya ng parents ko sa’kin, sabi pa nila [noon] “may dulot pala ang paglalaro mo.”',
-              name: 'Chino “Shino” Engallado',
-              tag: 'The Supportive Teacher',
-              content: 'Globe AA Merit Scholarship - Competitive 2021<br>Holy Angel University',
-              backgroundImage: 'https://picsum.photos/200'
-            },
-            {
-              header: `With AA's support, I founded an org connecting student gamers, fostering personal growth and leadership.`,
-              name: 'Renzel “RenzuKun” Laroza',
-              tag: 'The Supportive Teacher',
-              content: 'President of Tempest Gaming Society<br>Technological Institute of the Philippines - QC',
-              backgroundImage: 'https://picsum.photos/200'
-            },
-            {
-              header: 'Alliance turns gamers into achievers. Thanks to being a student gamer, I have been made into a student leader.',
-              name: 'Therese “Iryzviel” Elizalde',
-              tag: 'The Supportive Teacher',
-              content: 'AA Student Leader of the Year 2022<br>Central Philippine University',
-              backgroundImage: 'https://picsum.photos/200'
-            },
-          ],
+          cards: shuffle(TestimonialsList),
         },
         {
           component: 'carousel-cards',
@@ -126,6 +120,7 @@ export default defineComponent({
           },
           cards: [
             {
+              id: 'lorem-ipsum-dolor',
               header: 'New scholarship offers! Apply now!',
               backgroundImage: 'https://picsum.photos/602/383',
               tagDate: {
@@ -134,6 +129,7 @@ export default defineComponent({
               }
             },
             {
+              id: 'lorem-ipsum-dolor',
               header: 'New scholarship offers! Apply now!',
               backgroundImage: 'https://picsum.photos/602/383',
               tagDate: {
@@ -142,6 +138,7 @@ export default defineComponent({
               }
             },
             {
+              id: 'lorem-ipsum-dolor',
               header: 'New scholarship offers! Apply now!',
               backgroundImage: 'https://picsum.photos/602/383',
               tagDate: {

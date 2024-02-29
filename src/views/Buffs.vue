@@ -137,16 +137,16 @@ export default defineComponent({
           },
           cards: [
             {
-              buffId: 'unipin-mlbb-tournament-buff',
-              cta: 'CTA Here',
+              buffId: 'dewday-on-site-tournament-buff',
+              cta: 'Apply Now',
             },
             {
-              buffId: 'dewday-tournament-buff',
-              cta: 'CTA Here',
+              buffId: 'dewday-mlbb-tournament-buff',
+              cta: 'Apply Now',
             },
             {
-              buffId: 'unipin-mlbb-tournament-buff',
-              cta: 'CTA Here',
+              buffId: 'dewday-nba-tournament-buff',
+              cta: 'Apply Now',
             },
           ]
         },

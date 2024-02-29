@@ -48,7 +48,7 @@ export default defineComponent({
           </div>
         </div>
       </div>
-      <div class="description">{{ data?.description }}</div>
+      <div class="description" v-html="data?.description"></div>
     </div>
     <div class="cta-breaker">
       <div class="container">
@@ -61,7 +61,7 @@ export default defineComponent({
             <div class="big-text" v-if="data?.ctaBreaker.bigText">{{ data?.ctaBreaker.bigText }}</div>
             <div class="description" v-if="data?.ctaBreaker.description" v-html="data?.ctaBreaker.description"></div>
             <ul v-if="data?.ctaBreaker.list" class="list">
-              <li v-for="item in data?.ctaBreaker.list"><i class="bi bi-check-lg"></i> {{ item }}</li>
+              <li v-for="item in data?.ctaBreaker.list"><i class="bi bi-check-lg"></i> <span v-html="item"></span></li>
             </ul>
             <div class="action">
               <a :href="data?.ctaBreaker.cta.ctaLink" class="btn btn-lg btn-gradient"><i class="bi bi-clipboard2-check-fill"></i> {{ data?.ctaBreaker.cta.ctaText }}</a>

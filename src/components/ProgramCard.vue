@@ -5,7 +5,7 @@
     </div>
     <div class="card-footer">
       <div class="card-title no-margin" v-if="data?.name || item.name">{{ item.name ? item.name : data?.name }}</div>
-      <div class="card-description content" v-html="item.description ? item.description : data?.description"></div>
+      <div class="card-description content" v-html="item.shortDescription ? item.shortDescription : data?.shortDescription"></div>
       <div class="card-action">
         <span class="card-tag">{{ item.tag ? item.tag : data?.tag }}</span>
         <a 

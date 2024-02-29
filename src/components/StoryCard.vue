@@ -1,10 +1,10 @@
 <template>
   <div class="story-card">
-    <div class="card-image">
+    <div class="card-image" @click.prevent="goTo('stories/' + item.id)">
       <img :src="item.backgroundImage" alt="">
     </div>
     <div class="card-footer">
-      <div class="card-title">{{  item.header  }}</div>  
+      <div class="card-title" @click.prevent="goTo('stories/' + item.id)">{{  item.header  }}</div>  
       <div class="card-description" v-if="item.content" v-html="item.content"></div>
       <div class="card-tag-date" v-if="item.tagDate">
         <div class="card-tag">{{ item.tagDate.tag }}</div>
@@ -18,6 +18,7 @@
 </template>
 
 <script lang="ts">
+import { useRouter } from 'vue-router';
 
 export default {
   props: {
@@ -25,6 +26,17 @@ export default {
       type: Object,
       required: true
     },
+  },
+  setup() {
+    const router = useRouter();
+
+    const goTo = (path: string) => {
+      router.push(path);
+    }
+
+    return {
+      goTo
+    };
   },
 };
 </script>

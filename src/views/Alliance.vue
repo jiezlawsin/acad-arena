@@ -9,6 +9,22 @@ import BuffFeatures from '../components/BuffFeatures.vue'
 import IconedFeatures from '../components/IconedFeatures.vue'
 import FAQ from '../components/FAQ.vue'
 import ToBuffMarketplace from '../components/ToBuffMarketplace.vue'
+import { TestimonialsList } from '../mock/testimonials'
+
+function shuffle(array: any) {
+  let currentIndex = array.length,  randomIndex;
+  // While there remain elements to shuffle.
+  while (currentIndex > 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
 
 export default defineComponent({
   name: 'alliance',
@@ -143,29 +159,7 @@ export default defineComponent({
           carousel: {
             carouselType: 'cube-card',
           },
-          cards: [
-            {
-              header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim risus eget neque tincidunt, ut iaculis lorem.',
-              name: 'Xavier "Xavie8k" Juan',
-              tag: 'The Supportive Teacher',
-              content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
-              backgroundImage: 'https://picsum.photos/200'
-            },
-            {
-              header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim risus eget neque tincidunt, ut iaculis lorem.',
-              name: 'Xavier "Xavie8k" Juan',
-              tag: 'The Supportive Teacher',
-              content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
-              backgroundImage: 'https://picsum.photos/200'
-            },
-            {
-              header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim risus eget neque tincidunt, ut iaculis lorem.',
-              name: 'Xavier "Xavie8k" Juan',
-              tag: 'The Supportive Teacher',
-              content: 'President of XCEED-Mindanao Xavier University-Ateneo de Cagayan',
-              backgroundImage: 'https://picsum.photos/200'
-            },
-          ],
+          cards: shuffle(TestimonialsList),
         },
         {
           component: 'carousel-cards',
