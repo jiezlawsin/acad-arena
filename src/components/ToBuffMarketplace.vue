@@ -2,7 +2,7 @@
   <section :id="sectionId" class="buff-marketplace-section py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-5">
           <div class="title">{{  data.title }}</div>
           <div class="content" v-html="data.content"></div>
           <br>
@@ -17,7 +17,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-7">
           <div class="buff-marketplace-art">
             <img :src="data.image" alt="">
           </div>

@@ -93,6 +93,7 @@ export default {
     }
     if (this.carousel.carouselType === 'cube-card') {
       $('.' + this.sectionId + '-slick').slick({
+        dots: true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -101,6 +102,7 @@ export default {
           {
             breakpoint: 1200,
             settings: {
+              dots: false,
               variableWidth: true,
               slidesToShow: 1,
               slidesToScroll: 1,

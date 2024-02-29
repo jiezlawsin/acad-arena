@@ -3,7 +3,7 @@
     <div class="container">
       <div class="section-header">
         <h1 class="title">{{ carousel.title }}</h1>
-        <div v-if="carousel.description" class="description">{{ carousel.description }}</div>
+        <div v-if="carousel.short" class="description">{{ carousel.short }}</div>
       </div>
       <div class="swiper-container">
         <swiper class="swiper" 

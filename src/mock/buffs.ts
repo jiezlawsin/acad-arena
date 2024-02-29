@@ -18,12 +18,12 @@ export const BuffsList = [
     <p>You may only have one buff <b>per game title</b> in your event.</p>
     `,
     tag: 'For Students',
-    cardImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
-    heroImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
+    cardImage: '/images/buff-marketplace/DewDay-Tournament-(1).jpg',
+    heroImage: '/images/buff-marketplace/DewDay-Tournament-(1).jpg',
     sponsors: [
       {
-        name: 'Riot Games',
-        logo: 'https://i.pinimg.com/originals/90/6d/23/906d231cbaff55c77fb97191592e1c76.png',
+        name: 'Mountain Dew',
+        logo: '/images/Mountain-Dew.png',
       },
     ],
     eligibleEvents: [
@@ -62,10 +62,10 @@ export const BuffsList = [
         '10 Cases of Mountain Dew',
         '<b>Broadcast Bonus:</b> 3 Dew Shirts, 3 Dew Tumblers',
       ],
-      image: '/acad-arena/images/art3.png',
+      image: '/images/art-buff-mountain-dew.png',
       cta: {
         ctaText: 'Apply Now',
-        ctaLink: '#',
+        ctaLink: 'https://bit.ly/AAEduBuffRequest',
       },
     }
   },
@@ -88,12 +88,12 @@ export const BuffsList = [
     <p>You may only have one buff <b>per game title</b> in your event.</p>
     `,
     tag: 'For Students',
-    cardImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
-    heroImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
+    cardImage: '/images/buff-marketplace/DewDay-MLBB.jpg',
+    heroImage: '/images/buff-marketplace/DewDay-MLBB.jpg',
     sponsors: [
       {
-        name: 'Riot Games',
-        logo: 'https://i.pinimg.com/originals/90/6d/23/906d231cbaff55c77fb97191592e1c76.png',
+        name: 'Mountain Dew',
+        logo: '/images/Mountain-Dew.png',
       },
     ],
     eligibleEvents: [
@@ -132,10 +132,10 @@ export const BuffsList = [
         '5 Cases of Mountain Dew',
         '<b>Broadcast Bonus:</b> 3 Dew Shirts, 3 Dew Tumblers',
       ],
-      image: '/acad-arena/images/art3.png',
+      image: '/images/art-buff-mountain-dew.png',
       cta: {
         ctaText: 'Apply Now',
-        ctaLink: '#',
+        ctaLink: 'https://bit.ly/AAEduBuffRequest',
       },
     }
   },
@@ -144,10 +144,10 @@ export const BuffsList = [
     name: '#DewDay NBA Tournament Buff',
     shortDescription: 'Come on and slam! It’s your #DewDay on the court with this NBA 2K tournament buff!',
     description: `
-    <p>Ihanda mo na ang tropa mo! Get your mobile phones ready, queue up, and get ready for #DewDay!</p>
+    <p>Come on and slam! It’s your #DewDay on the court with this NBA 2K tournament buff!</p>
     <p><b>Buff Requirements</b></p>
     <ol type="1">
-      <li><b>Event Type.</b> Org tournament, campus intramurals, foundation day na may esports competition - this buff is open to ML:BB tournament with student participants!</li>
+      <li><b>Welcome to the jam.</b> Org tournament, campus intramurals, foundation day na may esports competition - this buff is open to any <b>NBA 2K tournaments</b> with student participants!</li>
       <li><b>Offline Venue.</b> All games must be done onsite - whether it’s your campus computer lab, your favorite computer shop, or your school cafeteria. Hindi kami kami picky.  </li>
       <li><b>Be Legendary.</b> Specifically for <b>ML:BB</b> tournaments that you want to power up with Mountain Dew.</li>
       <li><b>Make some noise.</b> May Facebook page ba yung org or event mo? Are you able to post event updates and promotional material? In that case, get ready to hype up the event in partnership with Mountain Dew through posts and campaigns we’ll share.</li>
@@ -158,12 +158,12 @@ export const BuffsList = [
     <p>You may only have one buff <b>per game title</b> in your event.</p>
     `,
     tag: 'For Students',
-    cardImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
-    heroImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
+    cardImage: '/images/buff-marketplace/DewDay-NBA.jpg',
+    heroImage: '/images/buff-marketplace/DewDay-NBA.jpg',
     sponsors: [
       {
-        name: 'Riot Games',
-        logo: 'https://i.pinimg.com/originals/90/6d/23/906d231cbaff55c77fb97191592e1c76.png',
+        name: 'Mountain Dew',
+        logo: '/images/Mountain-Dew.png',
       },
     ],
     eligibleEvents: [
@@ -202,10 +202,10 @@ export const BuffsList = [
         '5 Cases of Mountain Dew',
         '<b>Broadcast Bonus:</b> 3 Dew Shirts, 3 Dew Tumblers',
       ],
-      image: '/acad-arena/images/art3.png',
+      image: '/images/art-buff-mountain-dew.png',
       cta: {
         ctaText: 'Apply Now',
-        ctaLink: '#',
+        ctaLink: 'https://bit.ly/AAEduBuffRequest',
       },
     }
   },
@@ -228,12 +228,12 @@ export const BuffsList = [
     <p>You may only have one buff <b>per game title</b> in your event.</p>
     `,
     tag: 'For Students',
-    cardImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
-    heroImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
+    cardImage: '/images/buff-marketplace/DewFest-(1).jpg',
+    heroImage: '/images/buff-marketplace/DewFest-(1).jpg',
     sponsors: [
       {
-        name: 'Riot Games',
-        logo: 'https://i.pinimg.com/originals/90/6d/23/906d231cbaff55c77fb97191592e1c76.png',
+        name: 'Mountain Dew',
+        logo: '/images/Mountain-Dew.png',
       },
     ],
     eligibleEvents: [
@@ -268,10 +268,10 @@ export const BuffsList = [
         '10 cases of MTN DEW',
         '<b>Broadcast Bonus:</b> 3 Dew Shirts, 3 Dew Tumblers',
       ],
-      image: '/acad-arena/images/art3.png',
+      image: '/images/art-buff-mountain-dew.png',
       cta: {
         ctaText: 'Apply Now',
-        ctaLink: '#',
+        ctaLink: 'https://bit.ly/AAEduBuffRequest',
       },
     }
   },
@@ -294,12 +294,12 @@ export const BuffsList = [
     <p>You may only have one buff <b>per game title</b> in your event.</p>
     `,
     tag: 'For Students',
-    cardImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
-    heroImage: 'https://pinoygamer.ph/attachments/image-000-png.9257/',
+    cardImage: '/images/buff-marketplace/Unipin.jpg',
+    heroImage: '/images/buff-marketplace/Unipin.jpg',
     sponsors: [
       {
-        name: 'Riot Games',
-        logo: 'https://i.pinimg.com/originals/90/6d/23/906d231cbaff55c77fb97191592e1c76.png',
+        name: 'UniPin',
+        logo: '/images/UniPinWhite.png',
       },
     ],
     eligibleEvents: [
@@ -329,10 +329,10 @@ export const BuffsList = [
       bigText: '4,500 UC',
       description: 'Larger tournaments will receive more UniPin credits for prizes!',
       list: [],
-      image: '/acad-arena/images/art3.png',
+      image: '/images/art-buff-unipin.png',
       cta: {
         ctaText: 'Apply Now',
-        ctaLink: '#',
+        ctaLink: 'https://bit.ly/AAEduBuffRequest',
       },
     }
   },

@@ -31,13 +31,13 @@ export default defineComponent({
           component: 'banner',
           name: 'BuffsBanner',
           banners: {
-            header: 'Lorem Ipsum Dolor',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
-            ctaText: 'CTA Here',
-            ctaLink: '#',
+            header: 'Upgrade Your Events',
+            content: 'Perks available for your youth events. Limited slots per month.',
             images: [
-              'https://picsum.photos/1080/?blur=2&random=12&grayscale',
-              'https://picsum.photos/1080/?blur=2&random=24&grayscale'
+              'images/BUFF/20240119_171544.jpg',
+              'images/BUFF/326180047_697578868517103_4415535295206154481_n.jpg',
+              'images/BUFF/339645481_139464098883945_2373496877623822038_n.jpg',
+              'images/BUFF/IMG_1480.jpg',
             ], 
           }
         },
@@ -55,15 +55,15 @@ export default defineComponent({
           cards: [
             {
               tag: 'College or High School Students',
-              backgroundImage: 'https://picsum.photos/200'
+              backgroundImage: '/images/HOME/BUFFS---College-of-Highschool-Students.png'
             },
             {
               tag: 'Teachers & Administrators',
-              backgroundImage: 'https://picsum.photos/200'
+              backgroundImage: '/images/HOME/BUFFS---Teachers-and-Administrators.png'
             },
             {
               tag: 'NGOs or LGUs',
-              backgroundImage: 'https://picsum.photos/200'
+              backgroundImage: '/images/HOME/BUFFS---NGOs-or-LGUs.png'
             },
           ],
         },
@@ -100,9 +100,9 @@ export default defineComponent({
             sectionClass: 'py-5',
             left: {
               title: 'Early Bird Gets the Buff',
-              content: '<a href="#">Apply as early as four (4) months before your event.</a> Our Buff Coordinators will contact you within 3-5 working days."',
+              content: '<a >Apply as early as four (4) months before your event.</a> Our Buff Coordinators will contact you within 3-5 working days."',
               cta: {
-                url: '',
+                url: 'https://www.acadarena.com/buffs-marketplace',
                 text: 'Apply Now'
               }
             },
@@ -137,15 +137,15 @@ export default defineComponent({
           },
           cards: [
             {
+              buffId: 'unipin-tournament-buff',
+              cta: 'Apply Now',
+            },
+            {
               buffId: 'dewday-on-site-tournament-buff',
               cta: 'Apply Now',
             },
             {
               buffId: 'dewday-mlbb-tournament-buff',
-              cta: 'Apply Now',
-            },
-            {
-              buffId: 'dewday-nba-tournament-buff',
               cta: 'Apply Now',
             },
           ]
@@ -177,28 +177,36 @@ export default defineComponent({
           name: 'BuffFAQ',
           data: {
             sectionClass: 'pb-5',
-            image: 'https://picsum.photos/500/614',
+            image: '/images/BUFF/339645481_139464098883945_2373496877623822038_n.jpg',
             title: 'Frequently Asked Questions',
             faqs: [
               {
-                question: 'Lorem ipsum dolor sit amet?',
-                answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                question: 'What kind of support can I get from AcadArena Buffs?',
+                answer: 'Depending on the type of event you’re running, you may be eligible to receive digital prizes such as in-game currencies and skins, marketing support through social media campaigns and assets, or even physical merchandise such as shirts, event swag, and giveaways.'
               },
               {
-                question: 'Lorem ipsum dolor sit amet?',
-                answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                question: 'Are there any restrictions on the types of events or activities that qualify for AcadArena Buffs?',
+                answer: 'All buffs will indicate the minimum requirements for each. What we do require for all Buffs is that the main participants or organizers of the event are students or the youth. Is your org running a teachers-day tournament? Pwede yan. Is the faculty of your college running a workshop for students? Pwedeng pwede.'
               },
               {
-                question: 'Lorem ipsum dolor sit amet?',
-                answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                question: 'My event is not gaming or esports-related. Can I still apply for a buff?',
+                answer: 'Yes! We’ll be rolling out AcadArena Buffs that will be open to all types of events - run a cosplay competition, a themed fun run, a pop-culture quiz bee, a maid cafe, or a board game night - we’ll find ways to support it.'
               },
               {
-                question: 'Lorem ipsum dolor sit amet?',
-                answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                question: `Can I apply for AcadArena Buffs even if I'm not part of the Alliance Program?`,
+                answer: 'Yes. AcadArena Buffs are now open for non-members of the Alliance Program. Students, teachers, local government units (LGUs), and non-governmental organizations (NGOs) that serve the youth, all of whom can benefit from event support. However, Alliance members will get priority in applications and have a guaranteed allocation of buffs.'
               },
               {
-                question: 'Lorem ipsum dolor sit amet?',
-                answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                question: 'Can I apply for AcadArena Buffs as an individual and not an org?',
+                answer: 'Yes. You’ll still have to comply with all the requirements indicated in the Buff, so make sure you have a team (or a group of friends) ready to help you out. If you eventually become a club or organization, that’s great!'
+              },
+              {
+                question: 'Are the AcadArena Buffs guaranteed once I apply?',
+                answer: 'Applications for AcadArena Buffs are all assessed by our Buff Coordinators. You must meet all the minimum requirements to be selected. There are also a limited number of Buffs per month so not everyone might be able to avail depending on the demand. If your event doesn’t get selected for a particular buff, we’ll recommend you to other buffs that you qualify for!'
+              },
+              {
+                question: 'What happens when my event gets accepted?',
+                answer: 'All AcadArena Buffs will have clear requirements as to what the event organizers need to accomplish. If your event is eligible for a Buff, our Buff Coordinators will send you a more comprehensive briefer that will help you and your team fulfill the Buff requirements.'
               },
             ]
           }
@@ -207,7 +215,7 @@ export default defineComponent({
           component: 'buff-marketplace',
           name: 'BuffMarketplace',
           data: {
-            image: '/acad-arena/images/art2.png',
+            image: '/images/art-limited-buff.png',
             sectionClass: 'py-5',
             title: 'We have limited buffs per month.',
             content: '<a>Accepting events happening between March and June 2024.</a> Our Buff Coordinators will contact you within 3-5 working days.',

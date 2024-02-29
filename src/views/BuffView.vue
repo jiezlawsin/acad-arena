@@ -64,7 +64,7 @@ export default defineComponent({
               <li v-for="item in data?.ctaBreaker.list"><i class="bi bi-check-lg"></i> <span v-html="item"></span></li>
             </ul>
             <div class="action">
-              <a :href="data?.ctaBreaker.cta.ctaLink" class="btn btn-lg btn-gradient"><i class="bi bi-clipboard2-check-fill"></i> {{ data?.ctaBreaker.cta.ctaText }}</a>
+              <a :href="data?.ctaBreaker.cta.ctaLink" target="_blank" class="btn btn-lg btn-gradient"><i class="bi bi-clipboard2-check-fill"></i> {{ data?.ctaBreaker.cta.ctaText }}</a>
             </div>
           </div>
         </div>

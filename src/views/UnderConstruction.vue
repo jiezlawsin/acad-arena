@@ -17,3 +17,13 @@ export default defineComponent({
     <div class="logo"><img src="../assets/images/logo-colored.png" alt=""></div>
   </main>
 </template>
+
+<style>
+.under-construction-page + * {
+  display: none !important;
+}
+nav:has(+ .under-construction-page) {
+  display: none !important;
+}
+
+</style>

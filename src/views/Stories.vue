@@ -16,7 +16,7 @@ export default defineComponent({
       stories: StoriesList.filter(story => !story.featured),
       featuredStory: StoriesList.find(story => story.featured),
       newsletter: {
-        image: '/acad-arena/images/art-newsletter.png',
+        image: '/images/art-scholar.png',
         title: 'Be part of the AA Student Pulse!',
         description: '<span class="text-gradient">Join our newsletter for exclusive and spicy content</span> or not if you’re boring.',
       },

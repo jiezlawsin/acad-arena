@@ -9,9 +9,15 @@ import Stories from '../views/Stories.vue'
 import StoryView from '../views/StoryView.vue'
 import Alliance from '../views/Alliance.vue'
 import TermsAndConditions from '../views/TermsAndConditions.vue'
+import UnderConstruction from '../views/UnderConstruction.vue'
 import PrivacyPolicy from '../views/PrivacyPolicy.vue'
 
 const routesArr = [
+  // {
+  //   path: '/',
+  //   name: 'under-construction',
+  //   component: UnderConstruction
+  // },
   {
     path: '/',
     name: 'home',

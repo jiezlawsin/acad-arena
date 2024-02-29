@@ -47,13 +47,12 @@ export default defineComponent({
           component: 'banner',
           name: 'AllianceBanner',
           banners: {
-            header: 'Lorem Ipsum Dolor',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
-            ctaText: 'CTA Here',
-            ctaLink: '#',
+            header: 'Learn by Doing',
+            content: 'Make learning more fun. Join our communities by March 28!',
             images: [
-              'https://picsum.photos/1080/?blur=2&random=3&grayscale',
-              'https://picsum.photos/1080/?blur=2&random=4&grayscale'
+              'images/ALLIANCE/IMG_1420.jpg',
+              'images/ALLIANCE/339659836_1360017008090901_6741830183907613222_n.jpg',
+              'images/ALLIANCE/331324007_1682201745532379_6426191550582191943_n.jpg',
             ], 
           }
         },
@@ -69,27 +68,27 @@ export default defineComponent({
           },
           cards: [
           {
-              image: '/acad-arena/images/program2.jpg',
-              description: 'No club? No problem. We will help you set up a community that may become a club someday.',
+              image: '/images/ALLIANCE/card1.png',
+              shortDescription: 'No club? No problem. We will help you set up a community that may become a club someday.',
               tag: 'For Students',
               cta: 'Start Here',
-              url: 'https://www.challengermode.com/s/AcadArenaPH',
+              url: 'https://bit.ly/AAEduALLIn',
               external: true
             },
             {
-              image: '/acad-arena/images/program1.jpg',
-              description: 'Eng club, anime club, CS, IT etc. All official school clubs can join the Alliance.',
+              image: '/images/ALLIANCE/card2.png',
+              shortDescription: 'Eng club, anime club, CS, IT etc. All official school clubs can join the Alliance.',
               tag: 'For Clubs',
               cta: 'Join Here',
-              url: 'https://www.challengermode.com/s/AcadArenaPH',
+              url: 'https://bit.ly/AAEduAllianceApp',
               external: true
             },
             {
-              image: 'https://picsum.photos/200',
-              description: 'Aspiring esports club advisers, student team coaches, or a supportive OSA - we’re here to help.',
+              image: 'images/ALLIANCE/card3.png',
+              shortDescription: 'Aspiring esports club advisers, student team coaches, or a supportive OSA - we’re here to help.',
               tag: 'For Teachers',
               cta: 'Partner Up',
-              url: 'https://www.challengermode.com/s/AcadArenaPH',
+              url: 'https://bit.ly/AAEduSchoolPartners',
               external: true
             },
           ]
@@ -172,27 +171,12 @@ export default defineComponent({
           },
           cards: [
             {
-              header: 'New scholarship offers! Apply now!',
-              backgroundImage: 'https://picsum.photos/602/383',
+              id: 'on-acad-arena-edu-word-from-the-ceo',
+              header: 'On AcadArena Edu: Word from the CEO!',
+              backgroundImage: '/images/AA Web Quote Template.png',
               tagDate: {
-                tag: 'Adulting',
-                date: 'June 23, 2024'
-              }
-            },
-            {
-              header: 'New scholarship offers! Apply now!',
-              backgroundImage: 'https://picsum.photos/602/383',
-              tagDate: {
-                tag: 'Adulting',
-                date: 'June 23, 2024'
-              }
-            },
-            {
-              header: 'New scholarship offers! Apply now!',
-              backgroundImage: 'https://picsum.photos/602/383',
-              tagDate: {
-                tag: 'Adulting',
-                date: 'June 23, 2024'
+                tag: 'News',
+                date: 'Feb 29, 2024'
               }
             },
           ],
@@ -202,28 +186,28 @@ export default defineComponent({
           name: 'BuffFAQ',
           data: {
             sectionClass: 'pb-5',
-            image: 'https://picsum.photos/500/614',
+            image: '/images/ALLIANCE/331324007_1682201745532379_6426191550582191943_n.jpg',
             title: 'Frequently Asked Questions',
             faqs: [
               {
-                question: 'Lorem ipsum dolor sit amet?',
-                answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                question: 'How can I be part of the Alliance Program?',
+                answer: 'Registered or accredited student organizations in campuses across the Philippines are welcome to join the Alliance Program! Application cycles are regularly announced so make sure to get ready for when it opens.'
               },
               {
-                question: 'Lorem ipsum dolor sit amet?',
-                answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                question: 'Can I join the Alliance if I don’t have an org?',
+                answer: 'You can apply for the Alliance Incubator program - we’ll help you to establish your own esports org in your university. We’ll provide you with the guidance and support you need to get started on your journey.'
               },
               {
-                question: 'Lorem ipsum dolor sit amet?',
-                answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                question: 'What are the benefits of joining the Alliance?',
+                answer: 'There’s a lot! Alliance members get priority in buff applications and have a guaranteed allocation of buffs. You’ll also be our preferred partners for future campus events and programs that we roll out, as well as our existing programs like the Alliance Games and the AcadArena Awards.'
               },
               {
-                question: 'Lorem ipsum dolor sit amet?',
-                answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                question: 'I’m a teacher or administrator. Can I apply for the organization on our campus?',
+                answer: 'Absolutely! Head over to our application page for teachers above and we’ll help get your students started.'
               },
               {
-                question: 'Lorem ipsum dolor sit amet?',
-                answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                question: 'Are there partnership packages available for schools?',
+                answer: `Yes! We’re always on the lookout for supportive partners so we can provide students the best campus experience through special events, integrated extracurricular programs, and internship opportunities. Reach out to us <a href="https://bit.ly/AAEduSchoolPartners" target="_blank">here</a> and let's talk.`
               },
             ]
           }
@@ -232,12 +216,12 @@ export default defineComponent({
           component: 'buff-marketplace',
           name: 'ApplicationsOpen',
           data: {
-            image: '/acad-arena/images/art4.png',
+            image: '/images/art-alliance.png',
             sectionClass: 'py-5',
             title: 'Level Up Your Community.',
-            content: '<a>Deadline of applications is on March 28.</a> Our Alliance Coordinators will contact you within 3-5 working days."',
+            content: '<a>Deadline of applications is on March 28.</a> Our Alliance Coordinators will contact you within 3-5 working days.',
             cta: {
-              url: '',
+              url: 'https://bit.ly/AAEduAllianceApp',
               text: 'Apply Now',
               external: true
             }

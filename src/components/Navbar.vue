@@ -2,11 +2,7 @@
   <nav class="navbar navbar-expand-lg" :class="{ 'navbar-open': isCollapseOpen }">
     <div class="container container-fluid">
       <a class="navbar-brand" href="#" @click.prevent="goTo('/')">
-        <img src="../assets/images/logo-white.png" alt="">
-        <div class="brand-text">
-          <div>acadarena</div>
-          <div>education</div>
-        </div>
+        <img src="../assets/images/logo.png" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="bi " :class="{ 'bi-x-lg show': isCollapseOpen, 'bi-list': !isCollapseOpen }"></i>

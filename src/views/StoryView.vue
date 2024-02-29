@@ -15,7 +15,7 @@ export default defineComponent({
       data: StoriesList.find(story => story.id === this.$route.params.id),
       stories: StoriesList.filter(story => story.id !== this.$route.params.id),
       newsletter: {
-        image: '/acad-arena/images/art-newsletter.png',
+        image: '/images/art-newsletter.png',
         title: 'Be part of the AA Student Pulse!',
         description: '<span class="text-gradient">Join our newsletter for exclusive and spicy content</span> or not if you’re boring.',
       },

@@ -37,13 +37,15 @@ export default defineComponent({
           component: 'banner',
           name: 'HomeBanner',
           banners: {
-            header: 'Lorem Ipsum Dolor',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing el metus et just aliquet Inter suscipit.',
-            ctaText: 'CTA Here',
-            ctaLink: '#',
+            type: 'content-carousel',
             images: [
-              'https://picsum.photos/1080/?blur=2&random=1&grayscale',
-              'https://picsum.photos/1080/?blur=2&random=2&grayscale'
+              {
+                image: '/images/HOME/IMG_8437.jpg',
+                header: 'Upgrade Your Events',
+                content: 'Perks available for your youth events. Limited slots per month',
+                ctaText: 'Learn More',
+                ctaLink: 'https://www.acadarena.com/buffs',
+              },
             ], 
           }
         },
@@ -58,14 +60,14 @@ export default defineComponent({
           },
           cards: [
             {
-              image: '/acad-arena/images/program2.jpg',
+              image: '/images/HOME/program2.png',
               shortDescription: 'Buffs provide students with support through merch, prizes, and other cool stuff for tournaments and events.',
               tag: 'For Students',
               cta: 'Get Buffed',
               url: '/buffs',
             },
             {
-              image: '/acad-arena/images/program1.jpg',
+              image: '/images/HOME/program1.png',
               shortDescription: 'Compete in weekly tournaments, join regional conferences, and represent your school in a nationwide league.',
               tag: 'For Students',
               cta: 'Queue Up',
@@ -73,7 +75,7 @@ export default defineComponent({
               external: true
             },
             {
-              image: 'https://picsum.photos/200',
+              image: 'images/HOME/program3.png',
               shortDescription: 'Join a network of student leaders. Build a community, learn to mount events, be part of something greater.',
               tag: 'For Students',
               cta: 'Take Part',
@@ -85,9 +87,9 @@ export default defineComponent({
           component: 'features',
           name: 'LearnByDoing',
           data: {
-            image: '/acad-arena/images/art1.png',
+            image: '/images/art-learn-by-doing.png',
             title: 'Learn by Doing',
-            description: '<p>Turn your hobby to something more—learn a new skill, bond with friends, add to your resume, a paid gig, your difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
+            description: '<p>Turn your hobby to something more—learn a new skill, mount an event, add to your resume, get a paid gig, secure the difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
             features: [
               'Extracurricular Enrichment',
               'Sports Department', 
@@ -120,30 +122,12 @@ export default defineComponent({
           },
           cards: [
             {
-              id: 'lorem-ipsum-dolor',
-              header: 'New scholarship offers! Apply now!',
-              backgroundImage: 'https://picsum.photos/602/383',
+              id: 'on-acad-arena-edu-word-from-the-ceo',
+              header: 'On AcadArena Edu: Word from the CEO!',
+              backgroundImage: '/images/AA Web Quote Template.png',
               tagDate: {
-                tag: 'Adulting',
-                date: 'June 23, 2024'
-              }
-            },
-            {
-              id: 'lorem-ipsum-dolor',
-              header: 'New scholarship offers! Apply now!',
-              backgroundImage: 'https://picsum.photos/602/383',
-              tagDate: {
-                tag: 'Adulting',
-                date: 'June 23, 2024'
-              }
-            },
-            {
-              id: 'lorem-ipsum-dolor',
-              header: 'New scholarship offers! Apply now!',
-              backgroundImage: 'https://picsum.photos/602/383',
-              tagDate: {
-                tag: 'Adulting',
-                date: 'June 23, 2024'
+                tag: 'News',
+                date: 'Feb 29, 2024'
               }
             },
           ],
@@ -152,7 +136,7 @@ export default defineComponent({
           component: 'newsletter',
           name: 'NewsletterComponent',
           newsletter: {
-            image: '/acad-arena/images/art-newsletter.png',
+            image: '/images/art-scholar.png',
             title: 'Scholarships will be back soon!',
             description: '<a href="#">Get the news first!</a> Subscribe to our newsletter or join our Discord Server.',
           },
