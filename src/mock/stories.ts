@@ -4,7 +4,6 @@ export const StoriesList = [
     title: 'On AcadArena Edu: Word from the CEO',
     short: 'The biggest misconception of what an executive is is that you can do anything you want',
     content: `
-      <p><span>On AcadArena Edu: Word from the CEO</span></p>
       <p><span>The biggest misconception of what an executive is is that you can do anything you want.</span></p>
       <p><span>Anyone who has actually become a boss knows that you have to answer to everyone else--you have to take care of your staff, your community, your product, your customers, your clients and then hopefully, find some energy to take care of yourself.</span></p>
       <p><span>AcadArena first started in 2019 as the Philippines&rsquo; first national campus esports program. The #NotJustPlay mission was what I wanted to realize even if it meant juggling two jobs. When that gig became a VC-backed company, we were able to do a lot more good, but also, we just wanted to do way too many things.</span></p>

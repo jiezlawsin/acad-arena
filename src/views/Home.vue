@@ -60,14 +60,14 @@ export default defineComponent({
           },
           cards: [
             {
-              image: '/images/HOME/program2.png',
+              image: '/images/HOME/program1.png',
               shortDescription: 'Buffs provide students with support through merch, prizes, and other cool stuff for tournaments and events.',
               tag: 'For Students',
               cta: 'Get Buffed',
               url: '/buffs',
             },
             {
-              image: '/images/HOME/program1.png',
+              image: '/images/HOME/program2.png',
               shortDescription: 'Compete in weekly tournaments, join regional conferences, and represent your school in a nationwide league.',
               tag: 'For Students',
               cta: 'Queue Up',
