@@ -17,12 +17,12 @@
               target="_self">
               <div class="title">{{ newsletter.title }}</div>
               <div v-if="newsletter.description" class="description" v-html="newsletter.description"></div>
-              <div class="row mb-3">
+              <div class="row">
                 <div class="col-sm-6">
-                  <input required ref="firstNameInput" type="text" name="FNAME" :class="{'error': firstNameError}" v-model="firstName" class="form-control" placeholder="First Name">
+                  <input required ref="firstNameInput" type="text" name="FNAME" :class="{'error': firstNameError}" v-model="firstName" class="form-control mb-3" placeholder="First Name">
                 </div>
                 <div class="col-sm-6">
-                  <input required ref="lastNameInput" type="text" name="LNAME" :class="{'error': lastNameError}" v-model="lastName" class="form-control" placeholder="Last Name">
+                  <input required ref="lastNameInput" type="text" name="LNAME" :class="{'error': lastNameError}" v-model="lastName" class="form-control mb-3" placeholder="Last Name">
                 </div>
               </div>
               <input required type="email" name="EMAIL" ref="emailInput" :class="{'error': emailError}" v-model="email" class="form-control" aria-describedby="email" placeholder="Email">
