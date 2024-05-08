@@ -137,7 +137,7 @@ export default defineComponent({
           },
           cards: [
             {
-              buffId: 'unipin-tournament-buff',
+              buffId: 'usapang-tropa-mountain-dew-talk-buff',
               cta: 'Apply Now',
             },
             {
@@ -146,10 +146,6 @@ export default defineComponent({
             },
             {
               buffId: 'dewday-mlbb-tournament-buff',
-              cta: 'Apply Now',
-            },
-            {
-              buffId: 'sample-unipin-tournament-buff',
               cta: 'Apply Now',
             },
           ]

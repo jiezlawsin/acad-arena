@@ -336,4 +336,72 @@ export const BuffsList = [
       },
     }
   },
+  {
+    id: 'usapang-tropa-mountain-dew-talk-buff',
+    name: '#UsapangTropa Mountain Dew Talk Buff',
+    shortDescription: 'Hosting a campus talk or seminar? Matino ang usapan with Mountain Dew!',
+    description: `
+    <p>Hosting a campus talk or seminar? Matino ang usapan with Mountain Dew!</p>
+    <p><b>Buff Requirements</b></p>
+    <ol type="1">
+      <li><b>Usap Tayo.</b> Workshops, talks, seminars, panel discussions, and similar events are welcome. Any topic from esports, gaming, tech, pop-culture, and anime or open up more serious topics on youth, community, and careers.</li>
+      <li><b>Offline Venue.</b> Get your campus community together, sit down, and share some Mountain Dew while listening to the talk.</li>
+      <li><b>Location.</b> Venue must be in the Greater Metro Manila (Metro Manila, Rizal, Cavite, Laguna, Bulacan).</li>
+      <li><b>Make some noise.</b> May Facebook page ba yung org or event mo? Are you able to post event updates and promotional material? In that case, get ready to hype up the event in partnership with Mountain Dew through posts and campaigns we’ll share.</li>
+      <li><b>Plan Ahead.</b> Bawal crammer. Submit your application form at least 3 weeks before the event.</li>
+      <li><b>Speaker Bonus.</b> Let us know what the talk topic is and we might be able to provide a speaker of our own!</li>
+    </ol>
+    <p><b>Notes:</b></p>
+    <p>You may only have one buff <b>per game title</b> in your event.</p>
+    `,
+    tag: 'For Students',
+    cardImage: '/images/buff-marketplace/usapangtropa.jpg',
+    heroImage: '/images/buff-marketplace/usapangtropa.jpg',
+    sponsors: [
+      {
+        name: 'Mountain Dew',
+        logo: '/images/Mountain-Dew.png',
+      },
+    ],
+    eligibleEvents: [
+      {
+        name: 'On-site.',
+        description: 'Touch grass.',
+      },
+      {
+        name: 'Educational',
+        description: 'Kasi it’s not just play.',
+      },
+      {
+        name: 'Attend tayo.',
+        description: 'Invite your friends.',
+      },
+      {
+        name: 'Student first.',
+        description: 'Campus focused.',
+      },
+      {
+        name: 'Socials Posting.',
+        description: 'Loud and proud.',
+      },
+      {
+        name: 'AA Bonus.',
+        description: 'Speaker opportunity!',
+      },
+    ],
+    ctaBreaker: {
+      smallText: 'This buff gives',
+      bigText: '',
+      description: '',
+      list: [
+        '10-20 Cases of Mountain Dew depending on estimated audience size',
+        '5 Dew Tumblers',
+      ],
+      image: '/images/art-buff-mountain-dew.png',
+      cta: {
+        ctaText: 'Apply Now',
+        ctaLink: 'https://bit.ly/AAEduBuffRequest',
+      },
+    }
+  },
 ]
