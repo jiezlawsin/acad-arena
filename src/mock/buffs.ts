@@ -351,8 +351,6 @@ export const BuffsList = [
       <li><b>Plan Ahead.</b> Bawal crammer. Submit your application form at least 3 weeks before the event.</li>
       <li><b>Speaker Bonus.</b> Let us know what the talk topic is and we might be able to provide a speaker of our own!</li>
     </ol>
-    <p><b>Notes:</b></p>
-    <p>You may only have one buff <b>per game title</b> in your event.</p>
     `,
     tag: 'For Students',
     cardImage: '/images/buff-marketplace/usapangtropa.jpg',
