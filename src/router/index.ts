@@ -14,7 +14,7 @@ import PrivacyPolicy from '../views/PrivacyPolicy.vue'
 
 const routesArr = [
   // {
-  //   path: '/',
+  //   path: '/under-construction',
   //   name: 'under-construction',
   //   component: UnderConstruction
   // },

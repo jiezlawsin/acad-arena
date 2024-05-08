@@ -170,6 +170,15 @@ export default defineComponent({
             carouselType: 'story-card',
           },
           cards: [
+          {
+              id: 'mountain-dew-buffs-now-available-at-acad-arena-buffs-marketplace',
+              header: 'Mountain Dew Buffs Now Available at AcadArena Buffs Marketplace',
+              backgroundImage: '/images/story-mntdw.jpg',
+              tagDate: {
+                tag: 'News',
+                date: 'Mar 4, 2024'
+              }
+            },
             {
               id: 'on-acad-arena-edu-word-from-the-ceo',
               header: 'On AcadArena Edu: Word from the CEO!',

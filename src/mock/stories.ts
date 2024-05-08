@@ -36,4 +36,22 @@ export const StoriesList = [
     date: 'Feb 29, 2024',
     featured: true,
   },
+  {
+    id: 'mountain-dew-buffs-now-available-at-acad-arena-buffs-marketplace',
+    title: 'Mountain Dew Buffs Now Available at AcadArena Buffs Marketplace',
+    short: 'Mountain Dew, in collaboration with AcadArena Education, is revving up youth events across the Philippines with an exciting array of buffs tailored for student gamers.',
+    content: `
+    <p>Mountain Dew, in collaboration with AcadArena Education, is revving up youth events across the Philippines with an exciting array of buffs tailored for student gamers.</p>
+    <p>With a focus on campus-centric events, the Mountain Dew Buffs support a wide range of gaming competitions, including org tournaments, campus intramurals, foundation day activities with esports components, and more. Local government units and non-government organizations keen on organizing campus-focused esports are also welcome to explore the exciting opportunities presented by Mountain Dew Buffs for as early as four months before their event.</p>
+    <p>Whether it's Mobile Legends: Bang Bang, NBA 2K, or other popular titles, applicants can look forward to exciting buff inclusions ranging from event support, PC accessories, exclusive merch, and cases of Mountain Dew.</p>
+    <p>Organizers must secure offline venues and ensure active participation in marketing efforts, with every buff tailored to specific event types and participation sizes. There are also bonus loot available for events with broadcast components.</p>
+    <p>New and veteran organizers are welcome to apply, as all qualified applicants can receive guidance from AcadArena Buff Coordinators in planning and executing their event.</p>
+    <p>To learn more about the Mountain Dew Tournament Buffs, visit the AcadArena Buff Marketplace today 👉 <a href="https://www.acadarena.com/buffs/unipin-tournament-buff" target="_blank">https://www.acadarena.com/buffs/unipin-tournament-buff</a></p>
+    `,
+    tag: 'News',
+    cardImage: '/images/story-mntdw.jpg',
+    heroImage: '/images/story-mntdw.jpg',
+    date: 'Mar 4, 2024',
+    featured: false,
+  },
 ]

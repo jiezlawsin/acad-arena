@@ -122,6 +122,7 @@ export default {
           {
             breakpoint: 700,
             settings: {
+              dots: true,
               infinite: true,
               variableWidth: false,
               slidesToShow: 1,

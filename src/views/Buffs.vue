@@ -148,6 +148,10 @@ export default defineComponent({
               buffId: 'dewday-mlbb-tournament-buff',
               cta: 'Apply Now',
             },
+            {
+              buffId: 'sample-unipin-tournament-buff',
+              cta: 'Apply Now',
+            },
           ]
         },
         {

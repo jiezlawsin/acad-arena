@@ -587,18 +587,18 @@ h3 {
   }
   .story-card {
     color: $white;
+    width: 602px;
+    margin-right: 20px;
+    @media screen and (max-width: 699px) {
+      width: 100%;
+    }
     .card-image {
-      width: 602px;
-      margin-right: 20px;
       margin-block-end: 20px;
       aspect-ratio: 16 / 9;
       border-radius: 24px;
       overflow: hidden;
       position: relative;
       cursor: pointer;
-      @media screen and (max-width: 699px) {
-        width: 100%;
-      }
       img {
         object-fit: cover;
         max-width: 100%;
