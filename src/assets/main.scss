@@ -46,7 +46,8 @@
 }
 
 html {
-  background: linear-gradient(90deg, #0e1024 1.3%, #0c1826 100%);
+  // background: linear-gradient(90deg, #0e1024 1.3%, #0c1826 100%);
+  background: #FFF;
   overflow-x: hidden;
   .mobile-only {
     background-color: white;
@@ -259,6 +260,14 @@ nav.navbar {
           }
         }
       }
+    }
+  }
+  .dropdown-toggle {
+    img {
+      margin-left: 5px;
+    }
+    &:after {
+      display: none;
     }
   }
   .dropdown-menu {
@@ -2172,17 +2181,23 @@ h3 {
   .buffs-list {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     row-gap: 30px;
     .card {
       padding-right: 0;
     }
 
-    @media (max-width: 1039px) {
-      grid-template-columns: 1fr 1fr;
+    @media (max-width: 1180px) {
+      grid-template-columns: 1fr 1fr 1fr;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr 1fr;
+      .card {
+        padding-right: 0;
+      }
+    }
+    @media (max-width: 600px) {
       grid-template-columns: 1fr;
       .card {
         padding-right: 0;
