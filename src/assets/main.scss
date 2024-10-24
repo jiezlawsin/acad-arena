@@ -18,7 +18,7 @@
   0% {
     transform: translateY(100%);
   }
-  100% {
+  10%, 100% {
     transform: translateY(0%);
   }
 }
@@ -322,7 +322,6 @@ main {
     color: #FFF;
     .highlight-container {
       position: relative;
-      overflow: hidden;
       display: inline-block;
     }
     .highlight {
@@ -338,7 +337,7 @@ main {
       display: none;
       &.text-in {
         display: block;
-        animation: textIn 0.5s ease;
+        animation: textIn 4s ease;
       }
       &.text-out {
         animation: textOut 0.5s ease;

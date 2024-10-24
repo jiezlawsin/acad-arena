@@ -61,7 +61,6 @@ export default {
       }, textOutTimer)
 
       setTimeout(function(){
-
         if(index == textsLen-1){
             index = 0;
           }
