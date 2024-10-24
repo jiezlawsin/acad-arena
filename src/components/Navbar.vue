@@ -16,6 +16,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Community
+              <img src="/images/icons/chevron-down.svg" alt="">
             </a>
             <ul class="dropdown-menu">
               <li>
@@ -32,6 +33,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Career
+              <img src="/images/icons/chevron-down.svg" alt="">
             </a>
             <ul class="dropdown-menu">
               <li>
