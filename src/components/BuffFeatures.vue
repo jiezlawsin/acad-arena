@@ -8,16 +8,25 @@
           <br>
           <div class="action" v-if="data.left.cta">
             <a :href="data.left.cta.url" target="_blank" class="btn btn-lg btn-gradient">
-              <i class="bi bi-clipboard2-check-fill"></i>
-              {{ data.left.cta.text }}
+              <i v-if="!data.left.cta.icon" class="bi bi-check-lg"></i>
+              <img v-if="data.left.cta.icon" :src="data.left.cta.icon" alt="">
+              <div>
+                {{ data.left.cta.text }}
+              </div>
             </a>
           </div>
         </div>
         <div class="right col-md-6" v-if="data.right">
-          <div class="title">{{ data.right?.title}}</div>
+          <div class="title">{{ data.right?.title }}</div>
           <ul class="features">
-            <li v-for="feature in data?.right?.features"><i class="bi bi-check-lg"></i>{{  feature.title  }}</li>
-          </ul> 
+            <li v-for="feature in data?.right?.features">
+              <i v-if="!feature.icon" class="bi bi-check-lg"></i>
+              <img v-if="feature.icon" :src="feature.icon" alt="">
+              <div>
+                {{ feature.title }}
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
