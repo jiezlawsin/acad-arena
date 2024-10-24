@@ -2,6 +2,7 @@
 import { defineComponent } from 'vue'
 import HomeBanner from '../components/HomeBanner.vue'
 import CTABreaker from '../components/CTABreaker.vue'
+import CareersListing from '../components/CareersListing.vue'
 
 export default defineComponent({
   name: 'home',
@@ -9,6 +10,7 @@ export default defineComponent({
   components: {
     HomeBanner,
     CTABreaker,
+    CareersListing,
   },
   data() {
     return {
@@ -22,7 +24,7 @@ export default defineComponent({
             images: [
               {
                 image: '/images/HOME/IMG_8437.jpg',
-                text: 'Esports',
+                text: 'Esports', 
               },
               {
                 image: '/images/HOME/IMG_0355.jpg',
@@ -33,6 +35,89 @@ export default defineComponent({
                 text: 'Reyun',
               },
             ],
+          }
+        },
+        {
+          name: 'careers-listing',
+          component: 'CareersListing',
+          data: {
+            title: 'Available BoostCamps',
+            description: 'Different learning experiences for different learners.',
+            categories: [
+              'mentorships',
+              'classes',
+              'quizzes',
+              'pitches',
+              'research',
+            ],
+            list: [
+              {
+                id: 'branding-workshop',
+                name: 'Branding Workshop',
+                tag: 'with overdrive studios',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                image: '/images/program2.jpg',
+                schedule: 'Nov-Dec',
+                participants: '40-200+',
+                level: 'College',
+                course: 'Design Major',
+              },
+              {
+                id: 'branding-workshop',
+                name: 'Branding Workshop',
+                tag: 'with overdrive studios',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                image: '/images/program2.jpg',
+                schedule: 'Nov-Dec',
+                participants: '40-200+',
+                level: 'College',
+                course: 'Design Major',
+              },
+              {
+                id: 'branding-workshop',
+                name: 'Branding Workshop',
+                tag: 'with overdrive studios',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                image: '/images/program2.jpg',
+                schedule: 'Nov-Dec',
+                participants: '40-200+',
+                level: 'College',
+                course: 'Design Major',
+              },
+              {
+                id: 'branding-workshop',
+                name: 'Branding Workshop',
+                tag: 'with overdrive studios',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                image: '/images/program2.jpg',
+                schedule: 'Nov-Dec',
+                participants: '40-200+',
+                level: 'College',
+                course: 'Design Major',
+              },
+              {
+                id: 'branding-workshop',
+                name: 'Branding Workshop',
+                tag: 'with overdrive studios',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                image: '/images/program2.jpg',
+                schedule: 'Nov-Dec',
+                participants: '40-200+',
+                level: 'College',
+                course: 'Design Major',
+              },
+              {
+                id: 'branding-workshop',
+                name: 'Branding Workshop',
+                tag: 'with overdrive studios',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                image: '/images/program2.jpg',
+                schedule: 'Nov-Dec',
+                participants: '40-200+',
+                level: 'College',
+                course: 'Design Major',
+              },
+            ]
           }
         },
         {
@@ -57,6 +142,12 @@ export default defineComponent({
   <main>
     <div v-for="section in sections">
       <HomeBanner v-if="section.component === 'home-banner'" :section-id="section.name" :banner="section.banner" />
+      <CareersListing v-if="section.component === 'careers-listing'" 
+        :section-id="section.name" 
+        :title="section.data?.title"
+        :description="section.data?.description" 
+        :categories="section.data?.categories" 
+        :list="section.data?.list"/>
       <CTABreaker v-if="section.component === 'cta-breaker'" :section-id="section.name" :data="section.data" />
     </div>
   </main>
