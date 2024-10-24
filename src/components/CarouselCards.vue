@@ -8,7 +8,7 @@
       <div v-if="campuses">
         <div class="small-title">CAMPUSES WE'VE SUPPORTED</div>
         <div class="campuses">
-          <img v-for="campus in campuses" :src="campus.image" alt="campus.name" />
+          <img v-for="campus in campuses" :src="campus.image" :alt="campus.name" />
         </div>
       </div>
       <h2 class="section-title" :class="titleClass ? titleClass : ''">

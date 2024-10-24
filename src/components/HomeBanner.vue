@@ -2,17 +2,17 @@
   <section :id="sectionId" class="home-banner-section">
     <div class="container container-fluid">
       <div class="flex">
-        <div class="banner__text-content">
-          <h1 class="banner__heading">
+        <div class="home-banner-section__text-content">
+          <h1 class="home-banner-section__heading">
             {{ banner.header }} 
             <span class="highlight-container">
-              <span v-for="item in banner.images" class="highlight">{{ item.text }}</span>
+              <span v-for="item in banner.images" class="highlight">{{ item.text }}.</span>
             </span>
           </h1>
-          <p>{{ banner.description }}</p>
+          <p class="home-banner-section__description">{{ banner.description }}</p>
         </div>
-        <div class="banner__image-content">
-          <div v-for="item in banner.images" class="banner__image">
+        <div class="home-banner-section__image-content">
+          <div v-for="item in banner.images" class="home-banner-section__image">
             <img :src="item.image" />
           </div>
         </div>
@@ -42,14 +42,13 @@ export default {
   },
  
   mounted() {
-    const images = document.querySelectorAll('.banner__image');
-    const totalDuration = 3.4;
+    const images = document.querySelectorAll('.home-banner-section__image');
 
     const texts = document.querySelectorAll(".highlight"),
           textsLen = texts.length;
     let index = 0;
-    const textInTimer = 3000,
-          textOutTimer = 2800;
+    const textInTimer = 4000,
+          textOutTimer = 4000;
 
     function animateText() {
       for(let i = 0; i<textsLen; i++){
@@ -59,7 +58,7 @@ export default {
 
       setTimeout(function(){
           texts[index].classList.add("text-out");              
-      },textOutTimer)
+      }, textOutTimer)
 
       setTimeout(function(){
 
@@ -70,7 +69,7 @@ export default {
               index++;
             }
           animateText();
-      },textInTimer); 
+      }, textInTimer); 
     }
     
     window.onload=animateText;
