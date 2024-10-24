@@ -18,7 +18,7 @@
   0% {
     transform: translateY(100%);
   }
-  10%, 100% {
+  100% {
     transform: translateY(0%);
   }
 }
@@ -319,6 +319,7 @@ main {
     font-weight: 700;
     margin-bottom: 20px;
     white-space: pre-line;
+    overflow: hidden;
     color: #FFF;
     .highlight-container {
       position: relative;
@@ -337,7 +338,7 @@ main {
       display: none;
       &.text-in {
         display: block;
-        animation: textIn 4s ease;
+        animation: textIn 0.5s ease;
       }
       &.text-out {
         animation: textOut 0.5s ease;
@@ -2400,6 +2401,50 @@ h3 {
           -webkit-text-fill-color: initial;
         }
       }
+    }
+  }
+}
+
+.cta-breaker-section {
+  background: linear-gradient(0deg, #000910, #000910),
+    linear-gradient(268.74deg, rgba(120, 195, 255, 0.2) -36.11%, rgba(144, 48, 207, 0.2) 134.81%);
+  padding-block: 40px;
+  .cta-container {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 6px;
+    img {
+      position: absolute;
+      right: -40%;
+      top: -30px;
+      max-height: 68px;
+    }
+  }
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFF;
+  }
+  .cta {
+    background: linear-gradient(268.74deg,#78C3FF -36.11%, #9030CF 70%,#9030CF 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    &:hover {
+      border: none;
+      background-position: 0 100%;
+      color: #FFF;
     }
   }
 }

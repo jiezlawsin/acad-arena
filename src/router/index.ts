@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Compete from '../views/Compete.vue'
+import Careers from '../views/Careers.vue'
 import Buffs from '../views/Buffs.vue'
 import BuffView from '../views/BuffView.vue'
 import NotFound from '../views/NotFound.vue'
@@ -47,6 +48,11 @@ const routesArr = [
     path: '/compete',
     name: 'compete',
     component: Compete
+  },
+  {
+    path: '/careers',
+    name: 'careers',
+    component: Careers
   },
   {
     path: '/buffs/:id',
