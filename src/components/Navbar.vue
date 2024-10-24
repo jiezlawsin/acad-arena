@@ -13,13 +13,16 @@
             <a class="nav-link" href="/buffs" @click.prevent="goTo('/buffs')">Event Buffs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.challengermode.com/s/AcadArenaPH" target="_blank">Compete</a>
+            <a class="nav-link" href="https://www.challengermode.com/s/AcadArenaPH" target="_blank">Competition</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/alliance" @click.prevent="goTo('/alliance')">Alliance</a>
+            <a class="nav-link" href="/career" @click.prevent="goTo('/alliance')">Alliance</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/stories" @click.prevent="goTo('/stories')">News & Stories</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-button-link">Contact Us</a>
           </li>
         </ul>
       </div>

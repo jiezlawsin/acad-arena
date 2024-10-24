@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Banner from '../components/Banner.vue'
+import HomeBanner from '../components/HomeBanner.vue'
 import CarouselCards from '../components/CarouselCards.vue'
 import Features from '../components/Features.vue'
 import Newsletter from '../components/Newsletter.vue'
@@ -25,7 +25,7 @@ export default defineComponent({
   name: 'home',
   title: 'Home',
   components: {
-    Banner,
+    HomeBanner,
     CarouselCards,
     Features,
     Newsletter
@@ -34,17 +34,23 @@ export default defineComponent({
     return {
       sections: [
         {
-          component: 'banner',
+          component: 'home-banner',
           name: 'HomeBanner',
-          banners: {
-            type: 'content-carousel',
+          banner: {
+            header: 'Level-Up Your Extracurriculars \n in',
+            description: 'AcadArena Edu gamifies your extracurriculars inside and outside of school! Get cool loot for your campus events, join competitions and make friends with the same hobby!',
             images: [
               {
                 image: '/images/HOME/IMG_8437.jpg',
-                header: 'Upgrade Your Events',
-                content: 'Perks available for your youth events. Limited slots per month',
-                ctaText: 'Learn More',
-                ctaLink: 'https://www.acadarena.com/buffs',
+                text: 'Esports',
+              },
+              {
+                image: '/images/HOME/IMG_0355.jpg',
+                text: 'Gamehaus',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Reyun',
               },
             ], 
           }
@@ -53,33 +59,47 @@ export default defineComponent({
           component: 'carousel-cards',
           name: 'OurPrograms',
           title: 'Our Programs',
-          background: true,
+          titleClass: 'text-center',
+          titleIcon: '/images/HOME/sparkle.png',
+          description: 'Turn your hobby to something more—learn a new skill, mount an event, add to your resume, get a paid gig, secure the difference maker for your first job.',
+          background: false,
           noTopPadding: false,
           carousel: {
             carouselType: 'program-card',
           },
           cards: [
             {
+              name: 'FOR HS & COLLEGE CLUBS',
               image: '/images/HOME/program1.png',
-              shortDescription: 'Buffs provide students with support through merch, prizes, and other cool stuff for tournaments and events.',
-              tag: 'For Students',
-              cta: 'Get Buffed',
+              shortDescription: 'Get accredited in our student club network and get perks!',
+              tag: 'AcadArena Alliance',
+              cta: 'Apply Now',
+              url: '/alliance',
+            },
+            {
+              name: 'FOR HS & COLLEGE CLUBS',
+              image: '/images/HOME/program2.png',
+              shortDescription: 'Get loot and freebies for the campus event of your dreams.',
+              tag: 'AcadArena Buffs',
+              cta: 'October Cycle Live',
               url: '/buffs',
             },
             {
-              image: '/images/HOME/program2.png',
-              shortDescription: 'Compete in weekly tournaments, join regional conferences, and represent your school in a nationwide league.',
-              tag: 'For Students',
-              cta: 'Queue Up',
+              name: 'FOR HS & COLLEGE ESPORTS TEAMS',
+              image: 'images/HOME/program3.png',
+              shortDescription: 'Compete in our weekly rotating esports titles against fellow students.',
+              tag: 'AcadArena Aces',
+              cta: 'Join Tournaments',
               url: 'https://www.challengermode.com/s/AcadArenaPH',
               external: true
             },
             {
+              name: 'FOR ALL LEARNERS',
               image: 'images/HOME/program3.png',
-              shortDescription: 'Join a network of student leaders. Build a community, learn to mount events, be part of something greater.',
-              tag: 'For Students',
-              cta: 'Take Part',
-              url: '/alliance',
+              shortDescription: 'Apply in our mentorship cycles for psychology, design & production.',
+              tag: 'AcadArena BoostCamp',
+              cta: 'Explore Mentorships',
+              url: '/careers',
             },
           ]
         },
@@ -104,7 +124,7 @@ export default defineComponent({
           title: 'Join the #NotJustPlay Movement',
           titleClass: 'text-center',
           class: 'pb-5',
-          noTopPadding: true,
+          noTopPadding: false,
           carousel: {
             title: 'Join the #NotJustPlay Movement',
             carouselType: 'cube-card',
@@ -115,8 +135,8 @@ export default defineComponent({
           component: 'carousel-cards',
           name: 'NewsAndStories',
           title: 'News & Stories',
-          background: false,
-          noTopPadding: true,
+          background: true,
+          noTopPadding: false,
           carousel: {
             carouselType: 'story-card',
           },
@@ -160,15 +180,17 @@ export default defineComponent({
 <template>
   <main>
     <div v-for="section in sections">
-      <Banner v-if="section.component === 'banner'" :section-id="section.name" :banners="section.banners" />
+      <HomeBanner v-if="section.component === 'home-banner'" :section-id="section.name" :banner="section.banner" />
       <CarouselCards v-if="section.component === 'carousel-cards'" 
         :no-top-padding="section.noTopPadding"
         :has-background="section.background" 
-        :title="section.title"  
+        :title="section.title ?? ''"  
+        :titleIcon="section.titleIcon"  
+        :description="section.description"  
         :title-class="section.titleClass" 
         :section-id="section.name" 
         :cards="section.cards" 
-        :carousel="section.carousel" />
+        :carousel="section.carousel ?? {}" />
       <Features v-if="section.component === 'features'" :carousel="section.carousel" :section-id="section.name" :data="section.data" />
       <Newsletter v-if="section.component === 'newsletter'" :section-id="section.name" :newsletter="section.newsletter" />
       

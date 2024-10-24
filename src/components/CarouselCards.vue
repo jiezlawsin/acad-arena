@@ -1,7 +1,10 @@
 <template>
   <section :id="sectionId" class="carousel-cards-section" :class="{'hasBg': hasBackground, 'py-5': !noTopPadding, 'pb-5': noTopPadding}">
     <div class="container">
-      <h2 class="section-title" :class="titleClass ? titleClass : ''">{{ title }}</h2>
+      <h2 class="section-title" :class="titleClass ? titleClass : ''">
+        <img v-if="carousel.carouselType === 'program-card'" :src="titleIcon" />
+        {{ title }}
+      </h2>
       <p class="section-description content" v-if="description" v-html="description"></p>
       <div class="slick-carousel" :class="sectionId + '-slick'">
         <div v-for="item in cards" class="card">
@@ -46,6 +49,10 @@ export default {
       type: String,
       required: false
     },
+    titleIcon: {
+      type: String,
+      required: false
+    },
     description: {
       type: String,
       required: false
@@ -76,8 +83,8 @@ export default {
     if (this.carousel.carouselType === 'program-card') {
       $('.' + this.sectionId + '-slick').slick({
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         arrows: false,
         responsive: [
           {
