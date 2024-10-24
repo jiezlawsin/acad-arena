@@ -17,9 +17,9 @@ export default defineComponent({
       router.push('/notfound');
     }
     const eventCount = this.data?.eligibleEvents.length ?? 0;
-    if(eventCount < 6) {
+    if (eventCount < 6) {
       const diff = 6 - eventCount;
-      for(let i = 0; i < diff; i++) {
+      for (let i = 0; i < diff; i++) {
         this.data?.eligibleEvents.push({});
       }
     }
@@ -31,8 +31,27 @@ export default defineComponent({
 <template>
   <main class="buffs-view-page">
     <div class="container buff-view-container">
-      <div class="hero-banner">
+      <!-- <div class="hero-banner">
         <img :src="data?.heroImage" alt="">
+      </div> -->
+      <div class="hero-gallery">
+        <div class="main-image">
+          <img :src="data?.heroImages[0]">
+        </div>
+        <div class="right-column">
+          <div class="small-image">
+            <img :src="data?.heroImages[1]">
+          </div>
+          <div class="small-image">
+            <img :src="data?.heroImages[2]">
+          </div>
+          <div class="small-image">
+            <img :src="data?.heroImages[3]">
+          </div>
+          <div class="small-image">
+            <img :src="data?.heroImages[4]">
+          </div>
+        </div>
       </div>
       <h1>{{ data?.name }}</h1>
       <div class="sponsors" v-if="data?.sponsors">
@@ -42,9 +61,12 @@ export default defineComponent({
       <div class="events">
         <div class="heading">Eligible Events</div>
         <div class="cards">
-          <div class="event-card" :class="{'is-empty': !event.name}" v-for="event in data?.eligibleEvents">
+          <div class="event-card" :class="{ 'is-empty': !event.name }" v-for="event in data?.eligibleEvents">
             <div class="event-name">{{ event.name }}</div>
             <div class="event-description">{{ event.description }}</div>
+            <div class="event-icon">
+              <img :src="event.icon">
+            </div>
           </div>
         </div>
       </div>
@@ -52,19 +74,25 @@ export default defineComponent({
     </div>
     <div class="cta-breaker">
       <div class="container">
-        <div class="wrapper d-flex">
-          <div class="image">
-            <img :src="data?.ctaBreaker.image" alt="">
-          </div>
-          <div class="content">
-            <div class="small-text" v-if="data?.ctaBreaker.smallText">{{ data?.ctaBreaker.smallText }}</div>
-            <div class="big-text" v-if="data?.ctaBreaker.bigText">{{ data?.ctaBreaker.bigText }}</div>
-            <div class="description" v-if="data?.ctaBreaker.description" v-html="data?.ctaBreaker.description"></div>
-            <ul v-if="data?.ctaBreaker.list" class="list">
-              <li v-for="item in data?.ctaBreaker.list"><i class="bi bi-check-lg"></i> <span v-html="item"></span></li>
-            </ul>
-            <div class="action">
-              <a :href="data?.ctaBreaker.cta.ctaLink" target="_blank" class="btn btn-lg btn-gradient"><i class="bi bi-clipboard2-check-fill"></i> {{ data?.ctaBreaker.cta.ctaText }}</a>
+        <div class="wrapper">
+          <div class="cta-card d-flex" :style="'border-color: ' + data?.colorTheme">
+            <div class="image">
+              <img :src="data?.ctaBreaker.image" alt="">
+            </div>
+            <div class="content">
+              <div class="small-text" v-if="data?.ctaBreaker.smallText">{{ data?.ctaBreaker.smallText }}</div>
+              <div class="big-text" v-if="data?.ctaBreaker.bigText">{{ data?.ctaBreaker.bigText }}</div>
+              <div class="description" v-if="data?.ctaBreaker.description" v-html="data?.ctaBreaker.description"></div>
+              <ul v-if="data?.ctaBreaker.list" class="list">
+                <li v-for="item in data?.ctaBreaker.list"><i class="bi bi-check-lg"></i> <span v-html="item"></span>
+                </li>
+              </ul>
+              <div class="action">
+                <a :href="data?.ctaBreaker.cta.ctaLink" target="_blank" :style="'color: ' + data?.colorTheme">
+                  {{ data?.ctaBreaker.cta.ctaText }} &nbsp;
+                  <img src="/images/icons/arrow-left.svg" alt="" class="icon">
+                </a>
+              </div>
             </div>
           </div>
         </div>

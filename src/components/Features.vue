@@ -6,8 +6,8 @@
           <h2 class="title">{{ data.title }}</h2>
           <div class="description" v-html="data.description"></div>
           <ul class="features">
-            <li v-for="feature in data.features"><i class="bi bi-check-lg"></i>{{  feature  }}</li>
-          </ul> 
+            <li v-for="feature in data.features"><i class="bi bi-check-lg"></i>{{ feature }}</li>
+          </ul>
         </div>
         <div class="col-lg-7 col-md-6 col-sm-12">
           <div class="features-art">

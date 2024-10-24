@@ -1,5 +1,9 @@
 <template>
-  <section :id="sectionId" class="carousel-cards-section" :class="{'hasBg': hasBackground, 'py-5': !noTopPadding, 'pb-5': noTopPadding}">
+  <section :id="sectionId" class="carousel-cards-section" :class="{
+    hasBg: hasBackground,
+    'py-5': !noTopPadding,
+    'pb-5': noTopPadding,
+  }">
     <div class="container">
       <div v-if="campuses">
         <div class="small-title">CAMPUSES WE'VE SUPPORTED</div>
@@ -15,8 +19,9 @@
       <div class="slick-carousel" :class="sectionId + '-slick'">
         <div v-for="item in cards" class="card">
           <ProgramCard :item="item" v-if="carousel.carouselType === 'program-card'" />
-          <CubeCard :item="item" v-if="carousel.carouselType === 'cube-card'"/>
-          <StoryCard :item="item" v-if="carousel.carouselType === 'story-card'"/>
+          <CubeCard :item="item" v-if="carousel.carouselType === 'cube-card'" />
+          <StoryCard :item="item" v-if="carousel.carouselType === 'story-card'" />
+          <BuffCard :item="item" v-if="carousel.carouselType === 'buff-card'" />
         </div>
       </div>
     </div>
@@ -25,48 +30,49 @@
 
 <script lang="ts">
 import $ from "jquery";
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import ProgramCard from './ProgramCard.vue'
-import StoryCard from './StoryCard.vue'
-import CubeCard from './CubeCard.vue'
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/pagination";
+import ProgramCard from "./ProgramCard.vue";
+import StoryCard from "./StoryCard.vue";
+import CubeCard from "./CubeCard.vue";
+import BuffCard from "./BuffCard.vue";
 
 export default {
   props: {
     sectionId: {
       type: String,
-      required: true
+      required: true,
     },
     hasBackground: {
       type: Boolean,
       required: false,
-      default: false
+      default: false,
     },
     carousel: {
       type: Object,
-      required: true
+      required: true,
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     titleClass: {
       type: String,
-      required: false
+      required: false,
     },
     titleIcon: {
       type: String,
-      required: false
+      required: false,
     },
     description: {
       type: String,
-      required: false
+      required: false,
     },
     noTopPadding: {
       type: Boolean,
       required: false,
-      default: false
+      default: false,
     },
     campuses: {
       type: Object,
@@ -74,24 +80,25 @@ export default {
     },
     cards: {
       type: Object,
-      required: true
+      required: true,
     },
     cta: {
       type: Object,
-      required: false
-    }
+      required: false,
+    },
   },
   components: {
     Swiper,
     SwiperSlide,
     ProgramCard,
     StoryCard,
-    CubeCard
+    CubeCard,
+    BuffCard,
   },
   mounted() {
-    console.log(this.carousel.carouselType)
-    if (this.carousel.carouselType === 'program-card') {
-      $('.' + this.sectionId + '-slick').slick({
+    console.log(this.carousel.carouselType);
+    if (this.carousel.carouselType === "program-card") {
+      $("." + this.sectionId + "-slick").slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -103,13 +110,31 @@ export default {
               variableWidth: true,
               slidesToShow: 1,
               slidesToScroll: 1,
-            }
+            },
           },
-        ]
+        ],
       });
     }
-    if (this.carousel.carouselType === 'cube-card') {
-      $('.' + this.sectionId + '-slick').slick({
+    if (this.carousel.carouselType === "buff-card") {
+      $("." + this.sectionId + "-slick").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              variableWidth: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    }
+    if (this.carousel.carouselType === "cube-card") {
+      $("." + this.sectionId + "-slick").slick({
         dots: true,
         infinite: true,
         slidesToShow: 3,
@@ -123,13 +148,13 @@ export default {
               variableWidth: true,
               slidesToShow: 1,
               slidesToScroll: 1,
-            }
+            },
           },
-        ]
+        ],
       });
     }
-    if (this.carousel.carouselType === 'story-card') {
-      $('.' + this.sectionId + '-slick').slick({
+    if (this.carousel.carouselType === "story-card") {
+      $("." + this.sectionId + "-slick").slick({
         infinite: false,
         variableWidth: true,
         slidesToShow: 1,
@@ -144,13 +169,11 @@ export default {
               variableWidth: false,
               slidesToShow: 1,
               slidesToScroll: 1,
-            }
+            },
           },
-        ]
+        ],
       });
     }
-    
-  }
+  },
 };
-
 </script>
