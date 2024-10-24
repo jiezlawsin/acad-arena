@@ -61,7 +61,7 @@ export default defineComponent({
           component: 'carousel-cards',
           name: 'OurPrograms',
           title: 'Learn by Doing',
-          titleClass: 'text-center',
+          titleClass: 'with-icon',
           titleIcon: '/images/HOME/sparkle.png',
           description: 'Turn your hobby to something more—learn a new skill, mount an event, add to your resume, get a paid gig, secure the difference maker for your first job.',
           background: false,
@@ -160,6 +160,7 @@ export default defineComponent({
           component: 'carousel-cards',
           name: 'NewsAndStories',
           title: 'News & Stories',
+          titleClass: 'text-left',
           background: true,
           noTopPadding: false,
           carousel: {
@@ -217,7 +218,7 @@ export default defineComponent({
         :cards="section.cards" 
         :carousel="section.carousel ?? {}"
         :campuses="section.campuses" />
-      <Stats  v-if="section.component === 'stats'" :data="section.data" />
+      <Stats  v-if="section.component === 'stats'" :section-id="section.name" :data="section.data" />
       <Features v-if="section.component === 'features'" :carousel="section.carousel" :section-id="section.name" :data="section.data" />
       <Newsletter v-if="section.component === 'newsletter'" :section-id="section.name" :newsletter="section.newsletter" />
     </div>

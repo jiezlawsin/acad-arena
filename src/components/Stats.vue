@@ -3,7 +3,7 @@
     <div class="container">
       <div class="stat-container">
         <div class="stat" v-for="item in data">
-          <div class="count">{{ item.stat }}</div>
+          <div class="count"><span :data-number="item.stat">{{ item.stat }}</span>+</div>
           <div class="label">{{ item.name }}</div>
         </div>
       </div>

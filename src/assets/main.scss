@@ -1034,6 +1034,9 @@ h3 {
     background: linear-gradient(0deg, #000910, #000910),
       linear-gradient(268.74deg, rgba(120, 195, 255, 0.2) -36.11%, rgba(144, 48, 207, 0.2) 134.81%);
     color: $white;
+    .section-title {
+      color: #FFF;
+    }
   }
   .small-title {
     font-size: 10px;
@@ -1046,10 +1049,6 @@ h3 {
     font-size: 50px;
     line-height: 75px;
     font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 4px;
     img {
       max-height: 64px;
     }
@@ -1398,9 +1397,12 @@ h3 {
   padding-block: 50px;
   .stat-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     gap: 40px;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
     .stat {
       justify-self: center;
     }
@@ -1409,6 +1411,9 @@ h3 {
       line-height: 1;
       font-weight: 800;
       text-align: center;
+      background: linear-gradient(89.94deg, #9030CF 18.34%, #78C3FF 83.54%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .label {
       font-size: 15px;
@@ -2199,4 +2204,13 @@ h3 {
   background: linear-gradient(268.74deg, #78C3FF -36.11%, #9030CF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.text-left {
+  text-align: left;
+}
+.with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 4px;
 }
