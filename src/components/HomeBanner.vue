@@ -42,13 +42,13 @@ export default {
   },
  
   mounted() {
-    const images = document.querySelectorAll('.home-banner-section__image');
 
     const texts = document.querySelectorAll(".highlight"),
-          textsLen = texts.length;
+          textsLen = texts.length,
+          images = document.querySelectorAll('.home-banner-section__image');
     let index = 0;
-    const textInTimer = 4000,
-          textOutTimer = 4000;
+    const textInTimer = 3000,
+          textOutTimer = 2800;
 
     function animateText() {
       for(let i = 0; i<textsLen; i++){
@@ -62,16 +62,41 @@ export default {
 
       setTimeout(function(){
         if(index == textsLen-1){
-            index = 0;
-          }
-          else{
-              index++;
-            }
-          animateText();
+          index = 0;
+        }
+        else{
+          index++;
+        }
+        animateText();
+      }, textInTimer); 
+    }
+
+    function animateImage() {
+      for(let i = 0; i<textsLen; i++){
+        images[i].classList.remove("text-in","text-out");  
+      }
+      images[index].classList.add("text-in");
+
+      setTimeout(function(){
+          images[index].classList.add("text-out");              
+      }, textOutTimer)
+
+      setTimeout(function(){
+        if(index == textsLen-1){
+          index = 0;
+        }
+        else{
+          index++;
+        }
+        animateImage();
       }, textInTimer); 
     }
     
-    window.onload=animateText;
+    window.onload= animateText;
+    window.addEventListener("load", (event) => {
+      animateText();
+      animateImage();
+    });
 
   }
 };

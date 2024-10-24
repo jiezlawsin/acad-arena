@@ -38,8 +38,8 @@ export default defineComponent({
           }
         },
         {
-          name: 'careers-listing',
-          component: 'CareersListing',
+          name: 'CareersListing',
+          component: 'careers-listing',
           data: {
             title: 'Available BoostCamps',
             description: 'Different learning experiences for different learners.',
@@ -53,69 +53,29 @@ export default defineComponent({
             list: [
               {
                 id: 'branding-workshop',
+                colorTheme: '#FF7A7A',
                 name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                image: '/images/program2.jpg',
-                schedule: 'Nov-Dec',
-                participants: '40-200+',
-                level: 'College',
-                course: 'Design Major',
-              },
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                image: '/images/program2.jpg',
-                schedule: 'Nov-Dec',
-                participants: '40-200+',
-                level: 'College',
-                course: 'Design Major',
-              },
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                image: '/images/program2.jpg',
-                schedule: 'Nov-Dec',
-                participants: '40-200+',
-                level: 'College',
-                course: 'Design Major',
-              },
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                image: '/images/program2.jpg',
-                schedule: 'Nov-Dec',
-                participants: '40-200+',
-                level: 'College',
-                course: 'Design Major',
-              },
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                image: '/images/program2.jpg',
-                schedule: 'Nov-Dec',
-                participants: '40-200+',
-                level: 'College',
-                course: 'Design Major',
-              },
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                image: '/images/program2.jpg',
-                schedule: 'Nov-Dec',
-                participants: '40-200+',
-                level: 'College',
-                course: 'Design Major',
+                category: 'with overdrive studios',
+                shorDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                cardImage: '/images/program2.jpg',
+                cardIcons: [
+                  {
+                    name: 'Nov-Jan',
+                    icon: '/images/icons/calendar.png'
+                  },
+                  {
+                    name: '40-200+',
+                    icon: '/images/icons/people.png'
+                  },
+                  {
+                    name: 'College',
+                    icon: '/images/icons/confetti.png'
+                  },
+                  {
+                    name: 'Design Major',
+                    icon: '/images/icons/confetti.png'
+                  },
+                ],
               },
             ]
           }
@@ -147,7 +107,7 @@ export default defineComponent({
         :title="section.data?.title"
         :description="section.data?.description" 
         :categories="section.data?.categories" 
-        :list="section.data?.list"/>
+        :list="section.data?.list" />
       <CTABreaker v-if="section.component === 'cta-breaker'" :section-id="section.name" :data="section.data" />
     </div>
   </main>

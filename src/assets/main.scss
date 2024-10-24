@@ -2467,4 +2467,36 @@ h3 {
 .careers-listing-section {
   background: #FFF;
   padding-block: 58px;
+  .section-title {
+    color: #001B57;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #001B57;
+  }
+  .categories {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding-left: 0;
+    margin-top: 14px;
+    .pill {
+      border-radius: 8px;
+      background: #F4F4F4;
+      padding: 4px 8px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #3E3E3E;
+      text-transform: capitalize;
+    }
+  }
+  .grid-container {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+  }
 }

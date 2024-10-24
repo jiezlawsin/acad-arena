@@ -1,13 +1,15 @@
 <template>
   <section :id="sectionId" class="stats-section">
-    <div class="stat-container">
-      <!-- Iterate through the data and animate each stat -->
-      <div class="stat" v-for="(item, index) in data" :key="index">
-        <div class="count">
-          <!-- Use a unique ref for each rolling number based on index -->
-          <span :ref="'rollingNumber' + index">{{ item.displayedStat }}{{ item.statPost }}</span>
+    <div class="container-fluid">
+      <div class="stat-container">
+        <!-- Iterate through the data and animate each stat -->
+        <div class="stat" v-for="(item, index) in data" :key="index">
+          <div class="count">
+            <!-- Use a unique ref for each rolling number based on index -->
+            <span :ref="'rollingNumber' + index">{{ item.displayedStat }}{{ item.statPost }}</span>
+          </div>
+          <div class="label">{{ item.name }}</div>
         </div>
-        <div class="label">{{ item.name }}</div>
       </div>
     </div>
   </section>
