@@ -8,7 +8,7 @@ import Stats from '../components/Stats.vue'
 import { TestimonialsList } from '../mock/testimonials'
 
 function shuffle(array: any) {
-  let currentIndex = array.length,  randomIndex;
+  let currentIndex = array.length, randomIndex;
   // While there remain elements to shuffle.
   while (currentIndex > 0) {
     // Pick a remaining element.
@@ -54,7 +54,7 @@ export default defineComponent({
                 image: '/images/HOME/IMG_9935.jpg',
                 text: 'Reyun',
               },
-            ], 
+            ],
           }
         },
         {
@@ -129,14 +129,17 @@ export default defineComponent({
           data: [
             {
               stat: '450',
+              statPost: '+',
               name: 'Student Clubs Supported',
             },
             {
               stat: '1000',
+              statPost: '+',
               name: 'Campus Events Supported',
             },
             {
-              stat: '60k',
+              stat: '60',
+              statPost: 'k+',
               name: 'Competition Participants',
             },
 
@@ -207,20 +210,15 @@ export default defineComponent({
   <main>
     <div v-for="section in sections">
       <HomeBanner v-if="section.component === 'home-banner'" :section-id="section.name" :banner="section.banner" />
-      <CarouselCards v-if="section.component === 'carousel-cards'" 
-        :no-top-padding="section.noTopPadding"
-        :has-background="section.background" 
-        :title="section.title ?? ''"  
-        :titleIcon="section.titleIcon"  
-        :description="section.description"  
-        :title-class="section.titleClass" 
-        :section-id="section.name" 
-        :cards="section.cards" 
-        :carousel="section.carousel ?? {}"
-        :campuses="section.campuses" />
-      <Stats  v-if="section.component === 'stats'" :section-id="section.name" :data="section.data" />
-      <Features v-if="section.component === 'features'" :carousel="section.carousel" :section-id="section.name" :data="section.data" />
-      <Newsletter v-if="section.component === 'newsletter'" :section-id="section.name" :newsletter="section.newsletter" />
+      <CarouselCards v-if="section.component === 'carousel-cards'" :no-top-padding="section.noTopPadding"
+        :has-background="section.background" :title="section.title ?? ''" :titleIcon="section.titleIcon"
+        :description="section.description" :title-class="section.titleClass" :section-id="section.name"
+        :cards="section.cards" :carousel="section.carousel ?? {}" :campuses="section.campuses" />
+      <Stats v-if="section.component === 'stats'" :section-id="section.name" :data="section.data" />
+      <Features v-if="section.component === 'features'" :carousel="section.carousel" :section-id="section.name"
+        :data="section.data" />
+      <Newsletter v-if="section.component === 'newsletter'" :section-id="section.name"
+        :newsletter="section.newsletter" />
     </div>
   </main>
 </template>
