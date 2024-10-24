@@ -1,5 +1,5 @@
 <template>
-  <div class="card-item buff-card">
+  <div class="card-item">
     <div class="card-image">
       <img :src="item.image ? item.image : data?.cardImage" alt="">
     </div>
