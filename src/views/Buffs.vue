@@ -9,6 +9,7 @@ import BuffFeatures from "../components/BuffFeatures.vue";
 import IconedFeatures from "../components/IconedFeatures.vue";
 import FAQ from "../components/FAQ.vue";
 import ToBuffMarketplace from "../components/ToBuffMarketplace.vue";
+import $ from "jquery";
 
 export default defineComponent({
   name: "home",
@@ -26,7 +27,20 @@ export default defineComponent({
   },
   data() {
     return {
+      currentBackground: "",
       sections: [
+        {
+          component: "buffs-banner",
+          name: "BuffsBanner",
+          banners: {
+            images: [
+              '/images/BUFF/20240119_171544.jpg',
+              "/images/BUFF/326180047_697578868517103_4415535295206154481_n.jpg",
+              "/images/BUFF/339645481_139464098883945_2373496877623822038_n.jpg",
+              "/images/BUFF/IMG_1480.jpg",
+            ],
+          },
+        },
         {
           component: "banner",
           name: "BuffsBanner",
@@ -158,28 +172,66 @@ export default defineComponent({
       ],
     };
   },
+  mounted() {
+    const bannerImages: any = this.sections[0]?.banners?.images;
+    this.currentBackground = bannerImages[0];
+
+    $('#buff-banner-cards-slick').slick({
+      dots: false,
+      infinite: true,
+      speed: 350,
+      fade: false,
+      cssEase: 'linear',
+      autoplay: true,
+      arrows: false,
+      autoplaySpeed: 2000,
+    });
+    $("#buff-banner-cards-slick").on("beforeChange", (event: any, slick: any, currentSlide: any, nextSlide: string | number) => {
+      this.currentBackground = bannerImages[nextSlide];
+      console.log(this.currentBackground);
+    });
+  }
 });
 </script>
 
 <template>
   <main>
     <div class="buffs-banner">
-      <img src="" alt="">
-      <div class="container">
-        <div class="buff-banner-card" style="border-color: #FF7A7A">
-          <div class="content">
-            <div class="title">#SHAPPS Party Buff</div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt
-              ut labore et dolore.</div>
-            <div class="action">
-              <a href="#" target="_blank" style="color: #FF7A7A">
-                October Cycle Open &nbsp;
-                <img src="/images/icons/arrow-left.svg" alt="" class="icon">
-              </a>
+      <div class="buff-banner-background" :style="{ backgroundImage: `url(${currentBackground})` }"></div>
+      <div class="container" id="buff-banner-cards-slick">
+        <div class="buff-banner-card-slide">
+          <div class="buff-banner-card" style="border-color: #FF7A7A">
+            <div class="content">
+              <div class="title">#SHAPPS Party Buff</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore.</div>
+              <div class="action">
+                <a href="#" target="_blank" style="color: #FF7A7A">
+                  October Cycle Open &nbsp;
+                  <img src="/images/icons/arrow-left.svg" alt="" class="icon">
+                </a>
+              </div>
             </div>
+            <div class="image"></div>
           </div>
-          <div class="image"></div>
+        </div>
+        <div class="buff-banner-card-slide">
+          <div class="buff-banner-card" style="border-color: #FF7A7A">
+            <div class="content">
+              <div class="title">#SHAPPS Party Buff</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore.</div>
+              <div class="action">
+                <a href="#" target="_blank" style="color: #FF7A7A">
+                  October Cycle Open &nbsp;
+                  <img src="/images/icons/arrow-left.svg" alt="" class="icon">
+                </a>
+              </div>
+            </div>
+            <div class="image"></div>
+          </div>
         </div>
       </div>
     </div>

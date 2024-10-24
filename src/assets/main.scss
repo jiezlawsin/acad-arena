@@ -2385,6 +2385,26 @@ h3 {
 .buffs-banner {
   padding: 135px 0;
   background: linear-gradient(0deg, #F4F4F4, #F4F4F4);
+  position: relative;
+  .buff-banner-background {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out; /* Fade effect */
+  }
+  #buff-banner-cards-slick {
+    position: relative;
+    z-index: 1;
+  }
+  .slick-slide, .slick-track, .slick-list {
+    background: transparent !important;
+  }
   .buff-banner-card {
     background: #fff;
     width: 546px;
@@ -2414,6 +2434,7 @@ h3 {
           background: initial;
           -webkit-background-clip: initial;
           -webkit-text-fill-color: initial;
+          display: flex;
         }
       }
     }
