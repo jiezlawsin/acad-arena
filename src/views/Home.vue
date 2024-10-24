@@ -4,6 +4,7 @@ import HomeBanner from '../components/HomeBanner.vue'
 import CarouselCards from '../components/CarouselCards.vue'
 import Features from '../components/Features.vue'
 import Newsletter from '../components/Newsletter.vue'
+import Stats from '../components/Stats.vue'
 import { TestimonialsList } from '../mock/testimonials'
 
 function shuffle(array: any) {
@@ -26,6 +27,7 @@ export default defineComponent({
   title: 'Home',
   components: {
     HomeBanner,
+    Stats,
     CarouselCards,
     Features,
     Newsletter
@@ -58,7 +60,7 @@ export default defineComponent({
         {
           component: 'carousel-cards',
           name: 'OurPrograms',
-          title: 'Our Programs',
+          title: 'Learn by Doing',
           titleClass: 'text-center',
           titleIcon: '/images/HOME/sparkle.png',
           description: 'Turn your hobby to something more—learn a new skill, mount an event, add to your resume, get a paid gig, secure the difference maker for your first job.',
@@ -101,22 +103,44 @@ export default defineComponent({
               cta: 'Explore Mentorships',
               url: '/careers',
             },
-          ]
+          ],
+          campuses: [
+            {
+              image: '/images/HOME/TIP.png',
+              name: 'Technological Institute of The Philippines'
+            },
+            {
+              image: '/images/HOME/ADMU.png',
+              name: 'Ateneo de Manila University'
+            },
+            {
+              image: '/images/HOME/LSAI.png',
+              name: 'La Salle Academy - Iligan City'
+            },
+            {
+              image: '/images/HOME/AMA.png',
+              name: 'AMA University'
+            },
+          ],
         },
         {
-          component: 'features',
-          name: 'LearnByDoing',
-          data: {
-            image: '/images/art-learn-by-doing.png',
-            title: 'Learn by Doing',
-            description: '<p>Turn your hobby to something more—learn a new skill, mount an event, add to your resume, get a paid gig, secure the difference maker for your first job.</p><p>Here are departments who often partner wish us:</p>',
-            features: [
-              'Extracurricular Enrichment',
-              'Sports Department', 
-              'Alternative Learning Programs',
-              'Internships & Placement',
-            ]
-          }
+          component: 'stats',
+          name: 'Stats',
+          data: [
+            {
+              stat: '450',
+              name: 'Student Clubs Supported',
+            },
+            {
+              stat: '1000',
+              name: 'Campus Events Supported',
+            },
+            {
+              stat: '60k',
+              name: 'Competition Participants',
+            },
+
+          ]
         },
         {
           component: 'carousel-cards',
@@ -124,6 +148,7 @@ export default defineComponent({
           title: 'Join the #NotJustPlay Movement',
           titleClass: 'text-center',
           class: 'pb-5',
+          background: false,
           noTopPadding: false,
           carousel: {
             title: 'Join the #NotJustPlay Movement',
@@ -161,15 +186,15 @@ export default defineComponent({
             },
           ],
         },
-        {
-          component: 'newsletter',
-          name: 'NewsletterComponent',
-          newsletter: {
-            image: '/images/art-scholar.png',
-            title: 'Scholarships will be back soon!',
-            description: '<a href="#">Get the news first!</a> Subscribe to our newsletter or join our Discord Server.',
-          },
-        },
+        // {
+        //   component: 'newsletter',
+        //   name: 'NewsletterComponent',
+        //   newsletter: {
+        //     image: '/images/art-scholar.png',
+        //     title: 'Scholarships will be back soon!',
+        //     description: '<a href="#">Get the news first!</a> Subscribe to our newsletter or join our Discord Server.',
+        //   },
+        // },
       ],
     };
   },
@@ -190,10 +215,11 @@ export default defineComponent({
         :title-class="section.titleClass" 
         :section-id="section.name" 
         :cards="section.cards" 
-        :carousel="section.carousel ?? {}" />
+        :carousel="section.carousel ?? {}"
+        :campuses="section.campuses" />
+      <Stats  v-if="section.component === 'stats'" :data="section.data" />
       <Features v-if="section.component === 'features'" :carousel="section.carousel" :section-id="section.name" :data="section.data" />
       <Newsletter v-if="section.component === 'newsletter'" :section-id="section.name" :newsletter="section.newsletter" />
-      
     </div>
   </main>
 </template>

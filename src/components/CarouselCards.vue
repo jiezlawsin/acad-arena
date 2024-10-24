@@ -5,6 +5,12 @@
     'pb-5': noTopPadding,
   }">
     <div class="container">
+      <div v-if="campuses">
+        <div class="small-title">CAMPUSES WE'VE SUPPORTED</div>
+        <div class="campuses">
+          <img v-for="campus in campuses" :src="campus.image" alt="campus.name" />
+        </div>
+      </div>
       <h2 class="section-title" :class="titleClass ? titleClass : ''">
         <img v-if="carousel.carouselType === 'program-card'" :src="titleIcon" />
         {{ title }}
@@ -67,6 +73,10 @@ export default {
       type: Boolean,
       required: false,
       default: false,
+    },
+    campuses: {
+      type: Object,
+      required: false
     },
     cards: {
       type: Object,
