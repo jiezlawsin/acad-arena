@@ -890,6 +890,68 @@ h3 {
       }
     }
   }
+  .career-card {
+    border: 3px solid #FF7A7A;
+    border-radius: 17px;
+    width: 100%;
+    padding: 0;
+    background: #FFF;
+    .card-image {
+      aspect-ratio: 4/3;
+      img {
+        border-radius: 14px 14px 0 0;
+      }
+    }
+    .card-footer {
+      padding: 16px 10px 14px;
+      background: #FFF;
+      .card-text-content {
+        padding: 0;
+      }
+      .card-title {
+        font-size: 25px;
+        line-height: 27px;
+        color: #00174C;
+        text-align: left;
+      }
+      .card-tag {
+        align-self: flex-start;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 700;
+        color: #00174C;
+        background: none;
+        padding: 0;
+        display: block;
+      }
+      .card-description {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 17px;
+        text-align: left;
+      }
+    }
+    .card-icons {
+      display: flex;
+      gap: 8px;
+    }
+    .card-icon {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      background: #F4F4F4;
+      border-radius: 8px;
+      padding: 12px 6px;
+      font-size: 10px;
+      color: #00174C;
+      img {
+        max-width: 24px;
+      }
+    }
+  }
 }
 .grid {
   display: grid;
@@ -2494,6 +2556,19 @@ h3 {
 .careers-listing-section {
   background: #FFF;
   padding-block: 58px;
+  .container {
+    padding-inline: 115px;
+  }
+  .heading-container {
+    position: relative;
+    width: max-content;
+    img {
+      position: absolute;
+      top: -20px;
+      right: -35px;
+      max-height: 46px;
+    }
+  }
   .section-title {
     color: #001B57;
     font-size: 40px;
@@ -2524,6 +2599,7 @@ h3 {
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
+    column-gap: 10px;
+    row-gap: 20px;
   }
 }
