@@ -953,6 +953,71 @@ h3 {
       }
     }
   }
+  .career-card {
+    border: 3px solid #FF7A7A;
+    border-radius: 17px;
+    width: 100%;
+    padding: 0;
+    background: #FFF;
+    .card-image {
+      aspect-ratio: 3/2;
+      img {
+        border-radius: 14px 14px 0 0;
+      }
+    }
+    .card-footer {
+      padding: 16px 10px 14px;
+      background: #FFF;
+      .card-text-content {
+        padding: 0;
+      }
+      .card-title {
+        font-size: 25px;
+        line-height: 27px;
+        color: #00174C;
+        text-align: left;
+        margin-bottom: 0;
+      }
+      .card-tag {
+        align-self: flex-start;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 700;
+        color: #00174C;
+        background: none;
+        padding: 0;
+        display: block;
+        margin-bottom: 0;
+      }
+      .card-description {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 4px;
+        text-align: left;
+      }
+    }
+    .card-icons {
+      margin-top: 17px;
+      display: flex;
+      gap: 8px;
+    }
+    .card-icon {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      background: #F4F4F4;
+      border-radius: 8px;
+      padding: 12px 6px;
+      font-size: 10px;
+      color: #00174C;
+      img {
+        max-width: 24px;
+      }
+    }
+  }
 }
 .grid {
   display: grid;
@@ -2547,9 +2612,9 @@ h3 {
     gap: 6px;
     img {
       position: absolute;
-      right: -40%;
+      right: -75px;
       top: -30px;
-      max-height: 68px;
+      max-height: 80px;
     }
   }
   .text {
@@ -2581,6 +2646,22 @@ h3 {
 .careers-listing-section {
   background: #fff;
   padding-block: 58px;
+  .container {
+    padding-inline: 115px;
+  }
+  .card {
+    padding: 0;
+  }
+  .heading-container {
+    position: relative;
+    width: max-content;
+    img {
+      position: absolute;
+      top: -20px;
+      right: -35px;
+      max-height: 46px;
+    }
+  }
   .section-title {
     color: #001b57;
     font-size: 40px;
@@ -2611,6 +2692,102 @@ h3 {
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+}
+
+.careers-view-page {
+  .career-view-container {
+    @media screen and (min-width: 1280px) {
+      padding-inline: 100px 150px;
+    }
+  }
+  .back {
+    color: #001B57;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-block: 20px;
+    width: fit-content;
+  }
+  .grid-content {
+    padding-block: 50px 90px;
+    display: grid;
+    gap: 70px;
+    grid-template-columns: 1fr 300px;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  hr {
+    opacity: 1;
+    border-image: linear-gradient(to right, #78C3FF -36.11%, #9030CF 134.81%) 1;
+  }
+  .tag {
+    font-size: 10px;
+    color: #00174C;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .body {
+    margin-block: 30px;
+  }
+  .sticky-card {
+    position: sticky;
+    top: 120px;
+    background: linear-gradient(90deg, #9030CF 0%, #78C3FF 100%);
+    padding: 3px;
+    border-radius: 17px;
+    height: fit-content;
+    .card-body {
+      background: #FFF;
+      border-radius: 14px 14px 0 0;
+      padding: 158px 25px 20px;
+      .link {
+        font-size: 10px;
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+      }
+      .schedule {
+        margin-bottom: 8px;
+      }
+      .label {
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .value {
+        color: #343330;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        background: #F4F4F4;
+        padding: 14px 15px;
+        border-radius: 8px;
+        margin-top: 4px;
+      }
+    }
+    .card-cta {
+      color: #FFF;
+      text-align: center;
+      display: block;
+      padding: 12px 20px 10px;
+      border: none;
+      font-size: 16px;
+      line-height: 24px;
+      &:hover {
+        color: #FFF!important;
+      }
+    }
+  }
+  .tab-content {
+    h3 {
+      font-size: 25px;
+      font-weight: 700;
+    }
   }
 }

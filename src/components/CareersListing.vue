@@ -1,16 +1,20 @@
 <template>
   <section :id="sectionId" class="careers-listing-section">
     <div class="container">
-      <h2 class="section-title">{{ title }}</h2>
-      <p>{{ description }}</p>
+      <div class="heading-container">
+        <img src="../assets/images/cheer.png" alt="">
+        <h2 class="section-title">{{ title }}</h2>
+        <p>{{ description }}</p>
+      </div>
+      
       <ul v-if="categories.length" class="categories">
         <li v-for="item in categories">
           <span class="pill">{{ item }}</span>
         </li>
       </ul>
       <div class="grid-container" v-if="list.length">
-        <div v-for="item in list">
-          <!-- <BuffCard :item="item" /> -->
+        <div v-for="item in list" class="card">
+          <CareerCard :item="item" />
         </div>
       </div>
     </div>
@@ -18,7 +22,7 @@
 </template>
 
 <script>
-import BuffCard from "./BuffCard.vue";
+import CareerCard from "./CareerCard.vue";
 
 export default {
   props: {
@@ -44,7 +48,7 @@ export default {
     },
   },
   components: {
-    BuffCard,
+    CareerCard,
   },
 };
 </script>

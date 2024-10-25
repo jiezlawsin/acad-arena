@@ -1,7 +1,7 @@
 <template>
-  <div class="card-item buff-card">
+  <div class="card-item career-card">
     <div class="card-image">
-      <img :src="item.image" alt="">
+      <img :src="item.cardImage" alt="">
     </div>
     <div class="card-footer">
       <div class="card-text-content">
@@ -29,22 +29,6 @@ export default {
       type: Object,
       required: true
     },
-  },
-  data() {
-    return {
-      data: BuffsList.find(buff => buff.id === this.item.buffId || buff.id === this.item.id)
-    };
-  },
-  setup() {
-    const router = useRouter();
-
-    const viewBuff = (id: string) => {
-      router.push('/buffs/' + id);
-    }
-
-    return {
-      viewBuff
-    };
   },
 };
 </script>
