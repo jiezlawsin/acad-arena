@@ -32,29 +32,32 @@ export default defineComponent({
         {
           component: "buffs-banner",
           name: "BuffsBanner",
-          banners: {
-            images: [
-              '/images/BUFF/20240119_171544.jpg',
-              "/images/BUFF/326180047_697578868517103_4415535295206154481_n.jpg",
-              "/images/BUFF/339645481_139464098883945_2373496877623822038_n.jpg",
-              "/images/BUFF/IMG_1480.jpg",
-            ],
-          },
-        },
-        {
-          component: "banner",
-          name: "BuffsBanner",
-          banners: {
-            header: "Upgrade Your Events",
-            content:
-              "Perks available for your youth events. Limited slots per month.",
-            images: [
-              "images/BUFF/20240119_171544.jpg",
-              "images/BUFF/326180047_697578868517103_4415535295206154481_n.jpg",
-              "images/BUFF/339645481_139464098883945_2373496877623822038_n.jpg",
-              "images/BUFF/IMG_1480.jpg",
-            ],
-          },
+          banners: [
+            {
+              title: '#SHAPPS Talk Buff',
+              themeColor: '#FF7A7A',
+              description: '#SHAPPS, pare! Snack with no mess in your workshop or seminar! Share happiness, share Pocky in your school talks. Students, teachers, administrators, coaches can apply for the campus buff!',
+              actionText: 'October Cycle Open',
+              image: '/images/pocky.png',
+              backgroundImage: '/images/BUFF/IMG_1480.jpg',
+            },
+            {
+              title: '#SHAPPS Party Buff',
+              themeColor: '#FF7A7A',
+              description: '#SHAPPS, pare! No gathering is complete without a snack! Share happiness, share Pocky in your school events. Students, teachers, administrators, coaches can apply for the campus buff!',
+              actionText: 'October Cycle Open',
+              image: '/images/pocky.png',
+              backgroundImage: '/images/BUFF/20240119_171544.jpg',
+            },
+            {
+              title: '#SHAPPS Tournament Supply Buff',
+              themeColor: '#FF7A7A',
+              description: 'Tournament jitters? Munch it away with no mess with Pocky! Students, teachers, administrators, coaches can apply for the campus buff!',
+              actionText: 'October Cycle Open',
+              image: '/images/pocky.png',
+              backgroundImage: '/images/BUFF/326180047_697578868517103_4415535295206154481_n.jpg',
+            },
+          ],
         },
         {
           component: "buff-features",
@@ -97,6 +100,7 @@ export default defineComponent({
           component: "carousel-cards",
           name: "AvailableBuffs",
           title: "Available Buffs",
+          titleClass: "text-center line-height-1",
           description:
             'We have limited buffs per month! <a href="/buffs-marketplace">Check out our buffs marketplace for a full list.</a>',
           noTopPadding: false,
@@ -173,8 +177,8 @@ export default defineComponent({
     };
   },
   mounted() {
-    const bannerImages: any = this.sections[0]?.banners?.images;
-    this.currentBackground = bannerImages[0];
+    const bannerImages: any = this.sections[0]?.banners;
+    this.currentBackground = bannerImages[0].backgroundImage;
 
     $('#buff-banner-cards-slick').slick({
       dots: false,
@@ -187,8 +191,7 @@ export default defineComponent({
       autoplaySpeed: 2000,
     });
     $("#buff-banner-cards-slick").on("beforeChange", (event: any, slick: any, currentSlide: any, nextSlide: string | number) => {
-      this.currentBackground = bannerImages[nextSlide];
-      console.log(this.currentBackground);
+      this.currentBackground = bannerImages[nextSlide].backgroundImage;
     });
   }
 });
@@ -199,44 +202,24 @@ export default defineComponent({
     <div class="buffs-banner">
       <div class="buff-banner-background" :style="{ backgroundImage: `url(${currentBackground})` }"></div>
       <div class="container" id="buff-banner-cards-slick">
-        <div class="buff-banner-card-slide">
-          <div class="buff-banner-card" style="border-color: #FF7A7A">
+        <div class="buff-banner-card-slide" v-for="banner in sections[0]?.banners">
+          <div class="buff-banner-card" :style="{ borderColor: `${banner.themeColor}` }">
             <div class="content">
-              <div class="title">#SHAPPS Party Buff</div>
-              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt
-                ut labore et dolore.</div>
+              <div class="title">{{ banner.title }}</div>
+              <div class="description">{{ banner.description }}</div>
               <div class="action">
-                <a href="#" target="_blank" style="color: #FF7A7A">
-                  October Cycle Open &nbsp;
+                <a href="#" target="_blank" :style="{ color: `${banner.themeColor}` }">
+                  {{ banner.actionText }} &nbsp;
                   <img src="/images/icons/arrow-left.svg" alt="" class="icon">
                 </a>
               </div>
             </div>
-            <div class="image"></div>
-          </div>
-        </div>
-        <div class="buff-banner-card-slide">
-          <div class="buff-banner-card" style="border-color: #FF7A7A">
-            <div class="content">
-              <div class="title">#SHAPPS Party Buff</div>
-              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt
-                ut labore et dolore.</div>
-              <div class="action">
-                <a href="#" target="_blank" style="color: #FF7A7A">
-                  October Cycle Open &nbsp;
-                  <img src="/images/icons/arrow-left.svg" alt="" class="icon">
-                </a>
-              </div>
+            <div class="image">
+              <img :src="banner.image" alt="">
             </div>
-            <div class="image"></div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="how-do-you-apply">
-
     </div>
     <div v-for="section in sections">
       <!-- <Banner v-if="section.component === 'banner'" :section-id="section.name" :banners="section.banners" /> -->

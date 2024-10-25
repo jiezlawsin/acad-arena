@@ -15,7 +15,8 @@
         <img v-if="carousel.carouselType === 'program-card'" :src="titleIcon" />
         {{ title }}
       </h2>
-      <p class="section-description content" v-if="description" v-html="description"></p>
+      <p class="section-description content" v-if="description" v-html="description"
+        :class="titleClass ? titleClass : ''"></p>
       <div class="slick-carousel" :class="sectionId + '-slick'">
         <div v-for="item in cards" class="card">
           <ProgramCard :item="item" v-if="carousel.carouselType === 'program-card'" />
