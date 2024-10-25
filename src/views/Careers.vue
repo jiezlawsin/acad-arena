@@ -238,7 +238,7 @@ export default defineComponent({
           component: 'cta-breaker',
           name: 'CTABreaker',
           data: {
-            text: 'Help us improve our buffs',
+            text: 'Help us improve our buffs!',
             cta: {
               text: 'Feedback',
               href: '/careers'
