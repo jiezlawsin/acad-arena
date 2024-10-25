@@ -2536,7 +2536,7 @@ h3 {
     gap: 6px;
     img {
       position: absolute;
-      right: -60px;
+      right: -75px;
       top: -30px;
       max-height: 80px;
     }
@@ -2626,6 +2626,16 @@ h3 {
     @media screen and (min-width: 1280px) {
       padding-inline: 100px 150px;
     }
+  }
+  .back {
+    color: #001B57;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-block: 20px;
+    width: fit-content;
   }
   .grid-content {
     padding-block: 50px 90px;

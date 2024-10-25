@@ -68,6 +68,10 @@ export default defineComponent({
 <template>
   <main class="careers-view-page">
     <div class="container career-view-container">
+      <a href="/careers" class="back">
+        <img src="../assets/images/back-arrow.svg" alt="">
+        BACK
+      </a>
       <div class="hero">
         <img :src="data?.cardImage" alt="">
       </div>
