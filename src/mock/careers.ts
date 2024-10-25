@@ -28,5 +28,7 @@ export const CareersList = [
         icon: '/images/icons/confetti.png'
       },
     ],
+    activeTab: 0,
+    testimonies: [],
   },
 ]
