@@ -25,7 +25,7 @@ export default defineComponent({
 <template>
   <main class="buffs-marketplace-page ">
     <div class="header-container container py-5">
-      <h2 class="header-title">Buffs Marketplace</h2>
+      <h2 class="header-title line-height-1">Buffs Marketplace</h2>
       <p class="content">We have limited buffs per month! <a>Check back for new buffs per cycle.</a></p>
       <div class="buffs-list">
         <div class="card" v-for="buff in buffs">

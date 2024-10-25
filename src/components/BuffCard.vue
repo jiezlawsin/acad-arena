@@ -1,19 +1,30 @@
 <template>
-  <div class="card-item buff-card">
+  <div class="card-item buff-card" :style="'background: ' + data?.colorTheme">
     <div class="card-image">
-      <img :src="item.image" alt="">
+      <img :src="item.image ? item.image : data?.cardImage" alt="">
     </div>
     <div class="card-footer">
       <div class="card-text-content">
-        <div class="card-title">{{ item.name }}</div>
-        <div class="card-tag">{{ item.tag }}</div>
-        <div class="card-description content">{{ item.description }}</div>
+        <div class="card-category" v-if="data?.category || item.category">{{ item.category ? item.category :
+          data?.category }}</div>
+        <div class="card-title" v-if="data?.name || item.name">{{ item.name ? item.name : data?.name }}</div>
+        <div class="card-description content"
+          v-html="item.shortDescription ? item.shortDescription : data?.shortDescription"></div>
       </div>
       <div class="card-icons">
-        <div v-for="cardIcon in item.cardIcons" class="card-icon">
+        <div v-for="cardIcon in data.cardIcons" class="card-icon">
           <img :src="cardIcon.icon">
           {{ cardIcon.name }}
         </div>
+      </div>
+      <div class="card-action">
+        <a class="btn" v-if="item.url" :href="item.url ? item.url : '#'" :target="'_blank' ? item.external : ''">
+          {{ item.cta }}
+        </a>
+        <a v-if="!item.url" :href="'buffs/' + item.buffId"
+          @click.prevent="viewBuff(item.buffId ? item.buffId : item.id)">{{ item.cta ? item.cta :
+            item.ctaBreaker.cta.cardCtaText }}
+        </a>
       </div>
     </div>
   </div>

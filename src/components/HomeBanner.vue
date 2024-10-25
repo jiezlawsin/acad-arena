@@ -8,10 +8,16 @@
           <h1 class="home-banner-section__heading">
             {{ banner.header }}
             <span class="highlight-container">
-              <span v-for="item in banner.images" class="highlight" :data-img="item.image">{{ item.text }}.</span>
+              <span v-for="(item, idx) in banner.images" :key="idx" class="highlight"
+                :class="{ 'text-in': currentIndex === idx, 'text-out': exitingIndex === idx }" :data-img="item.image">
+                {{ item.text }}.
+              </span>
             </span>
           </h1>
           <p class="home-banner-section__description">{{ banner.description }}</p>
+          <div class="home-banner-section__action">
+            <a target="true" href="#" class="btn btn-lg btn-gradient">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
@@ -19,67 +25,49 @@
 </template>
 
 <script lang="ts">
-import $ from "jquery";
-// Import Swiper Vue.js components
-//  import { Swiper, SwiperSlide } from 'swiper/vue';
-
-// Import Swiper styles
-import 'swiper/css';
+import { ref, onMounted } from "vue";
 
 export default {
   props: {
     sectionId: {
       type: String,
-      required: true
+      required: true,
     },
     banner: {
       type: Object,
-      required: true
+      required: true,
     },
   },
-  data() {
-    return {
-      currentBackground: "",
-    }
-  },
-
-  mounted() {
-    this.currentBackground = this.banner?.images[0].image;
-    const txts = document.querySelector(".highlight-container").children,
-      txtsLen = txts.length;
-    let index = 0;
-    const textInTimer = 5000,
-      textOutTimer = 4800;
+  setup(props) {
+    const currentBackground = ref(props.banner.images[0]?.image || "");
+    const currentIndex = ref(0);
+    const exitingIndex = ref(-1);
+    const textInTimer = 5000;
+    const textOutTimer = 4800;
 
     function animateText() {
-      // this.currentBackground = this.banner?.images[index].image;
-      for (let i = 0; i < txtsLen; i++) {
-        txts[i].classList.remove("text-in", "text-out");
-      }
-      txts[index].classList.add("text-in");
-      let bg = $(txts[index]).data('img')
-      console.log(bg);
-      $('#home-banner-image-slide').css('background-image', `url(${bg})`);
+      console.log(currentIndex.value);
+      currentBackground.value = props.banner.images[currentIndex.value].image;
 
-      setTimeout(function () {
-        txts[index].classList.add("text-out");
-      }, textOutTimer)
+      setTimeout(() => {
+        exitingIndex.value = currentIndex.value;
+      }, textOutTimer);
 
-      setTimeout(function () {
-
-        if (index == txtsLen - 1) {
-          index = 0;
-        }
-        else {
-          index++;
-        }
+      setTimeout(() => {
+        currentIndex.value = (currentIndex.value + 1) % props.banner.images.length;
         animateText();
       }, textInTimer);
     }
 
-    window.onload = animateText;
-  }
+    onMounted(() => {
+      animateText();
+    });
 
+    return {
+      currentBackground,
+      currentIndex,
+      exitingIndex,
+    };
+  },
 };
-
 </script>

@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg" :class="{ 'navbar-open': isCollapseOpen }">
     <div class="container container-fluid">
       <a class="navbar-brand" href="#" @click.prevent="goTo('/')">
-        <img src="../assets/images/logo.png" alt="" />
+        <img src="../assets/images/logo-black.png" alt="" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
           <li class="nav-item">
             <a class="nav-link" href="/stories" @click.prevent="goTo('/stories')">News & Stories</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item__contact">
             <a href="" class="nav-button-link">Contact Us</a>
           </li>
         </ul>
