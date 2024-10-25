@@ -4,7 +4,7 @@
       <div class="flex">
         <div class="home-banner-section__text-content">
           <h1 class="home-banner-section__heading">
-            {{ banner.header }} 
+            {{ banner.header }}
             <span class="highlight-container">
               <span v-for="item in banner.images" class="highlight">{{ item.text }}.</span>
             </span>
@@ -22,9 +22,9 @@
 </template>
 
 <script lang="ts">
-import $ from "jquery";
- // Import Swiper Vue.js components
- import { Swiper, SwiperSlide } from 'swiper/vue';
+// import $ from "jquery";
+// Import Swiper Vue.js components
+//  import { Swiper, SwiperSlide } from 'swiper/vue';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -40,65 +40,39 @@ export default {
       required: true
     },
   },
- 
-  mounted() {
 
-    const texts = document.querySelectorAll(".highlight"),
-          textsLen = texts.length,
-          images = document.querySelectorAll('.home-banner-section__image');
+  mounted() {
+    const txts = document.querySelector(".highlight-container").children,
+      txtsLen = txts.length;
     let index = 0;
     const textInTimer = 3000,
-          textOutTimer = 2800;
+      textOutTimer = 2800;
 
     function animateText() {
-      for(let i = 0; i<textsLen; i++){
-        texts[i].classList.remove("text-in","text-out");  
+      for (let i = 0; i < txtsLen; i++) {
+        txts[i].classList.remove("text-in", "text-out");
       }
-      texts[index].classList.add("text-in");
+      txts[index].classList.add("text-in");
 
-      setTimeout(function(){
-          texts[index].classList.add("text-out");              
+      setTimeout(function () {
+        txts[index].classList.add("text-out");
       }, textOutTimer)
 
-      setTimeout(function(){
-        if(index == textsLen-1){
+      setTimeout(function () {
+
+        if (index == txtsLen - 1) {
           index = 0;
         }
-        else{
+        else {
           index++;
         }
         animateText();
-      }, textInTimer); 
+      }, textInTimer);
     }
 
-    function animateImage() {
-      for(let i = 0; i<textsLen; i++){
-        images[i].classList.remove("text-in","text-out");  
-      }
-      images[index].classList.add("text-in");
-
-      setTimeout(function(){
-          images[index].classList.add("text-out");              
-      }, textOutTimer)
-
-      setTimeout(function(){
-        if(index == textsLen-1){
-          index = 0;
-        }
-        else{
-          index++;
-        }
-        animateImage();
-      }, textInTimer); 
-    }
-    
-    window.onload= animateText;
-    window.addEventListener("load", (event) => {
-      animateText();
-      animateImage();
-    });
-
+    window.onload = animateText;
   }
+
 };
 
 </script>
