@@ -2,16 +2,38 @@
 import { defineComponent } from 'vue'
 import { BuffsList } from '../mock/buffs'
 import { useRouter } from 'vue-router';
+import CTABreaker from '../components/CTABreaker.vue'
+import $ from "jquery";
 
 export default defineComponent({
   name: 'buffView',
   title: 'BuffView',
+  components: {
+    CTABreaker,
+  },
   data() {
     return {
-      data: BuffsList.find(buff => buff.id === this.$route.params.id)
+      data: BuffsList.find(buff => buff.id === this.$route.params.id),
+      ctaBreaker: {
+        component: 'cta-breaker',
+        name: 'CTABreaker',
+        data: {
+          text: 'Help us improve our buffs!',
+          cta: {
+            text: 'Feedback',
+            href: '/careers'
+          }
+        }
+      }
     };
   },
   mounted() {
+    $('.hero-gallery-slides').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
     const router = useRouter();
     if (!this.data) {
       router.push('/notfound');
@@ -34,6 +56,11 @@ export default defineComponent({
       <!-- <div class="hero-banner">
         <img :src="data?.heroImage" alt="">
       </div> -->
+      <div class="hero-gallery-slides">
+        <div class="hero-gallery-image" v-for="image in data?.heroImages">
+          <img :src="image">
+        </div>
+      </div>
       <div class="hero-gallery">
         <div class="main-image">
           <img :src="data?.heroImages[0]">
@@ -98,5 +125,6 @@ export default defineComponent({
         </div>
       </div>
     </div>
+    <CTABreaker :section-id="'buff-view-cta'" :data="ctaBreaker.data" />
   </main>
 </template>

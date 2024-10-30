@@ -21,7 +21,7 @@
         <a class="btn" v-if="item.url" :href="item.url ? item.url : '#'" :target="'_blank' ? item.external : ''">
           {{ item.cta }}
         </a>
-        <a v-if="!item.url" :href="'buffs/' + item.buffId"
+        <a v-if="!item.url" :href="'buffs/' + item.id"
           @click.prevent="viewBuff(item.buffId ? item.buffId : item.id)">{{ item.cta ? item.cta :
             item.ctaBreaker.cta.cardCtaText }}
         </a>

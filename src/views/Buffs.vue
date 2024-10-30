@@ -39,7 +39,8 @@ export default defineComponent({
               description: '#SHAPPS, pare! Snack with no mess in your workshop or seminar! Share happiness, share Pocky in your school talks. Students, teachers, administrators, coaches can apply for the campus buff!',
               actionText: 'October Cycle Open',
               image: '/images/pocky.png',
-              backgroundImage: '/images/BUFF/IMG_1480.jpg',
+              backgroundImage: '/images/BUFF/pocky/partybuff-1.jpg',
+              buffId: 'shapps-pocky-party-buff'
             },
             {
               title: '#SHAPPS Party Buff',
@@ -47,7 +48,8 @@ export default defineComponent({
               description: '#SHAPPS, pare! No gathering is complete without a snack! Share happiness, share Pocky in your school events. Students, teachers, administrators, coaches can apply for the campus buff!',
               actionText: 'October Cycle Open',
               image: '/images/pocky.png',
-              backgroundImage: '/images/BUFF/20240119_171544.jpg',
+              backgroundImage: '/images/BUFF/pocky/supplybuff-1.jpg',
+              buffId: 'shapps-pocky-party-buff'
             },
             {
               title: '#SHAPPS Tournament Supply Buff',
@@ -55,7 +57,8 @@ export default defineComponent({
               description: 'Tournament jitters? Munch it away with no mess with Pocky! Students, teachers, administrators, coaches can apply for the campus buff!',
               actionText: 'October Cycle Open',
               image: '/images/pocky.png',
-              backgroundImage: '/images/BUFF/326180047_697578868517103_4415535295206154481_n.jpg',
+              backgroundImage: '/images/BUFF/pocky/takbuff-1.jpg',
+              buffId: 'shapps-pocky-party-buff'
             },
           ],
         },
@@ -208,7 +211,7 @@ export default defineComponent({
               <div class="title">{{ banner.title }}</div>
               <div class="description">{{ banner.description }}</div>
               <div class="action">
-                <a href="#" target="_blank" :style="{ color: `${banner.themeColor}` }">
+                <a :href="'buffs/' + banner.buffId" :style="{ color: `${banner.themeColor}` }">
                   {{ banner.actionText }} &nbsp;
                   <img src="/images/icons/arrow-left.svg" alt="" class="icon">
                 </a>

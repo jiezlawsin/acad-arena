@@ -121,6 +121,22 @@ export default defineComponent({
               image: '/images/HOME/AMA.png',
               name: 'AMA University'
             },
+            {
+              image: '/images/HOME/TIP.png',
+              name: 'Technological Institute of The Philippines'
+            },
+            {
+              image: '/images/HOME/ADMU.png',
+              name: 'Ateneo de Manila University'
+            },
+            {
+              image: '/images/HOME/LSAI.png',
+              name: 'La Salle Academy - Iligan City'
+            },
+            {
+              image: '/images/HOME/AMA.png',
+              name: 'AMA University'
+            },
           ],
         },
         {

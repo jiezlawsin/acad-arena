@@ -164,8 +164,8 @@ export default defineComponent({
           component: 'carousel-cards',
           name: 'NewsAndStories',
           title: 'What Our Community Does',
-          background: false,
-          noTopPadding: true,
+          background: true,
+          noTopPadding: false,
           carousel: {
             carouselType: 'story-card',
           },

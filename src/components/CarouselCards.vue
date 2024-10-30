@@ -7,8 +7,12 @@
     <div class="container">
       <div v-if="campuses">
         <div class="small-title">CAMPUSES WE'VE SUPPORTED</div>
-        <div class="campuses">
-          <img v-for="campus in campuses" :src="campus.image" :alt="campus.name" />
+        <div class="campuses" id="campusesSlides">
+          <div class="campus-slide" v-for="campus in campuses">
+            <div class="campus-image">
+              <img :src="campus.image" :alt="campus.name" />
+            </div>
+          </div>
         </div>
       </div>
       <h2 class="section-title" :class="titleClass ? titleClass : ''">
@@ -98,6 +102,21 @@ export default {
   },
   mounted() {
     console.log(this.carousel.carouselType);
+    $("#" + this.sectionId + " #campusesSlides").slick({
+        infinite: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
     if (this.carousel.carouselType === "program-card") {
       $("." + this.sectionId + "-slick").slick({
         infinite: true,
