@@ -34,28 +34,28 @@ export default defineComponent({
           name: "BuffsBanner",
           banners: [
             {
-              title: '#SHAPPS Talk Buff',
+              title: 'Pocky Talk Buff',
               themeColor: '#FF7A7A',
-              description: '#SHAPPS, pare! Snack with no mess in your workshop or seminar! Share happiness, share Pocky in your school talks. Students, teachers, administrators, coaches can apply for the campus buff!',
-              actionText: 'October Cycle Open',
+              description: 'Snack with no mess in your workshop or seminar! Share happiness, share Pocky in your school talks. Students, teachers, administrators, coaches can apply for the campus buff!',
+              actionText: 'November Cycle Open',
               image: '/images/pocky.png',
               backgroundImage: '/images/BUFF/pocky/partybuff-1.jpg',
               buffId: 'shapps-pocky-party-buff'
             },
             {
-              title: '#SHAPPS Party Buff',
+              title: 'Pocky Party Buff',
               themeColor: '#FF7A7A',
-              description: '#SHAPPS, pare! No gathering is complete without a snack! Share happiness, share Pocky in your school events. Students, teachers, administrators, coaches can apply for the campus buff!',
-              actionText: 'October Cycle Open',
+              description: 'No gathering is complete without a snack! Share happiness, share Pocky in your school events. Students, teachers, administrators, coaches can apply for the campus buff!',
+              actionText: 'November Cycle Open',
               image: '/images/pocky.png',
               backgroundImage: '/images/BUFF/pocky/supplybuff-1.jpg',
               buffId: 'shapps-pocky-party-buff'
             },
             {
-              title: '#SHAPPS Tournament Supply Buff',
+              title: 'Pocky Tournament Supply Buff',
               themeColor: '#FF7A7A',
               description: 'Tournament jitters? Munch it away with no mess with Pocky! Students, teachers, administrators, coaches can apply for the campus buff!',
-              actionText: 'October Cycle Open',
+              actionText: 'November Cycle Open',
               image: '/images/pocky.png',
               backgroundImage: '/images/BUFF/pocky/takbuff-1.jpg',
               buffId: 'shapps-pocky-party-buff'
@@ -116,11 +116,11 @@ export default defineComponent({
               cta: "Apply Now",
             },
             {
-              buffId: "shapps-pocky-party-buff",
+              buffId: "shapps-pocky-talk-buff",
               cta: "Apply Now",
             },
             {
-              buffId: "shapps-pocky-party-buff",
+              buffId: "shapps-pocky-tournament-buff",
               cta: "Apply Now",
             },
           ],

@@ -8,9 +8,11 @@
       <div v-if="campuses">
         <div class="small-title">CAMPUSES WE'VE SUPPORTED</div>
         <div class="campuses" id="campusesSlides">
-          <div class="campus-slide" v-for="campus in campuses">
+          <!-- <div class="campus-slide" v-for="campus in campuses"> -->
+          <div class="campus-slide"  v-for="n in Array.from({ length: 68 }, (_, i) => i)" :key="n">
             <div class="campus-image">
-              <img :src="campus.image" :alt="campus.name" />
+              <!-- {{ n + 1 }} -->
+              <img :src="`/images/campus_logos/${n+1}.png`"/>
             </div>
           </div>
         </div>
@@ -104,14 +106,30 @@ export default {
     console.log(this.carousel.carouselType);
     $("#" + this.sectionId + " #campusesSlides").slick({
         infinite: false,
-        slidesToShow: 6,
+        slidesToShow: 8,
         slidesToScroll: 1,
+        autoplay: true,
         arrows: false,
+        autoplaySpeed: 2500,
         responsive: [
           {
             breakpoint: 1200,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 6,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 3,
               slidesToScroll: 1,
             },
           },
@@ -194,6 +212,17 @@ export default {
         ],
       });
     }
+
+    let maxHeight = 0;
+    $('.slick-slide .card-text-content').css('height', 'auto');
+    $('.slick-slide .card-text-content').each(function() {
+      const slideHeight = $(this).outerHeight();
+      if (slideHeight > maxHeight) {
+        maxHeight = slideHeight;
+      }
+    });
+    $('.slick-slide .card-text-content').css('height', maxHeight + 'px');
+
   },
 };
 </script>

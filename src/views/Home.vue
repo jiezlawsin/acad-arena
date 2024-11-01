@@ -54,6 +54,26 @@ export default defineComponent({
                 image: '/images/HOME/IMG_9935.jpg',
                 text: 'Reyun',
               },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Anime',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Psychology',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Blockchain',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Advocacies',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Design',
+              },
             ],
           }
         },
@@ -83,7 +103,7 @@ export default defineComponent({
               image: '/images/HOME/program2.png',
               shortDescription: 'Get loot and freebies for the campus event of your dreams.',
               tag: 'AcadArena Buffs',
-              cta: 'October Cycle Live',
+              cta: 'November Cycle Live',
               url: '/buffs',
             },
             {
@@ -97,7 +117,7 @@ export default defineComponent({
             },
             {
               name: 'FOR ALL LEARNERS',
-              image: 'images/HOME/program3.png',
+              image: 'images/HOME/IMG_9063.jpg',
               shortDescription: 'Apply in our mentorship cycles for psychology, design & production.',
               tag: 'AcadArena BoostCamp',
               cta: 'Explore Mentorships',

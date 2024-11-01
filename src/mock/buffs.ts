@@ -2,10 +2,10 @@ export const BuffsList = [
   {
     id: 'shapps-pocky-party-buff',
     category: 'FOR GATHERINGS OR PARTIES',
-    name: '#SHAPPS Party Buff',
+    name: 'Pocky Party Buff',
     shortDescription: 'Share Happiness with your friends old and new.!',
     description: `
-    <p>#SHAPPS, pare! No gathering is complete without a snack! Share happiness, share Pocky in your school events. Students, teachers, administrators, coaches can apply for the campus buff!</p>
+    <p>No gathering is complete without a snack! Share happiness, share Pocky in your school events. Students, teachers, administrators, coaches can apply for the campus buff!</p>
     <ol type="1">
       <li>Event Type. Any type of student gathering from game nights, year-end parties, general assemblies!</li>
       <li>Onsite Event. All games must be done physically - whether it’s your campus computer lab, your favorite computer shop, or your school cafeteria. Hindi naman kami picky.</li>
@@ -29,7 +29,7 @@ export const BuffsList = [
     sponsors: [
       {
         name: 'Mountain Dew',
-        logo: '/images/Mountain-Dew.png',
+        logo: '/images/brands/Pocky.png',
       },
     ],
     cardIcons: [
@@ -90,7 +90,7 @@ export const BuffsList = [
       image: '/images/buff-drawing.png',
       cta: {
         cardCtaText: 'Apply Now',
-        ctaText: 'October Cycle Open',
+        ctaText: 'November Cycle Open',
         ctaLink: 'https://bit.ly/AAEduBuffRequest',
       },
     }
@@ -98,10 +98,10 @@ export const BuffsList = [
   {
     id: 'shapps-pocky-talk-buff',
     category: 'FOR GATHERINGS OR PARTIES',
-    name: '#SHAPPS Talk Buff ',
+    name: 'Pocky Talk Buff ',
     shortDescription: 'Share Happiness with your friends old and new.!',
     description: `
-    <p>#SHAPPS, pare! Snack with no mess in your workshop or seminar! Share happiness, share Pocky in your school talks. Students, teachers, administrators, coaches can apply for the campus buff!</p>
+    <p>Snack with no mess in your workshop or seminar! Share happiness, share Pocky in your school talks. Students, teachers, administrators, coaches can apply for the campus buff!</p>
     <ol type="1">
       <li>Event Type. Any type of talk, conference or workshop.</li>
       <li>Onsite Event. All talks must be done physically in-campus.</li>
@@ -125,7 +125,7 @@ export const BuffsList = [
     sponsors: [
       {
         name: 'Mountain Dew',
-        logo: '/images/Mountain-Dew.png',
+        logo: '/images/brands/Pocky.png',
       },
     ],
     cardIcons: [
@@ -186,7 +186,7 @@ export const BuffsList = [
       image: '/images/buff-drawing.png',
       cta: {
         cardCtaText: 'Apply Now',
-        ctaText: 'October Cycle Open',
+        ctaText: 'November Cycle Open',
         ctaLink: 'https://bit.ly/AAEduBuffRequest',
       },
     }
@@ -194,7 +194,7 @@ export const BuffsList = [
   {
     id: 'shapps-pocky-tournament-buff',
     category: 'FOR GATHERINGS OR PARTIES',
-    name: '#SHAPPS Tournament Supply Buff',
+    name: 'Pocky Tournament Supply Buff',
     shortDescription: 'Share Happiness with your friends old and new.!',
     description: `
     <p>Tournament jitters? Munch it away with no mess with Pocky! Students, teachers, administrators, coaches can apply for the campus buff!</p>
@@ -221,7 +221,7 @@ export const BuffsList = [
     sponsors: [
       {
         name: 'Mountain Dew',
-        logo: '/images/Mountain-Dew.png',
+        logo: '/images/brands/Pocky.png',
       },
     ],
     cardIcons: [
@@ -282,7 +282,7 @@ export const BuffsList = [
       image: '/images/buff-drawing.png',
       cta: {
         cardCtaText: 'Apply Now',
-        ctaText: 'October Cycle Open',
+        ctaText: 'November Cycle Open',
         ctaLink: 'https://bit.ly/AAEduBuffRequest',
       },
     }

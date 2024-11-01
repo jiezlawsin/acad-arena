@@ -7,7 +7,7 @@
         <div class="home-banner-section__text-content">
           <h1 class="home-banner-section__heading">
             {{ banner.header }}
-            <span class="highlight-container">
+            <span class="highlight-container" v-if="!banner.hideTextAnimation">
               <span v-for="(item, idx) in banner.images" :key="idx" class="highlight"
                 :class="{ 'text-in': currentIndex === idx, 'text-out': exitingIndex === idx }" :data-img="item.image">
                 {{ item.text }}.
@@ -46,7 +46,6 @@ export default {
     const textOutTimer = 4800;
 
     function animateText() {
-      console.log(currentIndex.value);
       currentBackground.value = props.banner.images[currentIndex.value].image;
 
       setTimeout(() => {

@@ -1,5 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
+import HomeBanner from '../components/HomeBanner.vue'
 import Banner from '../components/Banner.vue'
 import CarouselCards from '../components/CarouselCards.vue'
 import Features from '../components/Features.vue'
@@ -30,6 +31,7 @@ export default defineComponent({
   name: 'alliance',
   title: 'Alliance',
   components: {
+    HomeBanner,
     Banner,
     CarouselCards,
     Features,
@@ -44,22 +46,66 @@ export default defineComponent({
     return {
       sections: [
         {
-          component: 'banner',
-          name: 'AllianceBanner',
-          banners: {
-            header: 'Learn by Doing',
-            content: 'Make learning more fun. Join our communities by March 28!',
+          component: 'home-banner',
+          name: 'HomeBanner',
+          banner: {
+            hideTextAnimation: true,
+            header: 'Level-up Your Student Communities.',
+            description: 'Learn by doing and be part of a network of student clubs wanting to gamify their extracurriculars!',
             images: [
-              'images/ALLIANCE/IMG_1420.jpg',
-              'images/ALLIANCE/339659836_1360017008090901_6741830183907613222_n.jpg',
-              'images/ALLIANCE/331324007_1682201745532379_6426191550582191943_n.jpg',
-            ], 
+              {
+                image: '/images/HOME/IMG_8437.jpg',
+                text: 'Esports',
+              },
+              {
+                image: '/images/HOME/IMG_0355.jpg',
+                text: 'Gamehaus',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Reyun',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Anime',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Psychology',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Blockchain',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Advocacies',
+              },
+              {
+                image: '/images/HOME/IMG_9935.jpg',
+                text: 'Design',
+              },
+            ],
           }
         },
+        // {
+        //   component: 'banner',
+        //   name: 'AllianceBanner',
+        //   banners: {
+        //     header: 'Learn by Doing',
+        //     content: 'Make learning more fun. Join our communities by March 28!',
+        //     images: [
+        //       'images/ALLIANCE/IMG_1420.jpg',
+        //       'images/ALLIANCE/339659836_1360017008090901_6741830183907613222_n.jpg',
+        //       'images/ALLIANCE/331324007_1682201745532379_6426191550582191943_n.jpg',
+        //     ], 
+        //   }
+        // },
         {
           component: 'carousel-cards',
           name: 'JoinTheAlliance',
-          title: 'Join the Alliance',
+          title: 'Our Services',
+          titleClass: 'text-center',
           description: 'Any teacher or student can start a community or club in your campus! Get access to perks and resources to get into esports.',
           background: true,
           noTopPadding: false,
@@ -68,65 +114,74 @@ export default defineComponent({
           },
           cards: [
           {
-              image: '/images/ALLIANCE/card1.png',
-              shortDescription: 'No club? No problem. We will help you set up a community that may become a club someday.',
-              tag: 'For Students',
-              cta: 'Start Here',
-              url: 'https://bit.ly/AAEduALLIn',
-              external: true
+              name: 'FOR COLLEGE, JHS, & SHS COMMUNITIES',
+              image: '/images/ALLIANCE/Alliance Incubator.jpg',
+              shortDescription: 'No club? No problem. Let’s help you set-up one in your campus.',
+              tag: 'Alliance Incubator',
+              cta: 'November Cycle Open',
+              url: '#',
             },
             {
-              image: '/images/ALLIANCE/card2.png',
-              shortDescription: 'Eng club, anime club, CS, IT etc. All official school clubs can join the Alliance.',
-              tag: 'For Clubs',
-              cta: 'Join Here',
-              url: 'https://bit.ly/AAEduAllianceApp',
-              external: true
+              name: 'FOR OFFICIAL COLLEGE, JHS & SHS CLUBS',
+              image: '/images/ALLIANCE/Alliance Program.jpg',
+              shortDescription: 'All official school clubs whether academic or hobby-clubs can join the Alliance!',
+              tag: 'Alliance Program',
+              cta: 'November Cycle Live',
+              url: '#',
             },
             {
-              image: 'images/ALLIANCE/card3.png',
-              shortDescription: 'Aspiring esports club advisers, student team coaches, or a supportive OSA - we’re here to help.',
-              tag: 'For Teachers',
-              cta: 'Partner Up',
-              url: 'https://bit.ly/AAEduSchoolPartners',
-              external: true
+              name: 'FOR MODERATORS & EDUCATORS',
+              image: 'images/ALLIANCE/Alliance for Teachers.jpg',
+              shortDescription: 'Want to be a champion in your campus? Be part of a PLC to reach your goals for your campus.',
+              tag: 'Alliance for Teachers',
+              cta: 'November Batch Open',
+              url: '#',
+              // external: true
+            },
+            {
+              name: 'FOR ALL',
+              image: 'images/ALLIANCE/Extracurricular Services.jpg',
+              shortDescription: 'Just need help or advice in your current community? Ask away!',
+              tag: 'Extracurricular Services',
+              cta: 'Consult',
+              url: '#',
             },
           ]
         },
-        {
-          component: 'iconed-features',
-          name: 'Last5Years',
-          data: {
-            sectionClass: 'pb-5 ',
-            title: 'A Growing Community the Last 5 Years',
-            features: [
-              {
-                title: '+150 Clubs Seeded',
-              },
-              {
-                title: '+460 Events Supported',
-              },
-              {
-                title: '+100 Scholars Supported',
-              },
-              {
-                title: '+470 Teams Competed',
-              },
-            ]
-          }
-        },
+        // {
+        //   component: 'iconed-features',
+        //   name: 'Last5Years',
+        //   data: {
+        //     sectionClass: 'pb-5 ',
+        //     title: 'A Growing Community the Last 5 Years',
+        //     features: [
+        //       {
+        //         title: '+150 Clubs Seeded',
+        //       },
+        //       {
+        //         title: '+460 Events Supported',
+        //       },
+        //       {
+        //         title: '+100 Scholars Supported',
+        //       },
+        //       {
+        //         title: '+470 Teams Competed',
+        //       },
+        //     ]
+        //   }
+        // },
         {
           component: 'buff-features',
           name: 'ApplicationsOpen',
           data: {
             sectionClass: 'py-5 bg-light-gradient',
             left: {
-              title: 'Applications Open till March 28!',
-              content: '<a>Apply before the crushing weight of exams.</a> Our Alliance Coordinators will contact you within 3-5 working days."',
-              cta: {
-                url: '',
-                text: 'Apply Now'
-              }
+              title: 'Why Join the Alliance?',
+              content: 'Be closer to industry professionals, gain perks, and join a community of lifelong learners!',
+              // cta: {
+              //   url: '',
+              //   text: 'Apply Now'
+              // }
             },
             right:{
               title: 'Perks you unlock',
@@ -160,36 +215,36 @@ export default defineComponent({
           },
           cards: shuffle(TestimonialsList),
         },
-        {
-          component: 'carousel-cards',
-          name: 'NewsAndStories',
-          title: 'What Our Community Does',
-          background: true,
-          noTopPadding: false,
-          carousel: {
-            carouselType: 'story-card',
-          },
-          cards: [
-          {
-              id: 'mountain-dew-buffs-now-available-at-acad-arena-buffs-marketplace',
-              header: 'Mountain Dew Buffs Now Available at AcadArena Buffs Marketplace',
-              backgroundImage: '/images/story-mntdw.jpg',
-              tagDate: {
-                tag: 'News',
-                date: 'Mar 4, 2024'
-              }
-            },
-            {
-              id: 'on-acad-arena-edu-word-from-the-ceo',
-              header: 'On AcadArena Edu: Word from the CEO!',
-              backgroundImage: '/images/AA Web Quote Template.png',
-              tagDate: {
-                tag: 'News',
-                date: 'Feb 29, 2024'
-              }
-            },
-          ],
-        },
+        // {
+        //   component: 'carousel-cards',
+        //   name: 'NewsAndStories',
+        //   title: 'What Our Community Does',
+        //   background: true,
+        //   noTopPadding: false,
+        //   carousel: {
+        //     carouselType: 'story-card',
+        //   },
+        //   cards: [
+        //   {
+        //       id: 'mountain-dew-buffs-now-available-at-acad-arena-buffs-marketplace',
+        //       header: 'Mountain Dew Buffs Now Available at AcadArena Buffs Marketplace',
+        //       backgroundImage: '/images/story-mntdw.jpg',
+        //       tagDate: {
+        //         tag: 'News',
+        //         date: 'Mar 4, 2024'
+        //       }
+        //     },
+        //     {
+        //       id: 'on-acad-arena-edu-word-from-the-ceo',
+        //       header: 'On AcadArena Edu: Word from the CEO!',
+        //       backgroundImage: '/images/AA Web Quote Template.png',
+        //       tagDate: {
+        //         tag: 'News',
+        //         date: 'Feb 29, 2024'
+        //       }
+        //     },
+        //   ],
+        // },
         {
           component: 'faq',
           name: 'BuffFAQ',
@@ -221,21 +276,21 @@ export default defineComponent({
             ]
           }
         },
-        {
-          component: 'buff-marketplace',
-          name: 'ApplicationsOpen',
-          data: {
-            image: '/images/art-alliance.png',
-            sectionClass: 'py-5',
-            title: 'Level Up Your Community.',
-            content: '<a>Deadline of applications is on March 28.</a> Our Alliance Coordinators will contact you within 3-5 working days.',
-            cta: {
-              url: 'https://bit.ly/AAEduAllianceApp',
-              text: 'Apply Now',
-              external: true
-            }
-          }
-        },
+        // {
+        //   component: 'buff-marketplace',
+        //   name: 'ApplicationsOpen',
+        //   data: {
+        //     image: '/images/art-alliance.png',
+        //     sectionClass: 'py-5',
+        //     title: 'Level Up Your Community.',
+        //     content: '<a>Deadline of applications is on March 28.</a> Our Alliance Coordinators will contact you within 3-5 working days.',
+        //     cta: {
+        //       url: 'https://bit.ly/AAEduAllianceApp',
+        //       text: 'Apply Now',
+        //       external: true
+        //     }
+        //   }
+        // },
       ],
     };
   },
@@ -246,6 +301,7 @@ export default defineComponent({
 <template>
   <main>
     <div v-for="section in sections">
+      <HomeBanner v-if="section.component === 'home-banner'" :section-id="section.name" :banner="section.banner" />
       <Banner v-if="section.component === 'banner'" :section-id="section.name" :banners="section.banners" />
       <CarouselCards v-if="section.component === 'carousel-cards'" 
         :no-top-padding="section.noTopPadding"

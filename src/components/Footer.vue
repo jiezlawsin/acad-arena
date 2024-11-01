@@ -2,14 +2,15 @@
   <footer id="footer">
     <div class="container">
       <div class="sponsors">
-        <a >
+        <!-- <a >
           <img src="../assets/images/UniPinWhite.png" alt="UniPin logo">
+        </a> -->
+        <a >
+          <img src="/images/brands/GFP.png" alt="Globe logo">
         </a>
         <a >
-          <img src="../assets/images/globe.svg" alt="Globe logo">
-        </a>
-        <a >
-          <img src="../assets/images/Mountain-Dew.png" alt="Mountain Dew logo">
+          <img src="/images/brands/Pocky.png" alt="Globe logo">
+          <!-- <img src="../assets/images/Mountain-Dew.png" alt="Mountain Dew logo"> -->
         </a>
         <a >
           <img src="../assets/images/moonton.svg" alt="Moonton logo">

@@ -21,7 +21,7 @@ export default defineComponent({
           text: 'Help us improve our buffs!',
           cta: {
             text: 'Feedback',
-            href: '/careers'
+            href: 'https://docs.google.com/forms/d/e/1FAIpQLSfnTT7W5KP0D7z1Ojj27xDWPCP659DJ-GfZhsY_ewUiuXs_Cw/formrestricted'
           }
         }
       }
@@ -83,7 +83,7 @@ export default defineComponent({
       <h1>{{ data?.name }}</h1>
       <div class="sponsors" v-if="data?.sponsors">
         <span>powered by</span>
-        <img v-for="sponsor in data?.sponsors" :src="sponsor.logo" :alt="sponsor.name">
+        <img style="max-height: 80px;" v-for="sponsor in data?.sponsors" :src="sponsor.logo" :alt="sponsor.name">
       </div>
       <div class="events">
         <div class="heading">Eligible Events</div>
