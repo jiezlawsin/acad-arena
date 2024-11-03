@@ -54,36 +54,20 @@ export default defineComponent({
             description: 'Learn by doing and be part of a network of student clubs wanting to gamify their extracurriculars!',
             images: [
               {
-                image: '/images/HOME/IMG_8437.jpg',
+                image: '/images/ALLIANCE/alliance-banner-1.jpg',
                 text: 'Esports',
               },
               {
-                image: '/images/HOME/IMG_0355.jpg',
+                image: '/images/ALLIANCE/alliance-banner-2.png',
                 text: 'Gamehaus',
               },
               {
-                image: '/images/HOME/IMG_9935.jpg',
+                image: '/images/ALLIANCE/alliance-banner-3.png',
                 text: 'Reyun',
               },
               {
-                image: '/images/HOME/IMG_9935.jpg',
+                image: '/images/ALLIANCE/alliance-banner-4.png',
                 text: 'Anime',
-              },
-              {
-                image: '/images/HOME/IMG_9935.jpg',
-                text: 'Psychology',
-              },
-              {
-                image: '/images/HOME/IMG_9935.jpg',
-                text: 'Blockchain',
-              },
-              {
-                image: '/images/HOME/IMG_9935.jpg',
-                text: 'Advocacies',
-              },
-              {
-                image: '/images/HOME/IMG_9935.jpg',
-                text: 'Design',
               },
             ],
           }
@@ -127,7 +111,8 @@ export default defineComponent({
               shortDescription: 'All official school clubs whether academic or hobby-clubs can join the Alliance!',
               tag: 'Alliance Program',
               cta: 'November Cycle Live',
-              url: '#',
+              url: 'https://noteforms.com/forms/clubs-db-zzqppd-1',
+              external: true
             },
             {
               name: 'FOR MODERATORS & EDUCATORS',

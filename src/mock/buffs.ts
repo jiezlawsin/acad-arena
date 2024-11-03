@@ -7,12 +7,12 @@ export const BuffsList = [
     description: `
     <p>No gathering is complete without a snack! Share happiness, share Pocky in your school events. Students, teachers, administrators, coaches can apply for the campus buff!</p>
     <ol type="1">
-      <li>Event Type. Any type of student gathering from game nights, year-end parties, general assemblies!</li>
-      <li>Onsite Event. All games must be done physically - whether it’s your campus computer lab, your favorite computer shop, or your school cafeteria. Hindi naman kami picky.</li>
-      <li>Participation Size. We’re looking for medium sized events with at least 40 participants</li>
-      <li>Make Some Noise. The organizers must have an official Facebook page where they can post announcements and pictures about the buff.</li>
-      <li>Plan Ahead. Bawal crammer. Submit your application form, at least, 3 weeks before the event.</li>
-      <li>Booth Bonus. Does your event have a mini-bazaar? Maybe we can booth there.</li>
+      <li><b>Event Type.</b> Any type of student gathering from game nights, year-end parties, general assemblies!</li>
+      <li><b>Onsite Event.</b> All games must be done physically - whether it’s your campus computer lab, your favorite computer shop, or your school cafeteria. Hindi naman kami picky.</li>
+      <li><b>Participation Size.</b> We’re looking for medium sized events with at least 40 participants</li>
+      <li><b>Make Some Noise.</b> The organizers must have an official Facebook page where they can post announcements and pictures about the buff.</li>
+      <li><b>Plan Ahead. Bawal crammer.</b> Submit your application form, at least, 3 weeks before the event.</li>
+      <li><b>Booth Bonus.</b> Does your event have a mini-bazaar? Maybe we can booth there.</li>
     </ol>
     `,
     colorTheme: '#FF7A7A',
@@ -91,7 +91,7 @@ export const BuffsList = [
       cta: {
         cardCtaText: 'Apply Now',
         ctaText: 'November Cycle Open',
-        ctaLink: 'https://bit.ly/AAEduBuffRequest',
+        ctaLink: 'https://noteforms.com/forms/acadarena-buff-application-smxm79',
       },
     }
   },
@@ -103,12 +103,12 @@ export const BuffsList = [
     description: `
     <p>Snack with no mess in your workshop or seminar! Share happiness, share Pocky in your school talks. Students, teachers, administrators, coaches can apply for the campus buff!</p>
     <ol type="1">
-      <li>Event Type. Any type of talk, conference or workshop.</li>
-      <li>Onsite Event. All talks must be done physically in-campus.</li>
-      <li>Participation Size. We’re looking for medium sized events with at least _ participants.</li>
-      <li>Make Some Noise. The organizers must have an official Facebook page where they can post announcements and pictures about the buff.</li>
-      <li>Plan Ahead. Bawal crammer. Submit your application form, at least, 3 weeks before the event.</li>
-      <li>Booth Bonus. Does your event have a mini-bazaar? Maybe we can booth there.</li>
+      <li><b>Event Type.</b> Any type of talk, conference or workshop.</li>
+      <li><b>Onsite Event.</b> All talks must be done physically in-campus.</li>
+      <li><b>Participation Size.</b> We’re looking for medium sized events with at least _ participants.</li>
+      <li><b>Make Some Noise.</b> The organizers must have an official Facebook page where they can post announcements and pictures about the buff.</li>
+      <li><b>Plan Ahead.</b> Bawal crammer. Submit your application form, at least, 3 weeks before the event.</li>
+      <li><b>Booth Bonus.</b> Does your event have a mini-bazaar? Maybe we can booth there.</li>
     </ol>
     `,
     colorTheme: '#FF7A7A',
@@ -187,7 +187,7 @@ export const BuffsList = [
       cta: {
         cardCtaText: 'Apply Now',
         ctaText: 'November Cycle Open',
-        ctaLink: 'https://bit.ly/AAEduBuffRequest',
+        ctaLink: 'https://noteforms.com/forms/acadarena-buff-application-smxm79',
       },
     }
   },
@@ -199,17 +199,17 @@ export const BuffsList = [
     description: `
     <p>Tournament jitters? Munch it away with no mess with Pocky! Students, teachers, administrators, coaches can apply for the campus buff!</p>
     <ol type="1">
-      <li>Event Type. Org tournament, tryouts, campus intramurals, foundation day na may esports competition - this buff is open to any esports or gaming tournament with student participants!</li>
-      <li>Offline Venue. All games must be done onsite - whether it’s your campus computer lab, your favorite computer shop, or your school cafeteria.</li>
-      <li>Participation Size. This buff is good for one game with at least 16+ teams (for 5vs5 games) or 80 players (for solo games).</li>
-      <li>Make Some Noise. The organizers must have an official Facebook page where they can post announcements and pictures about the buff.</li>
-      <li>Plan Ahead. Bawal crammer. Submit your application form at least 3 weeks before the event.</li>
-      <li>Booth Bonus. Does your event have a mini-bazaar? Maybe we can booth there.</li>
+      <li><b>Event Type.</b> Org tournament, tryouts, campus intramurals, foundation day na may esports competition - this buff is open to any esports or gaming tournament with student participants!</li>
+      <li><b>Offline Venue.</b> All games must be done onsite - whether it’s your campus computer lab, your favorite computer shop, or your school cafeteria.</li>
+      <li><b>Participation Size.</b> This buff is good for one game with at least 16+ teams (for 5vs5 games) or 80 players (for solo games).</li>
+      <li><b>Make Some Noise.</b> The organizers must have an official Facebook page where they can post announcements and pictures about the buff.</li>
+      <li><b>Plan Ahead.</b> Bawal crammer. Submit your application form at least 3 weeks before the event.</li>
+      <li><b>Booth Bonus.</b> Does your event have a mini-bazaar? Maybe we can booth there.</li>
     </ol>
     `,
     colorTheme: '#FF7A7A',
     tag: 'For Students',
-    cardImage: '/images/BUFF/pocky/supplybuff-1.jpg',
+    cardImage: '/images/BUFF/pocky/supplybuff-6.jpg',
     heroImage: '/images/BUFF/pocky/supplybuff-1.jpg',
     heroImages: [
       '/images/BUFF/pocky/supplybuff-1.jpg',
@@ -283,7 +283,7 @@ export const BuffsList = [
       cta: {
         cardCtaText: 'Apply Now',
         ctaText: 'November Cycle Open',
-        ctaLink: 'https://bit.ly/AAEduBuffRequest',
+        ctaLink: 'https://noteforms.com/forms/acadarena-buff-application-smxm79',
       },
     }
   },

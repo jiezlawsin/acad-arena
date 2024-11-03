@@ -110,7 +110,7 @@ export default {
         slidesToScroll: 1,
         autoplay: true,
         arrows: false,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 5000,
         responsive: [
           {
             breakpoint: 1200,

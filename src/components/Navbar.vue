@@ -37,19 +37,16 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="/alliance" @click.prevent="goTo('/alliance')">Alliance</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="/buffs" @click.prevent="goTo('/buffs')">Buffs</a>
+                <a class="dropdown-item" href="#" @click.prevent="">Soon</a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/stories" @click.prevent="goTo('/stories')">News & Stories</a>
           </li>
-          <li class="nav-item nav-item__contact">
+          <!-- <li class="nav-item nav-item__contact">
             <a href="" class="nav-button-link">Contact Us</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -57,6 +54,7 @@
 </template>
 
 <script lang="ts">
+import $ from "jquery";
 import { useRouter } from "vue-router";
 
 export default {
@@ -89,6 +87,12 @@ export default {
     const router = useRouter();
 
     const goTo = (path: string) => {
+      console.log('goto');
+      $('nav .navbar-toggler').removeClass('collapsed');
+      $('nav .navbar-toggler').attr('aria-expanded', false);
+      $('nav .navbar-toggler i').removeClass('bi-x-lg show').addClass('bi-list');
+      $('nav .navbar-collapse').removeClass('show');
+
       router.push(path);
     };
 

@@ -13,7 +13,7 @@
           <!-- <img src="../assets/images/Mountain-Dew.png" alt="Mountain Dew logo"> -->
         </a>
         <a >
-          <img src="../assets/images/moonton.svg" alt="Moonton logo">
+          <img src="/images/brands/moonton.png" alt="Moonton logo">
         </a>
       </div>
       <hr>

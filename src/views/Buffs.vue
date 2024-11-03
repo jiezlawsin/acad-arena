@@ -39,7 +39,7 @@ export default defineComponent({
               description: 'Snack with no mess in your workshop or seminar! Share happiness, share Pocky in your school talks. Students, teachers, administrators, coaches can apply for the campus buff!',
               actionText: 'November Cycle Open',
               image: '/images/pocky.png',
-              backgroundImage: '/images/BUFF/pocky/partybuff-1.jpg',
+              backgroundImage: '/images/BUFF/buff-banner-3.png',
               buffId: 'shapps-pocky-party-buff'
             },
             {
@@ -48,7 +48,7 @@ export default defineComponent({
               description: 'No gathering is complete without a snack! Share happiness, share Pocky in your school events. Students, teachers, administrators, coaches can apply for the campus buff!',
               actionText: 'November Cycle Open',
               image: '/images/pocky.png',
-              backgroundImage: '/images/BUFF/pocky/supplybuff-1.jpg',
+              backgroundImage: '/images/BUFF/buff-banner-2.jpg',
               buffId: 'shapps-pocky-party-buff'
             },
             {
@@ -57,7 +57,7 @@ export default defineComponent({
               description: 'Tournament jitters? Munch it away with no mess with Pocky! Students, teachers, administrators, coaches can apply for the campus buff!',
               actionText: 'November Cycle Open',
               image: '/images/pocky.png',
-              backgroundImage: '/images/BUFF/pocky/takbuff-1.jpg',
+              backgroundImage: '/images/BUFF/buff-banner-1.jpg',
               buffId: 'shapps-pocky-party-buff'
             },
           ],
@@ -191,7 +191,7 @@ export default defineComponent({
       cssEase: 'linear',
       autoplay: true,
       arrows: false,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 5000,
     });
     $("#buff-banner-cards-slick").on("beforeChange", (event: any, slick: any, currentSlide: any, nextSlide: string | number) => {
       this.currentBackground = bannerImages[nextSlide].backgroundImage;
