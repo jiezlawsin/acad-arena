@@ -105,7 +105,7 @@ export default {
   mounted() {
     console.log(this.carousel.carouselType);
     $("#" + this.sectionId + " #campusesSlides").slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 8,
         slidesToScroll: 1,
         autoplay: true,
@@ -145,6 +145,7 @@ export default {
           {
             breakpoint: 1200,
             settings: {
+              dots: true,
               variableWidth: true,
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -163,6 +164,7 @@ export default {
           {
             breakpoint: 1200,
             settings: {
+              dots: true,
               variableWidth: true,
               slidesToShow: 1,
               slidesToScroll: 1,

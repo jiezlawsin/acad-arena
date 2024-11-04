@@ -16,7 +16,7 @@
           </h1>
           <p class="home-banner-section__description">{{ banner.description }}</p>
           <div class="home-banner-section__action">
-            <a target="true" href="#" class="btn btn-lg btn-gradient">Learn More</a>
+            <a target="true" href="#" class="btn btn-lg btn-gradient" v-if="!banner.hideAction">Learn More</a>
           </div>
         </div>
       </div>

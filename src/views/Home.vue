@@ -43,19 +43,7 @@ export default defineComponent({
             description: 'AcadArena Edu gamifies your extracurriculars inside and outside of school! Get cool loot for your campus events, join competitions and make friends with the same hobby!',
             images: [
               {
-                image: '/images/HOME/IMG_8437.jpg',
-                text: 'Esports',
-              },
-              {
-                image: '/images/HOME/IMG_0355.jpg',
-                text: 'Gamehaus',
-              },
-              {
-                image: '/images/HOME/IMG_9935.jpg',
-                text: 'Reyun',
-              },
-              {
-                image: '/images/HOME/IMG_9935.jpg',
+                image: '/images/HOME/anime.jpg',
                 text: 'Anime',
               },
               {
@@ -67,7 +55,7 @@ export default defineComponent({
                 text: 'Blockchain',
               },
               {
-                image: '/images/HOME/IMG_9935.jpg',
+                image: '/images/HOME/advocacies.jpg',
                 text: 'Advocacies',
               },
               {
@@ -117,7 +105,7 @@ export default defineComponent({
             },
             {
               name: 'FOR ALL LEARNERS',
-              image: 'images/HOME/IMG_9063.jpg',
+              image: 'images/HOME/BoostCamp.jpg',
               shortDescription: 'Apply in our mentorship cycles for psychology, design & production.',
               tag: 'AcadArena BoostCamp',
               cta: 'Explore Mentorships',

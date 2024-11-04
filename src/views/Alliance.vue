@@ -49,6 +49,7 @@ export default defineComponent({
           component: 'home-banner',
           name: 'HomeBanner',
           banner: {
+            hideAction: true,
             hideTextAnimation: true,
             header: 'Level-up Your Student Communities.',
             description: 'Learn by doing and be part of a network of student clubs wanting to gamify their extracurriculars!',
@@ -99,11 +100,12 @@ export default defineComponent({
           cards: [
           {
               name: 'FOR COLLEGE, JHS, & SHS COMMUNITIES',
-              image: '/images/ALLIANCE/Alliance Incubator.jpg',
+              image: '/images/HOME/incubator.jpg',
               shortDescription: 'No club? No problem. Let’s help you set-up one in your campus.',
               tag: 'Alliance Incubator',
               cta: 'November Cycle Open',
-              url: '#',
+              url: 'https://acadarenaedu.notion.site/1341c4eaf3128017b055fa5224cda252?pvs=105',
+              external: true,
             },
             {
               name: 'FOR OFFICIAL COLLEGE, JHS & SHS CLUBS',
@@ -116,20 +118,21 @@ export default defineComponent({
             },
             {
               name: 'FOR MODERATORS & EDUCATORS',
-              image: 'images/ALLIANCE/Alliance for Teachers.jpg',
+              image: 'images/HOME/BoostCamp.jpg',
               shortDescription: 'Want to be a champion in your campus? Be part of a PLC to reach your goals for your campus.',
               tag: 'Alliance for Teachers',
               cta: 'November Batch Open',
-              url: '#',
-              // external: true
+              url: 'https://acadarenaedu.notion.site/1341c4eaf31280a3beb3d40e38de226d?pvs=105',
+              external: true
             },
             {
               name: 'FOR ALL',
-              image: 'images/ALLIANCE/Extracurricular Services.jpg',
+              image: 'images/HOME/extracurricularservices.jpg',
               shortDescription: 'Just need help or advice in your current community? Ask away!',
               tag: 'Extracurricular Services',
               cta: 'Consult',
-              url: '#',
+              url: 'https://acadarenaedu.notion.site/1341c4eaf31280c0bfded0ba5b4c6c61?pvs=105',
+              external: true
             },
           ]
         },
