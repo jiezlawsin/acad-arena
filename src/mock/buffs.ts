@@ -114,13 +114,13 @@ export const BuffsList = [
     colorTheme: '#FF7A7A',
     tag: 'For Students',
     cardImage: '/images/BUFF/TALK-PIC.jpg',
-    heroImage: '/images/BUFF/pocky/talkbuff-1.jpg',
+    heroImage: '/images/BUFF/BUFF-PAGE-TALK-1.jpg',
     heroImages: [
-      '/images/BUFF/pocky/talkbuff-1.jpg',
-      '/images/BUFF/pocky/talkbuff-2.jpg',
-      '/images/BUFF/pocky/talkbuff-3.jpg',
-      '/images/BUFF/pocky/talkbuff-4.jpg',
-      '/images/BUFF/pocky/talkbuff-5.jpg',
+      '/images/BUFF/BUFF-PAGE-TALK-1.jpg',
+      '/images/BUFF/BUFF-PAGE-TALK-2.jpg',
+      '/images/BUFF/BUFF-PAGE-TALK-3.jpg',
+      '/images/BUFF/BUFF-PAGE-TALK-4.jpg',
+      '/images/BUFF/BUFF-PAGE-TALK-5.jpg',
     ],
     sponsors: [
       {

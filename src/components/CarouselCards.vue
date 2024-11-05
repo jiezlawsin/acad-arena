@@ -12,7 +12,7 @@
           <div class="campus-slide"  v-for="n in Array.from({ length: 68 }, (_, i) => i)" :key="n">
             <div class="campus-image">
               <!-- {{ n + 1 }} -->
-              <img :src="`/images/campus_logos/${n+1}.png`"/>
+              <img :src="`/images/campus_logo-min/${n+1}-min.png`"/>
             </div>
           </div>
         </div>
