@@ -43,7 +43,7 @@ export default defineComponent({
             description: 'AcadArena Edu gamifies your extracurriculars inside and outside of school! Get cool loot for your campus events, join competitions and make friends with the same hobby!',
             images: [
               {
-                image: '/images/HOME/anime.jpg',
+                image: '/images/HOME/Optimized-Anime.jpg',
                 text: 'Anime',
               },
               {
@@ -51,11 +51,11 @@ export default defineComponent({
                 text: 'Psychology',
               },
               {
-                image: '/images/HOME/IMG_9935.jpg',
+                image: '/images/HOME/OPTIMIZED-BLOCKCHAIN.jpg',
                 text: 'Blockchain',
               },
               {
-                image: '/images/HOME/advocacies.jpg',
+                image: '/images/HOME/Optimized-Advocacies.jpg',
                 text: 'Advocacies',
               },
               {
@@ -80,7 +80,7 @@ export default defineComponent({
           cards: [
             {
               name: 'FOR HS & COLLEGE CLUBS',
-              image: '/images/HOME/program1.png',
+              image: '/images/HOME/program1.jpg',
               shortDescription: 'Get accredited in our student club network and get perks!',
               tag: 'AcadArena Alliance',
               cta: 'Apply Now',
@@ -88,7 +88,7 @@ export default defineComponent({
             },
             {
               name: 'FOR HS & COLLEGE CLUBS',
-              image: '/images/HOME/program2.png',
+              image: '/images/HOME/program2.jpg',
               shortDescription: 'Get loot and freebies for the campus event of your dreams.',
               tag: 'AcadArena Buffs',
               cta: 'November Cycle Live',
@@ -96,7 +96,7 @@ export default defineComponent({
             },
             {
               name: 'FOR HS & COLLEGE ESPORTS TEAMS',
-              image: 'images/HOME/program3.png',
+              image: 'images/HOME/program3.jpg',
               shortDescription: 'Compete in our weekly rotating esports titles against fellow students.',
               tag: 'AcadArena Aces',
               cta: 'Join Tournaments',
@@ -105,7 +105,7 @@ export default defineComponent({
             },
             {
               name: 'FOR ALL LEARNERS',
-              image: 'images/HOME/BoostCamp.jpg',
+              image: 'images/HOME/program4.jpg',
               shortDescription: 'Apply in our mentorship cycles for psychology, design & production.',
               tag: 'AcadArena BoostCamp',
               cta: 'Explore Mentorships',

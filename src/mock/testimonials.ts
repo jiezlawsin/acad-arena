@@ -13,7 +13,7 @@ export const TestimonialsList = [
     content: 'Merit Scholarship Awardee - Competitive 2021<br>Holy Angel University',
     header: 'Sobrang saya ng parents ko sa’kin, sabi pa nila [noon] “may dulot pala ang paglalaro mo.”',
     tag: '',
-    backgroundImage: '/images/testimonials/ChinoEngallado (1).png'
+    backgroundImage: '/images/testimonials/ChinoEngallado.jpg'
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const TestimonialsList = [
     content: 'President of Tempest Gaming Society<br>Technological Institute of the Philippines - QC',
     header: `With AcadArena's support, I founded an org connecting student-gamers, fostering personal growth and leadership through extensive networking.`,
     tag: '',
-    backgroundImage: '/images/testimonials/RenzelLaroza (1).JPG'
+    backgroundImage: '/images/testimonials/RenzelLaroza.jpg'
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const TestimonialsList = [
     content: 'Student Leader of the Year 2022<br>Central Philippine University',
     header: `The AcadArena Alliance turns gamers into achievers. Thanks to being a student gamer, I have been made into a student leader.`,
     tag: '',
-    backgroundImage: '/images/testimonials/ThereseElizalde (1).jpg'
+    backgroundImage: '/images/testimonials/ThereseElizalde.jpg'
   },
   {
     id: 5,
