@@ -39,7 +39,7 @@ export default defineComponent({
               description: 'Snack with no mess in your workshop or seminar! Share happiness, share Pocky in your school talks. Students, teachers, administrators, coaches can apply for the campus buff!',
               actionText: 'November Cycle Open',
               image: '/images/pocky.png',
-              backgroundImage: '/images/BUFF/buff-banner-3.png',
+              backgroundImage: '/images/BUFF/SFW-BUFF-CAROUSEL-1.jpg',
               buffId: 'shapps-pocky-party-buff'
             },
             {
@@ -48,7 +48,7 @@ export default defineComponent({
               description: 'No gathering is complete without a snack! Share happiness, share Pocky in your school events. Students, teachers, administrators, coaches can apply for the campus buff!',
               actionText: 'November Cycle Open',
               image: '/images/pocky.png',
-              backgroundImage: '/images/BUFF/buff-banner-2.jpg',
+              backgroundImage: '/images/BUFF/SFW-BUFF-CAROUSEL-2.jpg',
               buffId: 'shapps-pocky-party-buff'
             },
             {
@@ -57,7 +57,7 @@ export default defineComponent({
               description: 'Tournament jitters? Munch it away with no mess with Pocky! Students, teachers, administrators, coaches can apply for the campus buff!',
               actionText: 'November Cycle Open',
               image: '/images/pocky.png',
-              backgroundImage: '/images/BUFF/buff-banner-1.jpg',
+              backgroundImage: '/images/BUFF/SFW-BUFF-CAROUSEL-3.jpg',
               buffId: 'shapps-pocky-party-buff'
             },
           ],
@@ -131,7 +131,7 @@ export default defineComponent({
           data: {
             sectionClass: "pb-5",
             image:
-              "/images/BUFF/339645481_139464098883945_2373496877623822038_n.jpg",
+              "/images/BUFF/BUFF-PAGE-FAQ-1.jpg",
             title: "Frequently Asked Questions",
             faqs: [
               {

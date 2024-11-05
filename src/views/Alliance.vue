@@ -55,19 +55,19 @@ export default defineComponent({
             description: 'Learn by doing and be part of a network of student clubs wanting to gamify their extracurriculars!',
             images: [
               {
-                image: '/images/ALLIANCE/alliance-banner-1.jpg',
+                image: '/images/ALLIANCE/SFW-Carousel-1.jpg',
                 text: 'Esports',
               },
               {
-                image: '/images/ALLIANCE/alliance-banner-2.png',
+                image: '/images/ALLIANCE/SFW-Carousel-2.jpg',
                 text: 'Gamehaus',
               },
               {
-                image: '/images/ALLIANCE/alliance-banner-3.png',
+                image: '/images/ALLIANCE/SFW-Carousel-3.jpg',
                 text: 'Reyun',
               },
               {
-                image: '/images/ALLIANCE/alliance-banner-4.png',
+                image: '/images/ALLIANCE/SFW-Carousel-4.jpg',
                 text: 'Anime',
               },
             ],
@@ -100,7 +100,7 @@ export default defineComponent({
           cards: [
           {
               name: 'FOR COLLEGE, JHS, & SHS COMMUNITIES',
-              image: '/images/HOME/incubator.jpg',
+              image: '/images/ALLIANCE/ALLIANCE-SERVICES-1.jpg',
               shortDescription: 'No club? No problem. Let’s help you set-up one in your campus.',
               tag: 'Alliance Incubator',
               cta: 'November Cycle Open',
@@ -109,7 +109,7 @@ export default defineComponent({
             },
             {
               name: 'FOR OFFICIAL COLLEGE, JHS & SHS CLUBS',
-              image: '/images/ALLIANCE/Alliance Program.jpg',
+              image: '/images/ALLIANCE/ALLIANCE-SERVICES-2.jpg',
               shortDescription: 'All official school clubs whether academic or hobby-clubs can join the Alliance!',
               tag: 'Alliance Program',
               cta: 'November Cycle Live',
@@ -118,7 +118,7 @@ export default defineComponent({
             },
             {
               name: 'FOR MODERATORS & EDUCATORS',
-              image: 'images/HOME/BoostCamp.jpg',
+              image: 'images/ALLIANCE/ALLIANCE-SERVICES-3.jpg',
               shortDescription: 'Want to be a champion in your campus? Be part of a PLC to reach your goals for your campus.',
               tag: 'Alliance for Teachers',
               cta: 'November Batch Open',
@@ -127,7 +127,7 @@ export default defineComponent({
             },
             {
               name: 'FOR ALL',
-              image: 'images/HOME/extracurricularservices.jpg',
+              image: 'images/ALLIANCE/ALLIANCE-SERVICES-4.jpg',
               shortDescription: 'Just need help or advice in your current community? Ask away!',
               tag: 'Extracurricular Services',
               cta: 'Consult',
@@ -238,7 +238,7 @@ export default defineComponent({
           name: 'BuffFAQ',
           data: {
             sectionClass: 'pb-5',
-            image: '/images/ALLIANCE/331324007_1682201745532379_6426191550582191943_n.jpg',
+            image: '/images/ALLIANCE/OPTIMIZED-160K-file-size.jpg',
             title: 'Frequently Asked Questions',
             faqs: [
               {

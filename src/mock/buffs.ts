@@ -17,14 +17,14 @@ export const BuffsList = [
     `,
     colorTheme: '#FF7A7A',
     tag: 'For Students',
-    cardImage: '/images/BUFF/pocky/partybuff-1.jpg',
-    heroImage: '/images/BUFF/pocky/partybuff-1.jpg',
+    cardImage: '/images/BUFF/PARTY-PIC.jpg',
+    heroImage: '/images/BUFF/BUFF-PAGE-PARTY-1.jpg',
     heroImages: [
-      '/images/BUFF/pocky/partybuff-1.jpg',
-      '/images/BUFF/pocky/partybuff-2.jpg',
-      '/images/BUFF/pocky/partybuff-3.jpg',
-      '/images/BUFF/pocky/partybuff-4.jpg',
-      '/images/BUFF/pocky/partybuff-5.jpg',
+      '/images/BUFF/BUFF-PAGE-PARTY-1.jpg',
+      '/images/BUFF/BUFF-PAGE-PARTY-2.jpg',
+      '/images/BUFF/BUFF-PAGE-PARTY-3.jpg',
+      '/images/BUFF/BUFF-PAGE-PARTY-4.jpg',
+      '/images/BUFF/BUFF-PAGE-PARTY-5.jpg',
     ],
     sponsors: [
       {
@@ -113,7 +113,7 @@ export const BuffsList = [
     `,
     colorTheme: '#FF7A7A',
     tag: 'For Students',
-    cardImage: '/images/BUFF/pocky/talkbuff-1.jpg',
+    cardImage: '/images/BUFF/TALK-PIC.jpg',
     heroImage: '/images/BUFF/pocky/talkbuff-1.jpg',
     heroImages: [
       '/images/BUFF/pocky/talkbuff-1.jpg',
@@ -209,14 +209,14 @@ export const BuffsList = [
     `,
     colorTheme: '#FF7A7A',
     tag: 'For Students',
-    cardImage: '/images/BUFF/pocky/supplybuff-6.jpg',
-    heroImage: '/images/BUFF/pocky/supplybuff-1.jpg',
+    cardImage: '/images/BUFF/TOURNAMENT-PIC.jpg',
+    heroImage: '/images/BUFF/BUFF-PAGE-TOURNAMENT-1.jpg',
     heroImages: [
-      '/images/BUFF/pocky/supplybuff-1.jpg',
-      '/images/BUFF/pocky/supplybuff-2.jpg',
-      '/images/BUFF/pocky/supplybuff-3.jpg',
-      '/images/BUFF/pocky/supplybuff-4.jpg',
-      '/images/BUFF/pocky/supplybuff-5.jpg',
+      '/images/BUFF/BUFF-PAGE-TOURNAMENT-1.jpg',
+      '/images/BUFF/BUFF-PAGE-TOURNAMENT-2.jpg',
+      '/images/BUFF/BUFF-PAGE-TOURNAMENT-3.jpg',
+      '/images/BUFF/BUFF-PAGE-TOURNAMENT-4.jpg',
+      '/images/BUFF/BUFF-PAGE-TOURNAMENT-5.jpg',
     ],
     sponsors: [
       {
