@@ -100,7 +100,7 @@ export default defineComponent({
           cards: [
           {
               name: 'FOR COLLEGE, JHS, & SHS COMMUNITIES',
-              image: '/images/ALLIANCE/ALLIANCE-SERVICES-1.jpg',
+              image: '/images/ALLIANCE/Incubator.jpg',
               shortDescription: 'No club? No problem. Let’s help you set-up one in your campus.',
               tag: 'Alliance Incubator',
               cta: 'November Cycle Open',
@@ -109,7 +109,7 @@ export default defineComponent({
             },
             {
               name: 'FOR OFFICIAL COLLEGE, JHS & SHS CLUBS',
-              image: '/images/ALLIANCE/ALLIANCE-SERVICES-2.jpg',
+              image: '/images/ALLIANCE/Alliance Program.jpg',
               shortDescription: 'All official school clubs whether academic or hobby-clubs can join the Alliance!',
               tag: 'Alliance Program',
               cta: 'November Cycle Live',
@@ -118,7 +118,7 @@ export default defineComponent({
             },
             {
               name: 'FOR MODERATORS & EDUCATORS',
-              image: 'images/ALLIANCE/ALLIANCE-SERVICES-3.jpg',
+              image: 'images/ALLIANCE/For Teachers.jpg',
               shortDescription: 'Want to be a champion in your campus? Be part of a PLC to reach your goals for your campus.',
               tag: 'Alliance for Teachers',
               cta: 'November Batch Open',
@@ -127,7 +127,7 @@ export default defineComponent({
             },
             {
               name: 'FOR ALL',
-              image: 'images/ALLIANCE/ALLIANCE-SERVICES-4.jpg',
+              image: 'images/ALLIANCE/Extracurricular.jpg',
               shortDescription: 'Just need help or advice in your current community? Ask away!',
               tag: 'Extracurricular Services',
               cta: 'Consult',
