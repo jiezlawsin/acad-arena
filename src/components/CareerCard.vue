@@ -6,11 +6,11 @@
     <div class="card-footer">
       <div class="card-text-content">
         <div class="card-title">{{ item.name }}</div>
-        <div class="card-tag">{{ item.tag }}</div>
+        <div class="card-tag">{{ item.tag.label }}</div>
         <div class="card-description content">{{ item.description }}</div>
       </div>
       <div class="card-icons">
-        <div v-for="cardIcon in item.cardIcons" class="card-icon">
+        <div v-for="cardIcon in item.aboutCards" class="card-icon">
           <img :src="cardIcon.icon">
           {{ cardIcon.name }}
         </div>

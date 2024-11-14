@@ -3,6 +3,7 @@ import { defineComponent } from 'vue'
 import HomeBanner from '../components/HomeBanner.vue'
 import CTABreaker from '../components/CTABreaker.vue'
 import CareersListing from '../components/CareersListing.vue'
+import { CareersList } from '../mock/careers'
 
 export default defineComponent({
   name: 'home',
@@ -50,197 +51,16 @@ export default defineComponent({
               'pitches',
               'research',
             ],
-            list: [
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                category: 'classes',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                body: '',
-                cardImage: '/images/program2.jpg',
-                images: [],
-                classSchedule: '',
-                applicationSchedule: '',
-                cardIcons: [
-                  {
-                    name: 'Nov-Jan',
-                    icon: '/images/icons/calendar.png'
-                  },
-                  {
-                    name: '40-200+',
-                    icon: '/images/icons/people.png'
-                  },
-                  {
-                    name: 'College',
-                    icon: '/images/icons/confetti.png'
-                  },
-                  {
-                    name: 'Design Major',
-                    icon: '/images/icons/confetti.png'
-                  },
-                ],
-              },
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                category: 'classes',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                body: '',
-                cardImage: '/images/program2.jpg',
-                images: [],
-                classSchedule: '',
-                applicationSchedule: '',
-                cardIcons: [
-                  {
-                    name: 'Nov-Jan',
-                    icon: '/images/icons/calendar.png'
-                  },
-                  {
-                    name: '40-200+',
-                    icon: '/images/icons/people.png'
-                  },
-                  {
-                    name: 'College',
-                    icon: '/images/icons/confetti.png'
-                  },
-                  {
-                    name: 'Design Major',
-                    icon: '/images/icons/confetti.png'
-                  },
-                ],
-              },
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                category: 'classes',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                body: '',
-                cardImage: '/images/program2.jpg',
-                images: [],
-                classSchedule: '',
-                applicationSchedule: '',
-                cardIcons: [
-                  {
-                    name: 'Nov-Jan',
-                    icon: '/images/icons/calendar.png'
-                  },
-                  {
-                    name: '40-200+',
-                    icon: '/images/icons/people.png'
-                  },
-                  {
-                    name: 'College',
-                    icon: '/images/icons/confetti.png'
-                  },
-                  {
-                    name: 'Design Major',
-                    icon: '/images/icons/confetti.png'
-                  },
-                ],
-              },
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                category: 'classes',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                body: '',
-                cardImage: '/images/program2.jpg',
-                images: [],
-                classSchedule: '',
-                applicationSchedule: '',
-                cardIcons: [
-                  {
-                    name: 'Nov-Jan',
-                    icon: '/images/icons/calendar.png'
-                  },
-                  {
-                    name: '40-200+',
-                    icon: '/images/icons/people.png'
-                  },
-                  {
-                    name: 'College',
-                    icon: '/images/icons/confetti.png'
-                  },
-                  {
-                    name: 'Design Major',
-                    icon: '/images/icons/confetti.png'
-                  },
-                ],
-              },
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                category: 'classes',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                body: '',
-                cardImage: '/images/program2.jpg',
-                images: [],
-                classSchedule: '',
-                applicationSchedule: '',
-                cardIcons: [
-                  {
-                    name: 'Nov-Jan',
-                    icon: '/images/icons/calendar.png'
-                  },
-                  {
-                    name: '40-200+',
-                    icon: '/images/icons/people.png'
-                  },
-                  {
-                    name: 'College',
-                    icon: '/images/icons/confetti.png'
-                  },
-                  {
-                    name: 'Design Major',
-                    icon: '/images/icons/confetti.png'
-                  },
-                ],
-              },
-              {
-                id: 'branding-workshop',
-                name: 'Branding Workshop',
-                tag: 'with overdrive studios',
-                category: 'classes',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                body: '',
-                cardImage: '/images/program2.jpg',
-                images: [],
-                classSchedule: '',
-                applicationSchedule: '',
-                cardIcons: [
-                  {
-                    name: 'Nov-Jan',
-                    icon: '/images/icons/calendar.png'
-                  },
-                  {
-                    name: '40-200+',
-                    icon: '/images/icons/people.png'
-                  },
-                  {
-                    name: 'College',
-                    icon: '/images/icons/confetti.png'
-                  },
-                  {
-                    name: 'Design Major',
-                    icon: '/images/icons/confetti.png'
-                  },
-                ],
-              },
-            ]
+            list: CareersList
           }
         },
         {
           component: 'cta-breaker',
           name: 'CTABreaker',
           data: {
-            text: 'Help us improve our buffs!',
+            text: 'Co-create Classes with Us!',
             cta: {
-              text: 'Feedback',
+              text: 'Contact Us',
               href: '/careers'
             }
           }
