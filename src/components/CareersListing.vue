@@ -14,7 +14,7 @@
       </ul>
       <div class="grid-container" v-if="list.length">
         <div v-for="item in list" class="card">
-          <CareerCard :item="item" />
+          <CareerCard :item="item" @click.prevent="goTo('/careers/' + item.id)"/>
         </div>
       </div>
     </div>
@@ -23,6 +23,7 @@
 
 <script>
 import CareerCard from "./CareerCard.vue";
+import { useRouter } from "vue-router";
 
 export default {
   props: {
@@ -49,6 +50,16 @@ export default {
   },
   components: {
     CareerCard,
+  },
+  setup() {
+    const router = useRouter();
+    const goTo = (path) => {
+      router.push(path);
+    };
+
+    return {
+      goTo,
+    };
   },
 };
 </script>

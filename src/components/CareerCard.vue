@@ -10,7 +10,7 @@
         <div class="card-description content">{{ item.description }}</div>
       </div>
       <div class="card-icons">
-        <div v-for="cardIcon in item.aboutCards" class="card-icon">
+        <div v-for="cardIcon in item.requirementCards" class="card-icon">
           <img :src="cardIcon.icon">
           {{ cardIcon.name }}
         </div>

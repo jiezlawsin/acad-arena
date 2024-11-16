@@ -8,13 +8,16 @@ export const CareersList = [
       description: 'THE DEVELOPMENT PARTNER OF THE ASIAN ESPORTS FEDERATION'
     },
     category: 'classes',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     highlight: {
       title: 'We Are Looking for Thesis Partners',
       body: '<p>The Research Aid is a program established in partnership with HealthyGaming to support students in the Philippines in research intertwining gaming and health through in-depth industry and subject matter expertise.</p>'
     },
-    cardImage: '/images/program2.jpg',
-    images: [],
+    cardImage: '/images/careers/HEALTHYGAMING 1.jpg',
+    images: [
+      '/images/careers/HEALTHYGAMING 1.jpg',
+      '/images/careers/HEALTHYGAMING 2.jpg'
+    ],
     classSchedule: 'FEB 2025 - MAR 2025',
     applicationSchedule: 'NOV 8 2024 - DEC 13 2024',
     aboutCards: [
@@ -61,6 +64,7 @@ export const CareersList = [
         description: '<p><strong>Research topic.</strong> Your thesis must run in 2025. It can be under any course as long as the thesis is regarding gaming, esports, tech, and online culture that are tied to mental health and wellness. </p>'
       },
     ],
+    link: 'https://forms.gle/779cj7xtnqnBKWhX6',
     activeTab: 0,
     goal: {
       title: 'Research Goals',
@@ -76,13 +80,16 @@ export const CareersList = [
       description: ''
     },
     category: 'classes',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     highlight: {
       title: 'Leave a Legacy Through Design',
       body: '<p>The <strong>Branding & Design Student Fellowship</strong> is for undergraduate students who is either taking a major in graphic design OR wants to pursue design as a career. Sharpen your fundamentals and leave a brand kit for your chosen community.</p>'
     },
-    cardImage: '/images/program2.jpg',
-    images: [],
+    cardImage: '/images/careers/BRAND AND DESIGN 2.jpg',
+    images: [
+      '/images/careers/BRAND AND DESIGN 2.jpg',
+      '/images/careers/BRAND AND DESIGN 1.jpg'
+    ],
     classSchedule: 'FEB 2025 - MAR 2025',
     applicationSchedule: 'NOV 8 2024 - DEC 13 2024',
     aboutCards: [
@@ -129,6 +136,7 @@ export const CareersList = [
         description: '<p><strong>Design Tools.</strong> You must have access and knowledge on how to use Adobe Photoshop and Adobe Illustrator. Figma is a plus!</p>'
       },
     ],
+    link: 'https://forms.gle/779cj7xtnqnBKWhX6',
     activeTab: 0,
     goal: {
       title: 'Learning Goals',

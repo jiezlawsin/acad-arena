@@ -77,7 +77,7 @@ hr {
         BACK
       </a>
       <div class="hero">
-        <img :src="data?.cardImage" alt="">
+        <img v-for="image in data?.images" :src="image" alt="">
       </div>
       <div class="grid-content">
         <div class="content">
@@ -149,6 +149,7 @@ hr {
         </div>
         <div class="sticky-card">
           <div class="card-body">
+            <img src="../assets/images/Stars & Spirals.png" alt="">
             <div class="schedule">
               <div class="label">CLASSES WILL START ON</div>
               <div class="value">{{ data?.classSchedule }}</div>
@@ -159,7 +160,7 @@ hr {
             </div>
             <a href="" class="link text-gradient">Ask a Question</a>
           </div>
-          <a href="" class="card-cta btn">Apply Now</a>
+          <a :href="data?.link" target="_blank" class="card-cta btn">Apply Now</a>
         </div>
       </div>
     </div>

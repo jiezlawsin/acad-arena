@@ -1132,6 +1132,7 @@ h3 {
     width: 100%;
     padding: 0;
     background: #FFF;
+    cursor: pointer;
 
     .card-image {
       aspect-ratio: 3/2;
@@ -1195,6 +1196,7 @@ h3 {
       padding: 12px 6px;
       font-size: 10px;
       color: #00174C;
+      text-align: center;
 
       img {
         max-width: 24px;
@@ -1429,7 +1431,7 @@ h3 {
   padding-inline: 24px;
 
   @media screen and (min-width: 1040px) {
-    padding: 0;
+    // padding: 0;
   }
 
   @media screen and (max-width: 767px) {
@@ -3342,7 +3344,7 @@ h3 {
   padding-block: 58px;
 
   .container {
-    padding-inline: 115px;
+    padding-inline: 90px;
   }
 
   .card {
@@ -3433,6 +3435,28 @@ h3 {
     }
   }
 
+  .hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+
+
+    img {
+      height: 450px;
+      width: 100%;
+      object-fit: cover;
+
+      @media screen and (max-width: 990px) {
+        height: 420px;
+      }
+      @media screen and (max-width: 640px) {
+        height: 280px;
+      }
+      @media screen and (max-width: 540px) {
+        height: 220px;
+      }
+    }
+  }
   hr {
     opacity: 1;
     border-image: linear-gradient(to right, #78C3FF -36.11%, #9030CF 134.81%) 1;
@@ -3485,6 +3509,16 @@ h3 {
       background: #FFF;
       border-radius: 14px 14px 0 0;
       padding: 158px 25px 20px;
+      position: relative;
+      > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+      }
 
       .link {
         font-size: 10px;
@@ -3593,4 +3627,10 @@ h3 {
 #ApplicationsOpen {
   color: $white;
   overflow: hidden;
+}
+
+#CareersBanner {
+  .home-banner-image-slide {
+    background-position: top;
+  }
 }

@@ -30,7 +30,7 @@
           <li class="nav-item">
             <a class="nav-link" href="https://www.challengermode.com/s/AcadArenaPH" target="_blank">Competition</a>
           </li>
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Career
               <img src="/images/icons/chevron-down.svg" alt="">
@@ -40,6 +40,9 @@
                 <a class="dropdown-item" href="#" @click.prevent="">Soon</a>
               </li>
             </ul>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/careers" @click.prevent="goTo('/careers')">Careers</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/stories" @click.prevent="goTo('/stories')">News & Stories</a>

@@ -18,22 +18,22 @@ export default defineComponent({
       sections: [
         {
           component: 'home-banner',
-          name: 'HomeBanner',
+          name: 'CareersBanner',
           banner: {
-            header: 'Level-Up Your Extracurriculars \n in',
-            description: 'AcadArena Edu gamifies your extracurriculars inside and outside of school! Get cool loot for your campus events, join competitions and make friends with the same hobby!',
+            header: 'Boost Your Experience \n in',
+            description: 'Everyone just needs a little boost. Discover yourself in new skills or double down on what you already know.',
             images: [
               {
-                image: '/images/HOME/IMG_8437.jpg',
+                image: '/images/careers/ESPORTS.jpg',
                 text: 'Esports', 
               },
               {
-                image: '/images/HOME/IMG_0355.jpg',
-                text: 'Gamehaus',
+                image: '/images/careers/PSYCHOLOGY.jpg',
+                text: 'Psychology',
               },
               {
-                image: '/images/HOME/IMG_9935.jpg',
-                text: 'Reyun',
+                image: '/images/careers/DESIGN.jpg',
+                text: 'Design',
               },
             ],
           }
