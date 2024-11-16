@@ -7,11 +7,11 @@
         <p>{{ description }}</p>
       </div>
       
-      <ul v-if="categories.length" class="categories">
+      <!-- <ul v-if="categories.length" class="categories">
         <li v-for="item in categories">
           <span class="pill">{{ item }}</span>
         </li>
-      </ul>
+      </ul> -->
       <div class="grid-container" v-if="list.length">
         <div v-for="item in list" class="card">
           <CareerCard :item="item" @click.prevent="goTo('/careers/' + item.id)"/>

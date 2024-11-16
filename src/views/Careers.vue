@@ -61,7 +61,7 @@ export default defineComponent({
             text: 'Co-create Classes with Us!',
             cta: {
               text: 'Contact Us',
-              href: 'https://docs.google.com/forms/d/e/1FAIpQLSfnTT7W5KP0D7z1Ojj27xDWPCP659DJ-GfZhsY_ewUiuXs_Cw/formrestricted'
+              href: 'https://acadarenaedu.notion.site/1401c4eaf312803bbb5bfeaa527fa1a8?pvs=105'
             }
           }
         }
