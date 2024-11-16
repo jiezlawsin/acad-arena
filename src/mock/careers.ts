@@ -5,7 +5,7 @@ export const CareersList = [
     tag: {
       label: 'with healthygaming',
       logo: '/images/careers/healthy-gaming-logo.svg',
-      description: 'THE DEVELOPMENT PARTNER OF THE ASIAN ESPORTS FEDERATION'
+      description: 'THE DEVELOPMENT PARTNER OF THE ASIAN ELECTRONIC SPORTS FEDERATION'
     },
     category: 'classes',
     description: '',
@@ -19,7 +19,7 @@ export const CareersList = [
       '/images/careers/HEALTHYGAMING 2.jpg'
     ],
     classSchedule: 'FEB 2025 - MAR 2025',
-    applicationSchedule: 'NOV 8 2024 - DEC 13 2024',
+    applicationSchedule: 'NOV 16 2024 - DEC 13 2024',
     aboutCards: [
       {
         name: 'Dec 2024',
@@ -91,7 +91,7 @@ export const CareersList = [
       '/images/careers/BRAND AND DESIGN 1.jpg'
     ],
     classSchedule: 'FEB 2025 - MAR 2025',
-    applicationSchedule: 'NOV 8 2024 - DEC 13 2024',
+    applicationSchedule: 'NOV 16 2024 - DEC 13 2024',
     aboutCards: [
       {
         name: 'Nov-Dec',
@@ -136,7 +136,7 @@ export const CareersList = [
         description: '<p><strong>Design Tools.</strong> You must have access and knowledge on how to use Adobe Photoshop and Adobe Illustrator. Figma is a plus!</p>'
       },
     ],
-    link: 'https://forms.gle/779cj7xtnqnBKWhX6',
+    link: 'https://acadarenaedu.notion.site/1401c4eaf31280f7a876f2611154458f?pvs=105',
     activeTab: 0,
     goal: {
       title: 'Learning Goals',
