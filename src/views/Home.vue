@@ -195,6 +195,24 @@ export default defineComponent({
           },
           cards: [
             {
+              id: 'aa-edu-overdrive',
+              header: 'AcadArena Edu Partners with Overdrive Studios to Create a Branding and Design Fellowship',
+              backgroundImage: '/images/careers/BRAND AND DESIGN 2.jpg',
+              tagDate: {
+                tag: 'News',
+                date: 'Nov 16, 2024'
+              }
+            },
+            {
+              id: 'aa-edu-healthy-gaming',
+              header: 'AcadArena Edu Partners with HealthyGaming to Launches Research Aid for Gamers & Wellness',
+              backgroundImage: '/images/careers/HEALTHYGAMING 1.jpg',
+              tagDate: {
+                tag: 'News',
+                date: 'Nov 16, 2024'
+              }
+            },
+            {
               id: 'mountain-dew-buffs-now-available-at-acad-arena-buffs-marketplace',
               header: 'Mountain Dew Buffs Now Available at AcadArena Buffs Marketplace',
               backgroundImage: '/images/story-mntdw.jpg',

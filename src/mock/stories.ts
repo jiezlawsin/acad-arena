@@ -1,5 +1,43 @@
 export const StoriesList = [
   {
+    id: 'aa-edu-overdrive',
+    title: 'AcadArena Edu Partners with Overdrive Studios to Create a Branding and Design Fellowship',
+    short: 'Looking to pursue a career in design? Get the boost with Overdrive Studios.',
+    content: `
+    <p>Looking to pursue a career in design? Get the boost with Overdrive Studios.</p>
+    <p>The Overdrive Studios x AcadArena Edu Branding & Design Fellowship is in search of undergraduates looking to pursue a career in design. Students do not need to be enrolled in a design course to qualify.</p>
+    <p>The chosen fellows will be creating a brand book for a chosen community they are part of.</p>
+    <p>“Design is the backbone of any thriving society, and visual design gives life and energy to things,” Dani Rogacion, CEO of Overdrive Studios shares. “Working with AcadArena Edu is an important step in having a focused-centered approach to design and branding and I’m excited to partner with them to invite students into this fellowship.”</p>
+    <p>AcadArena Edu was recently awarded as the training provider of the CHED Esports Coaching Certification and has also launched a thesis research aid with HealthyGaming for esports and wellness. This is the company’s first push for design. </p>
+    <p>“I was a fellow for writing myself for the Cultural Center of the Philippines’ programs,” Ariane Lim, the CEO of AcadArena Education adds. “That experience was invaluable to me as a young professional. I have always wanted to create a similar experience with Dani and Overdrive.”</p>
+    <p>Interested students can check the requirements and apply at <a href="www.acadarena.com/careers" target="_blank">www.acadarena.com/careers.</a></p>
+    `,
+    tag: 'News',
+    cardImage: '/images/careers/BRAND AND DESIGN 2.jpg',
+    heroImage: '/images/careers/BRAND AND DESIGN 2.jpg',
+    date: 'Nov 16, 2024',
+    featured: false,
+  },
+  {
+    id: 'aa-edu-healthy-gaming',
+    title: 'AcadArena Edu Partners with HealthyGaming to Launches Research Aid for Gamers & Wellness',
+    short: 'Are you proposing a thesis on gamers and their psychology? Now, there is a research aid to help.',
+    content: `
+    <p>Are you proposing a thesis on gamers and their psychology? Now, there is a research aid to help.</p>
+    <p>HealthyGaming is the development partner of the Asian Electronic Sports Federation (AESF) The federation is recognized by the Olympic Council of Asia. They are currently doing research on esports players in an Olympic-level. They wish to extend their studies to more cohorts.</p>
+    <p>The HealthyGaming x AcadArena Edu Thesis Research Aid is in search of undergraduate or masteral level thesis tackling gamers, wellness, behaviour, consumption and the like. The thesis does not have to be under psychology to qualify for the research aid.</p>
+    <p>The research aid offers mentorship from HealthyGaming and resources from AcadArena Edu. The thesis must be in its early stages and has not begun data collection to qualify.</p>
+    <p>Christoffer Johansson, the CEO of Healthy Gaming states "We are incredibly excited about this partnership with AcadArena Education. The passion of gamers in the Philippines is admirable and we sincerely look forward to supporting both the current and future generations of gamers and together contribute to a greater tomorrow." </p>
+    <p>“This is just the beginning. Our partnership will extend to assisting teams and schools gain a better understanding of their players,” Ariane Lim, the CEO of AcadArena Education shares. </p>
+    <p>Interested students can apply to the research aid here until December 8 2024. For inquiries regarding the research aid, you may contact the AcadArena Edu Facebook Page!</p>
+    `,
+    tag: 'News',
+    cardImage: '/images/careers/HEALTHYGAMING 1.jpg',
+    heroImage: '/images/careers/HEALTHYGAMING 1.jpg',
+    date: 'Nov 16, 2024',
+    featured: false,
+  },
+  {
     id: 'on-acad-arena-edu-word-from-the-ceo',
     title: 'On AcadArena Edu: Word from the CEO',
     short: 'The biggest misconception of what an executive is is that you can do anything you want',
