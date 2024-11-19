@@ -29,7 +29,7 @@ export const StoriesList = [
     <p>The research aid offers mentorship from HealthyGaming and resources from AcadArena Edu. The thesis must be in its early stages and has not begun data collection to qualify.</p>
     <p>Christoffer Johansson, the CEO of Healthy Gaming states "We are incredibly excited about this partnership with AcadArena Education. The passion of gamers in the Philippines is admirable and we sincerely look forward to supporting both the current and future generations of gamers and together contribute to a greater tomorrow." </p>
     <p>“This is just the beginning. Our partnership will extend to assisting teams and schools gain a better understanding of their players,” Ariane Lim, the CEO of AcadArena Education shares. </p>
-    <p>Interested students can apply to the research aid here until December 8 2024. For inquiries regarding the research aid, you may contact the AcadArena Edu Facebook Page!</p>
+    <p>Interested students can apply to the research aid <a href="www.acadarena.com/careers" target="_blank">here</a> until December 8 2024. For inquiries regarding the research aid, you may contact the AcadArena Edu Facebook Page!</p>
     `,
     tag: 'News',
     cardImage: '/images/careers/HEALTHYGAMING 1.jpg',
